@@ -1,0 +1,1304 @@
+                                      1 ;--------------------------------------------------------
+                                      2 ; File Created by SDCC : free open source ANSI-C Compiler
+                                      3 ; Version 4.1.0 #12072 (MINGW64)
+                                      4 ;--------------------------------------------------------
+                                      5 	.module main
+                                      6 	.optsdcc -mstm8
+                                      7 	
+                                      8 ;--------------------------------------------------------
+                                      9 ; Public variables in this module
+                                     10 ;--------------------------------------------------------
+                                     11 	.globl _main
+                                     12 	.globl _delay_2
+                                     13 	.globl _delay_1
+                                     14 	.globl _GPIO_Write
+                                     15 	.globl _GPIO_Init
+                                     16 	.globl _CLK_HSIPrescalerConfig
+                                     17 ;--------------------------------------------------------
+                                     18 ; ram data
+                                     19 ;--------------------------------------------------------
+                                     20 	.area DATA
+                                     21 ;--------------------------------------------------------
+                                     22 ; ram data
+                                     23 ;--------------------------------------------------------
+                                     24 	.area INITIALIZED
+                                     25 ;--------------------------------------------------------
+                                     26 ; Stack segment in internal ram 
+                                     27 ;--------------------------------------------------------
+                                     28 	.area	SSEG
+      000000                         29 __start__stack:
+      000000                         30 	.ds	1
+                                     31 
+                                     32 ;--------------------------------------------------------
+                                     33 ; absolute external ram data
+                                     34 ;--------------------------------------------------------
+                                     35 	.area DABS (ABS)
+                                     36 
+                                     37 ; default segment ordering for linker
+                                     38 	.area HOME
+                                     39 	.area GSINIT
+                                     40 	.area GSFINAL
+                                     41 	.area CONST
+                                     42 	.area INITIALIZER
+                                     43 	.area CODE
+                                     44 
+                                     45 ;--------------------------------------------------------
+                                     46 ; interrupt vector 
+                                     47 ;--------------------------------------------------------
+                                     48 	.area HOME
+      000000                         49 __interrupt_vect:
+      000000 82v00u00u00             50 	int s_GSINIT ; reset
+      000004 82v00u00u00             51 	int _TRAP_IRQHandler ; trap
+      000008 82v00u00u00             52 	int _TLI_IRQHandler ; int0
+      00000C 82v00u00u00             53 	int _AWU_IRQHandler ; int1
+      000010 82v00u00u00             54 	int _CLK_IRQHandler ; int2
+      000014 82v00u00u00             55 	int _EXTI_PORTA_IRQHandler ; int3
+      000018 82v00u00u00             56 	int _EXTI_PORTB_IRQHandler ; int4
+      00001C 82v00u00u00             57 	int _EXTI_PORTC_IRQHandler ; int5
+      000020 82v00u00u00             58 	int _EXTI_PORTD_IRQHandler ; int6
+      000024 82v00u00u00             59 	int _EXTI_PORTE_IRQHandler ; int7
+      000028 82v00u00u00             60 	int _CAN_RX_IRQHandler ; int8
+      00002C 82v00u00u00             61 	int _CAN_TX_IRQHandler ; int9
+      000030 82v00u00u00             62 	int _SPI_IRQHandler ; int10
+      000034 82v00u00u00             63 	int _TIM1_UPD_OVF_TRG_BRK_IRQHandler ; int11
+      000038 82v00u00u00             64 	int _TIM1_CAP_COM_IRQHandler ; int12
+      00003C 82v00u00u00             65 	int _TIM2_UPD_OVF_BRK_IRQHandler ; int13
+      000040 82v00u00u00             66 	int _TIM2_CAP_COM_IRQHandler ; int14
+      000044 82v00u00u00             67 	int _TIM3_UPD_OVF_BRK_IRQHandler ; int15
+      000048 82v00u00u00             68 	int _TIM3_CAP_COM_IRQHandler ; int16
+      00004C 82v00u00u00             69 	int _UART1_TX_IRQHandler ; int17
+      000050 82v00u00u00             70 	int _UART1_RX_IRQHandler ; int18
+      000054 82v00u00u00             71 	int _I2C_IRQHandler ; int19
+      000058 82v00u00u00             72 	int _UART3_TX_IRQHandler ; int20
+      00005C 82v00u00u00             73 	int _UART3_RX_IRQHandler ; int21
+      000060 82v00u00u00             74 	int _ADC2_IRQHandler ; int22
+      000064 82v00u00u00             75 	int _TIM4_UPD_OVF_IRQHandler ; int23
+      000068 82v00u00u00             76 	int _EEPROM_EEC_IRQHandler ; int24
+                                     77 ;--------------------------------------------------------
+                                     78 ; global & static initialisations
+                                     79 ;--------------------------------------------------------
+                                     80 	.area HOME
+                                     81 	.area GSINIT
+                                     82 	.area GSFINAL
+                                     83 	.area GSINIT
+      000000                         84 __sdcc_init_data:
+                                     85 ; stm8_genXINIT() start
+      000000 AEr00r00         [ 2]   86 	ldw x, #l_DATA
+      000003 27 07            [ 1]   87 	jreq	00002$
+      000005                         88 00001$:
+      000005 72 4FuFFuFF      [ 1]   89 	clr (s_DATA - 1, x)
+      000009 5A               [ 2]   90 	decw x
+      00000A 26 F9            [ 1]   91 	jrne	00001$
+      00000C                         92 00002$:
+      00000C AEr00r00         [ 2]   93 	ldw	x, #l_INITIALIZER
+      00000F 27 09            [ 1]   94 	jreq	00004$
+      000011                         95 00003$:
+      000011 D6uFFuFF         [ 1]   96 	ld	a, (s_INITIALIZER - 1, x)
+      000014 D7uFFuFF         [ 1]   97 	ld	(s_INITIALIZED - 1, x), a
+      000017 5A               [ 2]   98 	decw	x
+      000018 26 F7            [ 1]   99 	jrne	00003$
+      00001A                        100 00004$:
+                                    101 ; stm8_genXINIT() end
+                                    102 	.area GSFINAL
+      000000 CCr00r6C         [ 2]  103 	jp	__sdcc_program_startup
+                                    104 ;--------------------------------------------------------
+                                    105 ; Home
+                                    106 ;--------------------------------------------------------
+                                    107 	.area HOME
+                                    108 	.area HOME
+      00006C                        109 __sdcc_program_startup:
+      00006C CCr00r2E         [ 2]  110 	jp	_main
+                                    111 ;	return from main will return to caller
+                                    112 ;--------------------------------------------------------
+                                    113 ; code
+                                    114 ;--------------------------------------------------------
+                                    115 	.area CODE
+                           000000   116 	Smain$delay_1$0 ==.
+                           000000   117 	Smain$delay_1$1 ==.
+                                    118 ;	app/src/main.c: 3: void delay_1(void)
+                                    119 ;	-----------------------------------------
+                                    120 ;	 function delay_1
+                                    121 ;	-----------------------------------------
+      000000                        122 _delay_1:
+                           000000   123 	Smain$delay_1$2 ==.
+                           000000   124 	Smain$delay_1$3 ==.
+                                    125 ;	app/src/main.c: 5: for (uint32_t i = 0; i < 500000; i++);
+      000000 90 5F            [ 1]  126 	clrw	y
+      000002 5F               [ 1]  127 	clrw	x
+      000003                        128 00103$:
+      000003 90 A3 A1 20      [ 2]  129 	cpw	y, #0xa120
+      000007 9F               [ 1]  130 	ld	a, xl
+      000008 A2 07            [ 1]  131 	sbc	a, #0x07
+      00000A 9E               [ 1]  132 	ld	a, xh
+      00000B A2 00            [ 1]  133 	sbc	a, #0x00
+      00000D 24 07            [ 1]  134 	jrnc	00105$
+      00000F 90 5C            [ 1]  135 	incw	y
+      000011 26 F0            [ 1]  136 	jrne	00103$
+      000013 5C               [ 1]  137 	incw	x
+      000014 20 ED            [ 2]  138 	jra	00103$
+      000016                        139 00105$:
+                           000016   140 	Smain$delay_1$4 ==.
+                                    141 ;	app/src/main.c: 6: }
+                           000016   142 	Smain$delay_1$5 ==.
+                           000016   143 	XG$delay_1$0$0 ==.
+      000016 81               [ 4]  144 	ret
+                           000017   145 	Smain$delay_1$6 ==.
+                           000017   146 	Smain$delay_2$7 ==.
+                           000017   147 	Smain$delay_2$8 ==.
+                                    148 ;	app/src/main.c: 7: void delay_2(void)
+                                    149 ;	-----------------------------------------
+                                    150 ;	 function delay_2
+                                    151 ;	-----------------------------------------
+      000017                        152 _delay_2:
+                           000017   153 	Smain$delay_2$9 ==.
+                           000017   154 	Smain$delay_2$10 ==.
+                                    155 ;	app/src/main.c: 9: for (uint32_t i = 0; i < 250000; i++);
+      000017 90 5F            [ 1]  156 	clrw	y
+      000019 5F               [ 1]  157 	clrw	x
+      00001A                        158 00103$:
+      00001A 90 A3 D0 90      [ 2]  159 	cpw	y, #0xd090
+      00001E 9F               [ 1]  160 	ld	a, xl
+      00001F A2 03            [ 1]  161 	sbc	a, #0x03
+      000021 9E               [ 1]  162 	ld	a, xh
+      000022 A2 00            [ 1]  163 	sbc	a, #0x00
+      000024 24 07            [ 1]  164 	jrnc	00105$
+      000026 90 5C            [ 1]  165 	incw	y
+      000028 26 F0            [ 1]  166 	jrne	00103$
+      00002A 5C               [ 1]  167 	incw	x
+      00002B 20 ED            [ 2]  168 	jra	00103$
+      00002D                        169 00105$:
+                           00002D   170 	Smain$delay_2$11 ==.
+                                    171 ;	app/src/main.c: 10: } 
+                           00002D   172 	Smain$delay_2$12 ==.
+                           00002D   173 	XG$delay_2$0$0 ==.
+      00002D 81               [ 4]  174 	ret
+                           00002E   175 	Smain$delay_2$13 ==.
+                           00002E   176 	Smain$main$14 ==.
+                                    177 ;	app/src/main.c: 11: void main(void)
+                                    178 ;	-----------------------------------------
+                                    179 ;	 function main
+                                    180 ;	-----------------------------------------
+      00002E                        181 _main:
+                           00002E   182 	Smain$main$15 ==.
+                           00002E   183 	Smain$main$16 ==.
+                                    184 ;	app/src/main.c: 14: CLK_HSIPrescalerConfig(CLK_PRESCALER_HSIDIV1); // FREQ MCU 16MHz
+      00002E 4B 00            [ 1]  185 	push	#0x00
+                           000030   186 	Smain$main$17 ==.
+      000030 CDr00r00         [ 4]  187 	call	_CLK_HSIPrescalerConfig
+      000033 84               [ 1]  188 	pop	a
+                           000034   189 	Smain$main$18 ==.
+                           000034   190 	Smain$main$19 ==.
+                                    191 ;	app/src/main.c: 16: GPIO_Init(Port_Seg, GPIO_PIN_ALL, GPIO_MODE_OUT_PP_LOW_SLOW);
+      000034 4B C0            [ 1]  192 	push	#0xc0
+                           000036   193 	Smain$main$20 ==.
+      000036 4B FF            [ 1]  194 	push	#0xff
+                           000038   195 	Smain$main$21 ==.
+      000038 4B 05            [ 1]  196 	push	#0x05
+                           00003A   197 	Smain$main$22 ==.
+      00003A 4B 50            [ 1]  198 	push	#0x50
+                           00003C   199 	Smain$main$23 ==.
+      00003C CDr00r00         [ 4]  200 	call	_GPIO_Init
+      00003F 5B 04            [ 2]  201 	addw	sp, #4
+                           000041   202 	Smain$main$24 ==.
+                           000041   203 	Smain$main$25 ==.
+                                    204 ;	app/src/main.c: 18: while (1)
+      000041                        205 00102$:
+                           000041   206 	Smain$main$26 ==.
+                           000041   207 	Smain$main$27 ==.
+                                    208 ;	app/src/main.c: 20: GPIO_Write(Port_Seg, 0b11000000);//0
+      000041 4B C0            [ 1]  209 	push	#0xc0
+                           000043   210 	Smain$main$28 ==.
+      000043 4B 05            [ 1]  211 	push	#0x05
+                           000045   212 	Smain$main$29 ==.
+      000045 4B 50            [ 1]  213 	push	#0x50
+                           000047   214 	Smain$main$30 ==.
+      000047 CDr00r00         [ 4]  215 	call	_GPIO_Write
+      00004A 5B 03            [ 2]  216 	addw	sp, #3
+                           00004C   217 	Smain$main$31 ==.
+                           00004C   218 	Smain$main$32 ==.
+                                    219 ;	app/src/main.c: 21: delay_1();
+      00004C CDr00r00         [ 4]  220 	call	_delay_1
+                           00004F   221 	Smain$main$33 ==.
+                                    222 ;	app/src/main.c: 22: GPIO_Write(Port_Seg, 0b11111001);// 1
+      00004F 4B F9            [ 1]  223 	push	#0xf9
+                           000051   224 	Smain$main$34 ==.
+      000051 4B 05            [ 1]  225 	push	#0x05
+                           000053   226 	Smain$main$35 ==.
+      000053 4B 50            [ 1]  227 	push	#0x50
+                           000055   228 	Smain$main$36 ==.
+      000055 CDr00r00         [ 4]  229 	call	_GPIO_Write
+      000058 5B 03            [ 2]  230 	addw	sp, #3
+                           00005A   231 	Smain$main$37 ==.
+                           00005A   232 	Smain$main$38 ==.
+                                    233 ;	app/src/main.c: 23: delay_2();
+      00005A CDr00r17         [ 4]  234 	call	_delay_2
+                           00005D   235 	Smain$main$39 ==.
+                                    236 ;	app/src/main.c: 24: GPIO_Write(Port_Seg, 0b10100100);//2
+      00005D 4B A4            [ 1]  237 	push	#0xa4
+                           00005F   238 	Smain$main$40 ==.
+      00005F 4B 05            [ 1]  239 	push	#0x05
+                           000061   240 	Smain$main$41 ==.
+      000061 4B 50            [ 1]  241 	push	#0x50
+                           000063   242 	Smain$main$42 ==.
+      000063 CDr00r00         [ 4]  243 	call	_GPIO_Write
+      000066 5B 03            [ 2]  244 	addw	sp, #3
+                           000068   245 	Smain$main$43 ==.
+                           000068   246 	Smain$main$44 ==.
+                                    247 ;	app/src/main.c: 25: delay_1();
+      000068 CDr00r00         [ 4]  248 	call	_delay_1
+                           00006B   249 	Smain$main$45 ==.
+                                    250 ;	app/src/main.c: 26: GPIO_Write(Port_Seg, 0b10110000);// 3
+      00006B 4B B0            [ 1]  251 	push	#0xb0
+                           00006D   252 	Smain$main$46 ==.
+      00006D 4B 05            [ 1]  253 	push	#0x05
+                           00006F   254 	Smain$main$47 ==.
+      00006F 4B 50            [ 1]  255 	push	#0x50
+                           000071   256 	Smain$main$48 ==.
+      000071 CDr00r00         [ 4]  257 	call	_GPIO_Write
+      000074 5B 03            [ 2]  258 	addw	sp, #3
+                           000076   259 	Smain$main$49 ==.
+                           000076   260 	Smain$main$50 ==.
+                                    261 ;	app/src/main.c: 27: delay_2();
+      000076 CDr00r17         [ 4]  262 	call	_delay_2
+                           000079   263 	Smain$main$51 ==.
+                                    264 ;	app/src/main.c: 28: GPIO_Write(Port_Seg, 0b10011001);//4
+      000079 4B 99            [ 1]  265 	push	#0x99
+                           00007B   266 	Smain$main$52 ==.
+      00007B 4B 05            [ 1]  267 	push	#0x05
+                           00007D   268 	Smain$main$53 ==.
+      00007D 4B 50            [ 1]  269 	push	#0x50
+                           00007F   270 	Smain$main$54 ==.
+      00007F CDr00r00         [ 4]  271 	call	_GPIO_Write
+      000082 5B 03            [ 2]  272 	addw	sp, #3
+                           000084   273 	Smain$main$55 ==.
+                           000084   274 	Smain$main$56 ==.
+                                    275 ;	app/src/main.c: 29: delay_1();
+      000084 CDr00r00         [ 4]  276 	call	_delay_1
+                           000087   277 	Smain$main$57 ==.
+                                    278 ;	app/src/main.c: 30: GPIO_Write(Port_Seg, 0b10010010);// 5
+      000087 4B 92            [ 1]  279 	push	#0x92
+                           000089   280 	Smain$main$58 ==.
+      000089 4B 05            [ 1]  281 	push	#0x05
+                           00008B   282 	Smain$main$59 ==.
+      00008B 4B 50            [ 1]  283 	push	#0x50
+                           00008D   284 	Smain$main$60 ==.
+      00008D CDr00r00         [ 4]  285 	call	_GPIO_Write
+      000090 5B 03            [ 2]  286 	addw	sp, #3
+                           000092   287 	Smain$main$61 ==.
+                           000092   288 	Smain$main$62 ==.
+                                    289 ;	app/src/main.c: 31: delay_2();
+      000092 CDr00r17         [ 4]  290 	call	_delay_2
+                           000095   291 	Smain$main$63 ==.
+                                    292 ;	app/src/main.c: 32: GPIO_Write(Port_Seg, 0b10000010);//6
+      000095 4B 82            [ 1]  293 	push	#0x82
+                           000097   294 	Smain$main$64 ==.
+      000097 4B 05            [ 1]  295 	push	#0x05
+                           000099   296 	Smain$main$65 ==.
+      000099 4B 50            [ 1]  297 	push	#0x50
+                           00009B   298 	Smain$main$66 ==.
+      00009B CDr00r00         [ 4]  299 	call	_GPIO_Write
+      00009E 5B 03            [ 2]  300 	addw	sp, #3
+                           0000A0   301 	Smain$main$67 ==.
+                           0000A0   302 	Smain$main$68 ==.
+                                    303 ;	app/src/main.c: 33: delay_1();
+      0000A0 CDr00r00         [ 4]  304 	call	_delay_1
+                           0000A3   305 	Smain$main$69 ==.
+                                    306 ;	app/src/main.c: 34: GPIO_Write(Port_Seg, 0b11111000);// 7
+      0000A3 4B F8            [ 1]  307 	push	#0xf8
+                           0000A5   308 	Smain$main$70 ==.
+      0000A5 4B 05            [ 1]  309 	push	#0x05
+                           0000A7   310 	Smain$main$71 ==.
+      0000A7 4B 50            [ 1]  311 	push	#0x50
+                           0000A9   312 	Smain$main$72 ==.
+      0000A9 CDr00r00         [ 4]  313 	call	_GPIO_Write
+      0000AC 5B 03            [ 2]  314 	addw	sp, #3
+                           0000AE   315 	Smain$main$73 ==.
+                           0000AE   316 	Smain$main$74 ==.
+                                    317 ;	app/src/main.c: 35: delay_2();
+      0000AE CDr00r17         [ 4]  318 	call	_delay_2
+                           0000B1   319 	Smain$main$75 ==.
+                                    320 ;	app/src/main.c: 36: GPIO_Write(Port_Seg, 0b10000000);//8
+      0000B1 4B 80            [ 1]  321 	push	#0x80
+                           0000B3   322 	Smain$main$76 ==.
+      0000B3 4B 05            [ 1]  323 	push	#0x05
+                           0000B5   324 	Smain$main$77 ==.
+      0000B5 4B 50            [ 1]  325 	push	#0x50
+                           0000B7   326 	Smain$main$78 ==.
+      0000B7 CDr00r00         [ 4]  327 	call	_GPIO_Write
+      0000BA 5B 03            [ 2]  328 	addw	sp, #3
+                           0000BC   329 	Smain$main$79 ==.
+                           0000BC   330 	Smain$main$80 ==.
+                                    331 ;	app/src/main.c: 37: delay_1();
+      0000BC CDr00r00         [ 4]  332 	call	_delay_1
+                           0000BF   333 	Smain$main$81 ==.
+                                    334 ;	app/src/main.c: 38: GPIO_Write(Port_Seg, 0b10010000);// 9
+      0000BF 4B 90            [ 1]  335 	push	#0x90
+                           0000C1   336 	Smain$main$82 ==.
+      0000C1 4B 05            [ 1]  337 	push	#0x05
+                           0000C3   338 	Smain$main$83 ==.
+      0000C3 4B 50            [ 1]  339 	push	#0x50
+                           0000C5   340 	Smain$main$84 ==.
+      0000C5 CDr00r00         [ 4]  341 	call	_GPIO_Write
+      0000C8 5B 03            [ 2]  342 	addw	sp, #3
+                           0000CA   343 	Smain$main$85 ==.
+                           0000CA   344 	Smain$main$86 ==.
+                                    345 ;	app/src/main.c: 39: delay_2();
+      0000CA CDr00r17         [ 4]  346 	call	_delay_2
+                           0000CD   347 	Smain$main$87 ==.
+      0000CD CCr00r41         [ 2]  348 	jp	00102$
+                           0000D0   349 	Smain$main$88 ==.
+                                    350 ;	app/src/main.c: 41: }
+                           0000D0   351 	Smain$main$89 ==.
+                           0000D0   352 	XG$main$0$0 ==.
+      0000D0 81               [ 4]  353 	ret
+                           0000D1   354 	Smain$main$90 ==.
+                                    355 	.area CODE
+                                    356 	.area CONST
+                                    357 	.area INITIALIZER
+                                    358 	.area CABS (ABS)
+                                    359 
+                                    360 	.area .debug_line (NOLOAD)
+      000000 00 00 01 4D            361 	.dw	0,Ldebug_line_end-Ldebug_line_start
+      000004                        362 Ldebug_line_start:
+      000004 00 02                  363 	.dw	2
+      000006 00 00 00 6F            364 	.dw	0,Ldebug_line_stmt-6-Ldebug_line_start
+      00000A 01                     365 	.db	1
+      00000B 01                     366 	.db	1
+      00000C FB                     367 	.db	-5
+      00000D 0F                     368 	.db	15
+      00000E 0A                     369 	.db	10
+      00000F 00                     370 	.db	0
+      000010 01                     371 	.db	1
+      000011 01                     372 	.db	1
+      000012 01                     373 	.db	1
+      000013 01                     374 	.db	1
+      000014 00                     375 	.db	0
+      000015 00                     376 	.db	0
+      000016 00                     377 	.db	0
+      000017 01                     378 	.db	1
+      000018 43 3A 5C 50 72 6F 67   379 	.ascii "C:\Program Files\SDCC\bin\..\include\stm8"
+             72 61 6D 20 46 69 6C
+             65 73 5C 53 44 43 43
+             08 69 6E 5C 2E 2E 5C
+             69 6E 63 6C 75 64 65
+             5C 73 74 6D 38
+      000040 00                     380 	.db	0
+      000041 43 3A 5C 50 72 6F 67   381 	.ascii "C:\Program Files\SDCC\bin\..\include"
+             72 61 6D 20 46 69 6C
+             65 73 5C 53 44 43 43
+             08 69 6E 5C 2E 2E 5C
+             69 6E 63 6C 75 64 65
+      000064 00                     382 	.db	0
+      000065 00                     383 	.db	0
+      000066 61 70 70 2F 73 72 63   384 	.ascii "app/src/main.c"
+             2F 6D 61 69 6E 2E 63
+      000074 00                     385 	.db	0
+      000075 00                     386 	.uleb128	0
+      000076 00                     387 	.uleb128	0
+      000077 00                     388 	.uleb128	0
+      000078 00                     389 	.db	0
+      000079                        390 Ldebug_line_stmt:
+      000079 00                     391 	.db	0
+      00007A 05                     392 	.uleb128	5
+      00007B 02                     393 	.db	2
+      00007C 00 00r00r00            394 	.dw	0,(Smain$delay_1$1)
+      000080 03                     395 	.db	3
+      000081 02                     396 	.sleb128	2
+      000082 01                     397 	.db	1
+      000083 09                     398 	.db	9
+      000084 00 00                  399 	.dw	Smain$delay_1$3-Smain$delay_1$1
+      000086 03                     400 	.db	3
+      000087 02                     401 	.sleb128	2
+      000088 01                     402 	.db	1
+      000089 09                     403 	.db	9
+      00008A 00 16                  404 	.dw	Smain$delay_1$4-Smain$delay_1$3
+      00008C 03                     405 	.db	3
+      00008D 01                     406 	.sleb128	1
+      00008E 01                     407 	.db	1
+      00008F 09                     408 	.db	9
+      000090 00 01                  409 	.dw	1+Smain$delay_1$5-Smain$delay_1$4
+      000092 00                     410 	.db	0
+      000093 01                     411 	.uleb128	1
+      000094 01                     412 	.db	1
+      000095 00                     413 	.db	0
+      000096 05                     414 	.uleb128	5
+      000097 02                     415 	.db	2
+      000098 00 00r00r17            416 	.dw	0,(Smain$delay_2$8)
+      00009C 03                     417 	.db	3
+      00009D 06                     418 	.sleb128	6
+      00009E 01                     419 	.db	1
+      00009F 09                     420 	.db	9
+      0000A0 00 00                  421 	.dw	Smain$delay_2$10-Smain$delay_2$8
+      0000A2 03                     422 	.db	3
+      0000A3 02                     423 	.sleb128	2
+      0000A4 01                     424 	.db	1
+      0000A5 09                     425 	.db	9
+      0000A6 00 16                  426 	.dw	Smain$delay_2$11-Smain$delay_2$10
+      0000A8 03                     427 	.db	3
+      0000A9 01                     428 	.sleb128	1
+      0000AA 01                     429 	.db	1
+      0000AB 09                     430 	.db	9
+      0000AC 00 01                  431 	.dw	1+Smain$delay_2$12-Smain$delay_2$11
+      0000AE 00                     432 	.db	0
+      0000AF 01                     433 	.uleb128	1
+      0000B0 01                     434 	.db	1
+      0000B1 00                     435 	.db	0
+      0000B2 05                     436 	.uleb128	5
+      0000B3 02                     437 	.db	2
+      0000B4 00 00r00r2E            438 	.dw	0,(Smain$main$14)
+      0000B8 03                     439 	.db	3
+      0000B9 0A                     440 	.sleb128	10
+      0000BA 01                     441 	.db	1
+      0000BB 09                     442 	.db	9
+      0000BC 00 00                  443 	.dw	Smain$main$16-Smain$main$14
+      0000BE 03                     444 	.db	3
+      0000BF 03                     445 	.sleb128	3
+      0000C0 01                     446 	.db	1
+      0000C1 09                     447 	.db	9
+      0000C2 00 06                  448 	.dw	Smain$main$19-Smain$main$16
+      0000C4 03                     449 	.db	3
+      0000C5 02                     450 	.sleb128	2
+      0000C6 01                     451 	.db	1
+      0000C7 09                     452 	.db	9
+      0000C8 00 0D                  453 	.dw	Smain$main$25-Smain$main$19
+      0000CA 03                     454 	.db	3
+      0000CB 02                     455 	.sleb128	2
+      0000CC 01                     456 	.db	1
+      0000CD 09                     457 	.db	9
+      0000CE 00 00                  458 	.dw	Smain$main$27-Smain$main$25
+      0000D0 03                     459 	.db	3
+      0000D1 02                     460 	.sleb128	2
+      0000D2 01                     461 	.db	1
+      0000D3 09                     462 	.db	9
+      0000D4 00 0B                  463 	.dw	Smain$main$32-Smain$main$27
+      0000D6 03                     464 	.db	3
+      0000D7 01                     465 	.sleb128	1
+      0000D8 01                     466 	.db	1
+      0000D9 09                     467 	.db	9
+      0000DA 00 03                  468 	.dw	Smain$main$33-Smain$main$32
+      0000DC 03                     469 	.db	3
+      0000DD 01                     470 	.sleb128	1
+      0000DE 01                     471 	.db	1
+      0000DF 09                     472 	.db	9
+      0000E0 00 0B                  473 	.dw	Smain$main$38-Smain$main$33
+      0000E2 03                     474 	.db	3
+      0000E3 01                     475 	.sleb128	1
+      0000E4 01                     476 	.db	1
+      0000E5 09                     477 	.db	9
+      0000E6 00 03                  478 	.dw	Smain$main$39-Smain$main$38
+      0000E8 03                     479 	.db	3
+      0000E9 01                     480 	.sleb128	1
+      0000EA 01                     481 	.db	1
+      0000EB 09                     482 	.db	9
+      0000EC 00 0B                  483 	.dw	Smain$main$44-Smain$main$39
+      0000EE 03                     484 	.db	3
+      0000EF 01                     485 	.sleb128	1
+      0000F0 01                     486 	.db	1
+      0000F1 09                     487 	.db	9
+      0000F2 00 03                  488 	.dw	Smain$main$45-Smain$main$44
+      0000F4 03                     489 	.db	3
+      0000F5 01                     490 	.sleb128	1
+      0000F6 01                     491 	.db	1
+      0000F7 09                     492 	.db	9
+      0000F8 00 0B                  493 	.dw	Smain$main$50-Smain$main$45
+      0000FA 03                     494 	.db	3
+      0000FB 01                     495 	.sleb128	1
+      0000FC 01                     496 	.db	1
+      0000FD 09                     497 	.db	9
+      0000FE 00 03                  498 	.dw	Smain$main$51-Smain$main$50
+      000100 03                     499 	.db	3
+      000101 01                     500 	.sleb128	1
+      000102 01                     501 	.db	1
+      000103 09                     502 	.db	9
+      000104 00 0B                  503 	.dw	Smain$main$56-Smain$main$51
+      000106 03                     504 	.db	3
+      000107 01                     505 	.sleb128	1
+      000108 01                     506 	.db	1
+      000109 09                     507 	.db	9
+      00010A 00 03                  508 	.dw	Smain$main$57-Smain$main$56
+      00010C 03                     509 	.db	3
+      00010D 01                     510 	.sleb128	1
+      00010E 01                     511 	.db	1
+      00010F 09                     512 	.db	9
+      000110 00 0B                  513 	.dw	Smain$main$62-Smain$main$57
+      000112 03                     514 	.db	3
+      000113 01                     515 	.sleb128	1
+      000114 01                     516 	.db	1
+      000115 09                     517 	.db	9
+      000116 00 03                  518 	.dw	Smain$main$63-Smain$main$62
+      000118 03                     519 	.db	3
+      000119 01                     520 	.sleb128	1
+      00011A 01                     521 	.db	1
+      00011B 09                     522 	.db	9
+      00011C 00 0B                  523 	.dw	Smain$main$68-Smain$main$63
+      00011E 03                     524 	.db	3
+      00011F 01                     525 	.sleb128	1
+      000120 01                     526 	.db	1
+      000121 09                     527 	.db	9
+      000122 00 03                  528 	.dw	Smain$main$69-Smain$main$68
+      000124 03                     529 	.db	3
+      000125 01                     530 	.sleb128	1
+      000126 01                     531 	.db	1
+      000127 09                     532 	.db	9
+      000128 00 0B                  533 	.dw	Smain$main$74-Smain$main$69
+      00012A 03                     534 	.db	3
+      00012B 01                     535 	.sleb128	1
+      00012C 01                     536 	.db	1
+      00012D 09                     537 	.db	9
+      00012E 00 03                  538 	.dw	Smain$main$75-Smain$main$74
+      000130 03                     539 	.db	3
+      000131 01                     540 	.sleb128	1
+      000132 01                     541 	.db	1
+      000133 09                     542 	.db	9
+      000134 00 0B                  543 	.dw	Smain$main$80-Smain$main$75
+      000136 03                     544 	.db	3
+      000137 01                     545 	.sleb128	1
+      000138 01                     546 	.db	1
+      000139 09                     547 	.db	9
+      00013A 00 03                  548 	.dw	Smain$main$81-Smain$main$80
+      00013C 03                     549 	.db	3
+      00013D 01                     550 	.sleb128	1
+      00013E 01                     551 	.db	1
+      00013F 09                     552 	.db	9
+      000140 00 0B                  553 	.dw	Smain$main$86-Smain$main$81
+      000142 03                     554 	.db	3
+      000143 01                     555 	.sleb128	1
+      000144 01                     556 	.db	1
+      000145 09                     557 	.db	9
+      000146 00 06                  558 	.dw	Smain$main$88-Smain$main$86
+      000148 03                     559 	.db	3
+      000149 02                     560 	.sleb128	2
+      00014A 01                     561 	.db	1
+      00014B 09                     562 	.db	9
+      00014C 00 01                  563 	.dw	1+Smain$main$89-Smain$main$88
+      00014E 00                     564 	.db	0
+      00014F 01                     565 	.uleb128	1
+      000150 01                     566 	.db	1
+      000151                        567 Ldebug_line_end:
+                                    568 
+                                    569 	.area .debug_loc (NOLOAD)
+      000000                        570 Ldebug_loc_start:
+      000000 00 00r00rCA            571 	.dw	0,(Smain$main$85)
+      000004 00 00r00rD1            572 	.dw	0,(Smain$main$90)
+      000008 00 02                  573 	.dw	2
+      00000A 78                     574 	.db	120
+      00000B 01                     575 	.sleb128	1
+      00000C 00 00r00rC5            576 	.dw	0,(Smain$main$84)
+      000010 00 00r00rCA            577 	.dw	0,(Smain$main$85)
+      000014 00 02                  578 	.dw	2
+      000016 78                     579 	.db	120
+      000017 04                     580 	.sleb128	4
+      000018 00 00r00rC3            581 	.dw	0,(Smain$main$83)
+      00001C 00 00r00rC5            582 	.dw	0,(Smain$main$84)
+      000020 00 02                  583 	.dw	2
+      000022 78                     584 	.db	120
+      000023 03                     585 	.sleb128	3
+      000024 00 00r00rC1            586 	.dw	0,(Smain$main$82)
+      000028 00 00r00rC3            587 	.dw	0,(Smain$main$83)
+      00002C 00 02                  588 	.dw	2
+      00002E 78                     589 	.db	120
+      00002F 02                     590 	.sleb128	2
+      000030 00 00r00rBC            591 	.dw	0,(Smain$main$79)
+      000034 00 00r00rC1            592 	.dw	0,(Smain$main$82)
+      000038 00 02                  593 	.dw	2
+      00003A 78                     594 	.db	120
+      00003B 01                     595 	.sleb128	1
+      00003C 00 00r00rB7            596 	.dw	0,(Smain$main$78)
+      000040 00 00r00rBC            597 	.dw	0,(Smain$main$79)
+      000044 00 02                  598 	.dw	2
+      000046 78                     599 	.db	120
+      000047 04                     600 	.sleb128	4
+      000048 00 00r00rB5            601 	.dw	0,(Smain$main$77)
+      00004C 00 00r00rB7            602 	.dw	0,(Smain$main$78)
+      000050 00 02                  603 	.dw	2
+      000052 78                     604 	.db	120
+      000053 03                     605 	.sleb128	3
+      000054 00 00r00rB3            606 	.dw	0,(Smain$main$76)
+      000058 00 00r00rB5            607 	.dw	0,(Smain$main$77)
+      00005C 00 02                  608 	.dw	2
+      00005E 78                     609 	.db	120
+      00005F 02                     610 	.sleb128	2
+      000060 00 00r00rAE            611 	.dw	0,(Smain$main$73)
+      000064 00 00r00rB3            612 	.dw	0,(Smain$main$76)
+      000068 00 02                  613 	.dw	2
+      00006A 78                     614 	.db	120
+      00006B 01                     615 	.sleb128	1
+      00006C 00 00r00rA9            616 	.dw	0,(Smain$main$72)
+      000070 00 00r00rAE            617 	.dw	0,(Smain$main$73)
+      000074 00 02                  618 	.dw	2
+      000076 78                     619 	.db	120
+      000077 04                     620 	.sleb128	4
+      000078 00 00r00rA7            621 	.dw	0,(Smain$main$71)
+      00007C 00 00r00rA9            622 	.dw	0,(Smain$main$72)
+      000080 00 02                  623 	.dw	2
+      000082 78                     624 	.db	120
+      000083 03                     625 	.sleb128	3
+      000084 00 00r00rA5            626 	.dw	0,(Smain$main$70)
+      000088 00 00r00rA7            627 	.dw	0,(Smain$main$71)
+      00008C 00 02                  628 	.dw	2
+      00008E 78                     629 	.db	120
+      00008F 02                     630 	.sleb128	2
+      000090 00 00r00rA0            631 	.dw	0,(Smain$main$67)
+      000094 00 00r00rA5            632 	.dw	0,(Smain$main$70)
+      000098 00 02                  633 	.dw	2
+      00009A 78                     634 	.db	120
+      00009B 01                     635 	.sleb128	1
+      00009C 00 00r00r9B            636 	.dw	0,(Smain$main$66)
+      0000A0 00 00r00rA0            637 	.dw	0,(Smain$main$67)
+      0000A4 00 02                  638 	.dw	2
+      0000A6 78                     639 	.db	120
+      0000A7 04                     640 	.sleb128	4
+      0000A8 00 00r00r99            641 	.dw	0,(Smain$main$65)
+      0000AC 00 00r00r9B            642 	.dw	0,(Smain$main$66)
+      0000B0 00 02                  643 	.dw	2
+      0000B2 78                     644 	.db	120
+      0000B3 03                     645 	.sleb128	3
+      0000B4 00 00r00r97            646 	.dw	0,(Smain$main$64)
+      0000B8 00 00r00r99            647 	.dw	0,(Smain$main$65)
+      0000BC 00 02                  648 	.dw	2
+      0000BE 78                     649 	.db	120
+      0000BF 02                     650 	.sleb128	2
+      0000C0 00 00r00r92            651 	.dw	0,(Smain$main$61)
+      0000C4 00 00r00r97            652 	.dw	0,(Smain$main$64)
+      0000C8 00 02                  653 	.dw	2
+      0000CA 78                     654 	.db	120
+      0000CB 01                     655 	.sleb128	1
+      0000CC 00 00r00r8D            656 	.dw	0,(Smain$main$60)
+      0000D0 00 00r00r92            657 	.dw	0,(Smain$main$61)
+      0000D4 00 02                  658 	.dw	2
+      0000D6 78                     659 	.db	120
+      0000D7 04                     660 	.sleb128	4
+      0000D8 00 00r00r8B            661 	.dw	0,(Smain$main$59)
+      0000DC 00 00r00r8D            662 	.dw	0,(Smain$main$60)
+      0000E0 00 02                  663 	.dw	2
+      0000E2 78                     664 	.db	120
+      0000E3 03                     665 	.sleb128	3
+      0000E4 00 00r00r89            666 	.dw	0,(Smain$main$58)
+      0000E8 00 00r00r8B            667 	.dw	0,(Smain$main$59)
+      0000EC 00 02                  668 	.dw	2
+      0000EE 78                     669 	.db	120
+      0000EF 02                     670 	.sleb128	2
+      0000F0 00 00r00r84            671 	.dw	0,(Smain$main$55)
+      0000F4 00 00r00r89            672 	.dw	0,(Smain$main$58)
+      0000F8 00 02                  673 	.dw	2
+      0000FA 78                     674 	.db	120
+      0000FB 01                     675 	.sleb128	1
+      0000FC 00 00r00r7F            676 	.dw	0,(Smain$main$54)
+      000100 00 00r00r84            677 	.dw	0,(Smain$main$55)
+      000104 00 02                  678 	.dw	2
+      000106 78                     679 	.db	120
+      000107 04                     680 	.sleb128	4
+      000108 00 00r00r7D            681 	.dw	0,(Smain$main$53)
+      00010C 00 00r00r7F            682 	.dw	0,(Smain$main$54)
+      000110 00 02                  683 	.dw	2
+      000112 78                     684 	.db	120
+      000113 03                     685 	.sleb128	3
+      000114 00 00r00r7B            686 	.dw	0,(Smain$main$52)
+      000118 00 00r00r7D            687 	.dw	0,(Smain$main$53)
+      00011C 00 02                  688 	.dw	2
+      00011E 78                     689 	.db	120
+      00011F 02                     690 	.sleb128	2
+      000120 00 00r00r76            691 	.dw	0,(Smain$main$49)
+      000124 00 00r00r7B            692 	.dw	0,(Smain$main$52)
+      000128 00 02                  693 	.dw	2
+      00012A 78                     694 	.db	120
+      00012B 01                     695 	.sleb128	1
+      00012C 00 00r00r71            696 	.dw	0,(Smain$main$48)
+      000130 00 00r00r76            697 	.dw	0,(Smain$main$49)
+      000134 00 02                  698 	.dw	2
+      000136 78                     699 	.db	120
+      000137 04                     700 	.sleb128	4
+      000138 00 00r00r6F            701 	.dw	0,(Smain$main$47)
+      00013C 00 00r00r71            702 	.dw	0,(Smain$main$48)
+      000140 00 02                  703 	.dw	2
+      000142 78                     704 	.db	120
+      000143 03                     705 	.sleb128	3
+      000144 00 00r00r6D            706 	.dw	0,(Smain$main$46)
+      000148 00 00r00r6F            707 	.dw	0,(Smain$main$47)
+      00014C 00 02                  708 	.dw	2
+      00014E 78                     709 	.db	120
+      00014F 02                     710 	.sleb128	2
+      000150 00 00r00r68            711 	.dw	0,(Smain$main$43)
+      000154 00 00r00r6D            712 	.dw	0,(Smain$main$46)
+      000158 00 02                  713 	.dw	2
+      00015A 78                     714 	.db	120
+      00015B 01                     715 	.sleb128	1
+      00015C 00 00r00r63            716 	.dw	0,(Smain$main$42)
+      000160 00 00r00r68            717 	.dw	0,(Smain$main$43)
+      000164 00 02                  718 	.dw	2
+      000166 78                     719 	.db	120
+      000167 04                     720 	.sleb128	4
+      000168 00 00r00r61            721 	.dw	0,(Smain$main$41)
+      00016C 00 00r00r63            722 	.dw	0,(Smain$main$42)
+      000170 00 02                  723 	.dw	2
+      000172 78                     724 	.db	120
+      000173 03                     725 	.sleb128	3
+      000174 00 00r00r5F            726 	.dw	0,(Smain$main$40)
+      000178 00 00r00r61            727 	.dw	0,(Smain$main$41)
+      00017C 00 02                  728 	.dw	2
+      00017E 78                     729 	.db	120
+      00017F 02                     730 	.sleb128	2
+      000180 00 00r00r5A            731 	.dw	0,(Smain$main$37)
+      000184 00 00r00r5F            732 	.dw	0,(Smain$main$40)
+      000188 00 02                  733 	.dw	2
+      00018A 78                     734 	.db	120
+      00018B 01                     735 	.sleb128	1
+      00018C 00 00r00r55            736 	.dw	0,(Smain$main$36)
+      000190 00 00r00r5A            737 	.dw	0,(Smain$main$37)
+      000194 00 02                  738 	.dw	2
+      000196 78                     739 	.db	120
+      000197 04                     740 	.sleb128	4
+      000198 00 00r00r53            741 	.dw	0,(Smain$main$35)
+      00019C 00 00r00r55            742 	.dw	0,(Smain$main$36)
+      0001A0 00 02                  743 	.dw	2
+      0001A2 78                     744 	.db	120
+      0001A3 03                     745 	.sleb128	3
+      0001A4 00 00r00r51            746 	.dw	0,(Smain$main$34)
+      0001A8 00 00r00r53            747 	.dw	0,(Smain$main$35)
+      0001AC 00 02                  748 	.dw	2
+      0001AE 78                     749 	.db	120
+      0001AF 02                     750 	.sleb128	2
+      0001B0 00 00r00r4C            751 	.dw	0,(Smain$main$31)
+      0001B4 00 00r00r51            752 	.dw	0,(Smain$main$34)
+      0001B8 00 02                  753 	.dw	2
+      0001BA 78                     754 	.db	120
+      0001BB 01                     755 	.sleb128	1
+      0001BC 00 00r00r47            756 	.dw	0,(Smain$main$30)
+      0001C0 00 00r00r4C            757 	.dw	0,(Smain$main$31)
+      0001C4 00 02                  758 	.dw	2
+      0001C6 78                     759 	.db	120
+      0001C7 04                     760 	.sleb128	4
+      0001C8 00 00r00r45            761 	.dw	0,(Smain$main$29)
+      0001CC 00 00r00r47            762 	.dw	0,(Smain$main$30)
+      0001D0 00 02                  763 	.dw	2
+      0001D2 78                     764 	.db	120
+      0001D3 03                     765 	.sleb128	3
+      0001D4 00 00r00r43            766 	.dw	0,(Smain$main$28)
+      0001D8 00 00r00r45            767 	.dw	0,(Smain$main$29)
+      0001DC 00 02                  768 	.dw	2
+      0001DE 78                     769 	.db	120
+      0001DF 02                     770 	.sleb128	2
+      0001E0 00 00r00r41            771 	.dw	0,(Smain$main$24)
+      0001E4 00 00r00r43            772 	.dw	0,(Smain$main$28)
+      0001E8 00 02                  773 	.dw	2
+      0001EA 78                     774 	.db	120
+      0001EB 01                     775 	.sleb128	1
+      0001EC 00 00r00r3C            776 	.dw	0,(Smain$main$23)
+      0001F0 00 00r00r41            777 	.dw	0,(Smain$main$24)
+      0001F4 00 02                  778 	.dw	2
+      0001F6 78                     779 	.db	120
+      0001F7 05                     780 	.sleb128	5
+      0001F8 00 00r00r3A            781 	.dw	0,(Smain$main$22)
+      0001FC 00 00r00r3C            782 	.dw	0,(Smain$main$23)
+      000200 00 02                  783 	.dw	2
+      000202 78                     784 	.db	120
+      000203 04                     785 	.sleb128	4
+      000204 00 00r00r38            786 	.dw	0,(Smain$main$21)
+      000208 00 00r00r3A            787 	.dw	0,(Smain$main$22)
+      00020C 00 02                  788 	.dw	2
+      00020E 78                     789 	.db	120
+      00020F 03                     790 	.sleb128	3
+      000210 00 00r00r36            791 	.dw	0,(Smain$main$20)
+      000214 00 00r00r38            792 	.dw	0,(Smain$main$21)
+      000218 00 02                  793 	.dw	2
+      00021A 78                     794 	.db	120
+      00021B 02                     795 	.sleb128	2
+      00021C 00 00r00r34            796 	.dw	0,(Smain$main$18)
+      000220 00 00r00r36            797 	.dw	0,(Smain$main$20)
+      000224 00 02                  798 	.dw	2
+      000226 78                     799 	.db	120
+      000227 01                     800 	.sleb128	1
+      000228 00 00r00r30            801 	.dw	0,(Smain$main$17)
+      00022C 00 00r00r34            802 	.dw	0,(Smain$main$18)
+      000230 00 02                  803 	.dw	2
+      000232 78                     804 	.db	120
+      000233 02                     805 	.sleb128	2
+      000234 00 00r00r2E            806 	.dw	0,(Smain$main$15)
+      000238 00 00r00r30            807 	.dw	0,(Smain$main$17)
+      00023C 00 02                  808 	.dw	2
+      00023E 78                     809 	.db	120
+      00023F 01                     810 	.sleb128	1
+      000240 00 00 00 00            811 	.dw	0,0
+      000244 00 00 00 00            812 	.dw	0,0
+      000248 00 00r00r17            813 	.dw	0,(Smain$delay_2$9)
+      00024C 00 00r00r2E            814 	.dw	0,(Smain$delay_2$13)
+      000250 00 02                  815 	.dw	2
+      000252 78                     816 	.db	120
+      000253 01                     817 	.sleb128	1
+      000254 00 00 00 00            818 	.dw	0,0
+      000258 00 00 00 00            819 	.dw	0,0
+      00025C 00 00r00r00            820 	.dw	0,(Smain$delay_1$2)
+      000260 00 00r00r17            821 	.dw	0,(Smain$delay_1$6)
+      000264 00 02                  822 	.dw	2
+      000266 78                     823 	.db	120
+      000267 01                     824 	.sleb128	1
+      000268 00 00 00 00            825 	.dw	0,0
+      00026C 00 00 00 00            826 	.dw	0,0
+                                    827 
+                                    828 	.area .debug_abbrev (NOLOAD)
+      000000                        829 Ldebug_abbrev:
+      000000 02                     830 	.uleb128	2
+      000001 2E                     831 	.uleb128	46
+      000002 01                     832 	.db	1
+      000003 01                     833 	.uleb128	1
+      000004 13                     834 	.uleb128	19
+      000005 03                     835 	.uleb128	3
+      000006 08                     836 	.uleb128	8
+      000007 11                     837 	.uleb128	17
+      000008 01                     838 	.uleb128	1
+      000009 12                     839 	.uleb128	18
+      00000A 01                     840 	.uleb128	1
+      00000B 3F                     841 	.uleb128	63
+      00000C 0C                     842 	.uleb128	12
+      00000D 40                     843 	.uleb128	64
+      00000E 06                     844 	.uleb128	6
+      00000F 00                     845 	.uleb128	0
+      000010 00                     846 	.uleb128	0
+      000011 04                     847 	.uleb128	4
+      000012 34                     848 	.uleb128	52
+      000013 00                     849 	.db	0
+      000014 02                     850 	.uleb128	2
+      000015 0A                     851 	.uleb128	10
+      000016 03                     852 	.uleb128	3
+      000017 08                     853 	.uleb128	8
+      000018 49                     854 	.uleb128	73
+      000019 13                     855 	.uleb128	19
+      00001A 00                     856 	.uleb128	0
+      00001B 00                     857 	.uleb128	0
+      00001C 03                     858 	.uleb128	3
+      00001D 0B                     859 	.uleb128	11
+      00001E 01                     860 	.db	1
+      00001F 11                     861 	.uleb128	17
+      000020 01                     862 	.uleb128	1
+      000021 00                     863 	.uleb128	0
+      000022 00                     864 	.uleb128	0
+      000023 01                     865 	.uleb128	1
+      000024 11                     866 	.uleb128	17
+      000025 01                     867 	.db	1
+      000026 03                     868 	.uleb128	3
+      000027 08                     869 	.uleb128	8
+      000028 10                     870 	.uleb128	16
+      000029 06                     871 	.uleb128	6
+      00002A 13                     872 	.uleb128	19
+      00002B 0B                     873 	.uleb128	11
+      00002C 25                     874 	.uleb128	37
+      00002D 08                     875 	.uleb128	8
+      00002E 00                     876 	.uleb128	0
+      00002F 00                     877 	.uleb128	0
+      000030 07                     878 	.uleb128	7
+      000031 0B                     879 	.uleb128	11
+      000032 00                     880 	.db	0
+      000033 11                     881 	.uleb128	17
+      000034 01                     882 	.uleb128	1
+      000035 12                     883 	.uleb128	18
+      000036 01                     884 	.uleb128	1
+      000037 00                     885 	.uleb128	0
+      000038 00                     886 	.uleb128	0
+      000039 06                     887 	.uleb128	6
+      00003A 2E                     888 	.uleb128	46
+      00003B 01                     889 	.db	1
+      00003C 03                     890 	.uleb128	3
+      00003D 08                     891 	.uleb128	8
+      00003E 11                     892 	.uleb128	17
+      00003F 01                     893 	.uleb128	1
+      000040 12                     894 	.uleb128	18
+      000041 01                     895 	.uleb128	1
+      000042 3F                     896 	.uleb128	63
+      000043 0C                     897 	.uleb128	12
+      000044 40                     898 	.uleb128	64
+      000045 06                     899 	.uleb128	6
+      000046 00                     900 	.uleb128	0
+      000047 00                     901 	.uleb128	0
+      000048 05                     902 	.uleb128	5
+      000049 24                     903 	.uleb128	36
+      00004A 00                     904 	.db	0
+      00004B 03                     905 	.uleb128	3
+      00004C 08                     906 	.uleb128	8
+      00004D 0B                     907 	.uleb128	11
+      00004E 0B                     908 	.uleb128	11
+      00004F 3E                     909 	.uleb128	62
+      000050 0B                     910 	.uleb128	11
+      000051 00                     911 	.uleb128	0
+      000052 00                     912 	.uleb128	0
+      000053 00                     913 	.uleb128	0
+                                    914 
+                                    915 	.area .debug_info (NOLOAD)
+      000000 00 00 00 D1            916 	.dw	0,Ldebug_info_end-Ldebug_info_start
+      000004                        917 Ldebug_info_start:
+      000004 00 02                  918 	.dw	2
+      000006 00 00r00r00            919 	.dw	0,(Ldebug_abbrev)
+      00000A 04                     920 	.db	4
+      00000B 01                     921 	.uleb128	1
+      00000C 61 70 70 2F 73 72 63   922 	.ascii "app/src/main.c"
+             2F 6D 61 69 6E 2E 63
+      00001A 00                     923 	.db	0
+      00001B 00 00r00r00            924 	.dw	0,(Ldebug_line_start+-4)
+      00001F 01                     925 	.db	1
+      000020 53 44 43 43 20 76 65   926 	.ascii "SDCC version 4.1.0 #12072"
+             72 73 69 6F 6E 20 34
+             2E 31 2E 30 20 23 31
+             32 30 37 32
+      000039 00                     927 	.db	0
+      00003A 02                     928 	.uleb128	2
+      00003B 00 00 00 6F            929 	.dw	0,111
+      00003F 64 65 6C 61 79 5F 31   930 	.ascii "delay_1"
+      000046 00                     931 	.db	0
+      000047 00 00r00r00            932 	.dw	0,(_delay_1)
+      00004B 00 00r00r17            933 	.dw	0,(XG$delay_1$0$0+1)
+      00004F 01                     934 	.db	1
+      000050 00 00r02r5C            935 	.dw	0,(Ldebug_loc_start+604)
+      000054 03                     936 	.uleb128	3
+      000055 00 00r00r00            937 	.dw	0,(Smain$delay_1$0)
+      000059 04                     938 	.uleb128	4
+      00005A 0C                     939 	.db	12
+      00005B 52                     940 	.db	82
+      00005C 93                     941 	.db	147
+      00005D 01                     942 	.uleb128	1
+      00005E 51                     943 	.db	81
+      00005F 93                     944 	.db	147
+      000060 01                     945 	.uleb128	1
+      000061 54                     946 	.db	84
+      000062 93                     947 	.db	147
+      000063 01                     948 	.uleb128	1
+      000064 53                     949 	.db	83
+      000065 93                     950 	.db	147
+      000066 01                     951 	.uleb128	1
+      000067 69                     952 	.ascii "i"
+      000068 00                     953 	.db	0
+      000069 00 00 00 6F            954 	.dw	0,111
+      00006D 00                     955 	.uleb128	0
+      00006E 00                     956 	.uleb128	0
+      00006F 05                     957 	.uleb128	5
+      000070 75 6E 73 69 67 6E 65   958 	.ascii "unsigned long"
+             64 20 6C 6F 6E 67
+      00007D 00                     959 	.db	0
+      00007E 04                     960 	.db	4
+      00007F 07                     961 	.db	7
+      000080 02                     962 	.uleb128	2
+      000081 00 00 00 B5            963 	.dw	0,181
+      000085 64 65 6C 61 79 5F 32   964 	.ascii "delay_2"
+      00008C 00                     965 	.db	0
+      00008D 00 00r00r17            966 	.dw	0,(_delay_2)
+      000091 00 00r00r2E            967 	.dw	0,(XG$delay_2$0$0+1)
+      000095 01                     968 	.db	1
+      000096 00 00r02r48            969 	.dw	0,(Ldebug_loc_start+584)
+      00009A 03                     970 	.uleb128	3
+      00009B 00 00r00r17            971 	.dw	0,(Smain$delay_2$7)
+      00009F 04                     972 	.uleb128	4
+      0000A0 0C                     973 	.db	12
+      0000A1 52                     974 	.db	82
+      0000A2 93                     975 	.db	147
+      0000A3 01                     976 	.uleb128	1
+      0000A4 51                     977 	.db	81
+      0000A5 93                     978 	.db	147
+      0000A6 01                     979 	.uleb128	1
+      0000A7 54                     980 	.db	84
+      0000A8 93                     981 	.db	147
+      0000A9 01                     982 	.uleb128	1
+      0000AA 53                     983 	.db	83
+      0000AB 93                     984 	.db	147
+      0000AC 01                     985 	.uleb128	1
+      0000AD 69                     986 	.ascii "i"
+      0000AE 00                     987 	.db	0
+      0000AF 00 00 00 6F            988 	.dw	0,111
+      0000B3 00                     989 	.uleb128	0
+      0000B4 00                     990 	.uleb128	0
+      0000B5 06                     991 	.uleb128	6
+      0000B6 6D 61 69 6E            992 	.ascii "main"
+      0000BA 00                     993 	.db	0
+      0000BB 00 00r00r2E            994 	.dw	0,(_main)
+      0000BF 00 00r00rD1            995 	.dw	0,(XG$main$0$0+1)
+      0000C3 01                     996 	.db	1
+      0000C4 00 00r00r00            997 	.dw	0,(Ldebug_loc_start)
+      0000C8 07                     998 	.uleb128	7
+      0000C9 00 00r00r41            999 	.dw	0,(Smain$main$26)
+      0000CD 00 00r00rCD           1000 	.dw	0,(Smain$main$87)
+      0000D1 00                    1001 	.uleb128	0
+      0000D2 00                    1002 	.uleb128	0
+      0000D3 00                    1003 	.uleb128	0
+      0000D4 00                    1004 	.uleb128	0
+      0000D5                       1005 Ldebug_info_end:
+                                   1006 
+                                   1007 	.area .debug_pubnames (NOLOAD)
+      000000 00 00 00 2F           1008 	.dw	0,Ldebug_pubnames_end-Ldebug_pubnames_start
+      000004                       1009 Ldebug_pubnames_start:
+      000004 00 02                 1010 	.dw	2
+      000006 00 00r00r00           1011 	.dw	0,(Ldebug_info_start-4)
+      00000A 00 00 00 D5           1012 	.dw	0,4+Ldebug_info_end-Ldebug_info_start
+      00000E 00 00 00 3A           1013 	.dw	0,58
+      000012 64 65 6C 61 79 5F 31  1014 	.ascii "delay_1"
+      000019 00                    1015 	.db	0
+      00001A 00 00 00 80           1016 	.dw	0,128
+      00001E 64 65 6C 61 79 5F 32  1017 	.ascii "delay_2"
+      000025 00                    1018 	.db	0
+      000026 00 00 00 B5           1019 	.dw	0,181
+      00002A 6D 61 69 6E           1020 	.ascii "main"
+      00002E 00                    1021 	.db	0
+      00002F 00 00 00 00           1022 	.dw	0,0
+      000033                       1023 Ldebug_pubnames_end:
+                                   1024 
+                                   1025 	.area .debug_frame (NOLOAD)
+      000000 00 00                 1026 	.dw	0
+      000002 00 0E                 1027 	.dw	Ldebug_CIE0_end-Ldebug_CIE0_start
+      000004                       1028 Ldebug_CIE0_start:
+      000004 FF FF                 1029 	.dw	0xffff
+      000006 FF FF                 1030 	.dw	0xffff
+      000008 01                    1031 	.db	1
+      000009 00                    1032 	.db	0
+      00000A 01                    1033 	.uleb128	1
+      00000B 7F                    1034 	.sleb128	-1
+      00000C 09                    1035 	.db	9
+      00000D 0C                    1036 	.db	12
+      00000E 08                    1037 	.uleb128	8
+      00000F 02                    1038 	.uleb128	2
+      000010 89                    1039 	.db	137
+      000011 01                    1040 	.uleb128	1
+      000012                       1041 Ldebug_CIE0_end:
+      000012 00 00 01 5C           1042 	.dw	0,348
+      000016 00 00r00r00           1043 	.dw	0,(Ldebug_CIE0_start-4)
+      00001A 00 00r00r2E           1044 	.dw	0,(Smain$main$15)	;initial loc
+      00001E 00 00 00 A3           1045 	.dw	0,Smain$main$90-Smain$main$15
+      000022 01                    1046 	.db	1
+      000023 00 00r00r2E           1047 	.dw	0,(Smain$main$15)
+      000027 0E                    1048 	.db	14
+      000028 02                    1049 	.uleb128	2
+      000029 01                    1050 	.db	1
+      00002A 00 00r00r30           1051 	.dw	0,(Smain$main$17)
+      00002E 0E                    1052 	.db	14
+      00002F 03                    1053 	.uleb128	3
+      000030 01                    1054 	.db	1
+      000031 00 00r00r34           1055 	.dw	0,(Smain$main$18)
+      000035 0E                    1056 	.db	14
+      000036 02                    1057 	.uleb128	2
+      000037 01                    1058 	.db	1
+      000038 00 00r00r36           1059 	.dw	0,(Smain$main$20)
+      00003C 0E                    1060 	.db	14
+      00003D 03                    1061 	.uleb128	3
+      00003E 01                    1062 	.db	1
+      00003F 00 00r00r38           1063 	.dw	0,(Smain$main$21)
+      000043 0E                    1064 	.db	14
+      000044 04                    1065 	.uleb128	4
+      000045 01                    1066 	.db	1
+      000046 00 00r00r3A           1067 	.dw	0,(Smain$main$22)
+      00004A 0E                    1068 	.db	14
+      00004B 05                    1069 	.uleb128	5
+      00004C 01                    1070 	.db	1
+      00004D 00 00r00r3C           1071 	.dw	0,(Smain$main$23)
+      000051 0E                    1072 	.db	14
+      000052 06                    1073 	.uleb128	6
+      000053 01                    1074 	.db	1
+      000054 00 00r00r41           1075 	.dw	0,(Smain$main$24)
+      000058 0E                    1076 	.db	14
+      000059 02                    1077 	.uleb128	2
+      00005A 01                    1078 	.db	1
+      00005B 00 00r00r43           1079 	.dw	0,(Smain$main$28)
+      00005F 0E                    1080 	.db	14
+      000060 03                    1081 	.uleb128	3
+      000061 01                    1082 	.db	1
+      000062 00 00r00r45           1083 	.dw	0,(Smain$main$29)
+      000066 0E                    1084 	.db	14
+      000067 04                    1085 	.uleb128	4
+      000068 01                    1086 	.db	1
+      000069 00 00r00r47           1087 	.dw	0,(Smain$main$30)
+      00006D 0E                    1088 	.db	14
+      00006E 05                    1089 	.uleb128	5
+      00006F 01                    1090 	.db	1
+      000070 00 00r00r4C           1091 	.dw	0,(Smain$main$31)
+      000074 0E                    1092 	.db	14
+      000075 02                    1093 	.uleb128	2
+      000076 01                    1094 	.db	1
+      000077 00 00r00r51           1095 	.dw	0,(Smain$main$34)
+      00007B 0E                    1096 	.db	14
+      00007C 03                    1097 	.uleb128	3
+      00007D 01                    1098 	.db	1
+      00007E 00 00r00r53           1099 	.dw	0,(Smain$main$35)
+      000082 0E                    1100 	.db	14
+      000083 04                    1101 	.uleb128	4
+      000084 01                    1102 	.db	1
+      000085 00 00r00r55           1103 	.dw	0,(Smain$main$36)
+      000089 0E                    1104 	.db	14
+      00008A 05                    1105 	.uleb128	5
+      00008B 01                    1106 	.db	1
+      00008C 00 00r00r5A           1107 	.dw	0,(Smain$main$37)
+      000090 0E                    1108 	.db	14
+      000091 02                    1109 	.uleb128	2
+      000092 01                    1110 	.db	1
+      000093 00 00r00r5F           1111 	.dw	0,(Smain$main$40)
+      000097 0E                    1112 	.db	14
+      000098 03                    1113 	.uleb128	3
+      000099 01                    1114 	.db	1
+      00009A 00 00r00r61           1115 	.dw	0,(Smain$main$41)
+      00009E 0E                    1116 	.db	14
+      00009F 04                    1117 	.uleb128	4
+      0000A0 01                    1118 	.db	1
+      0000A1 00 00r00r63           1119 	.dw	0,(Smain$main$42)
+      0000A5 0E                    1120 	.db	14
+      0000A6 05                    1121 	.uleb128	5
+      0000A7 01                    1122 	.db	1
+      0000A8 00 00r00r68           1123 	.dw	0,(Smain$main$43)
+      0000AC 0E                    1124 	.db	14
+      0000AD 02                    1125 	.uleb128	2
+      0000AE 01                    1126 	.db	1
+      0000AF 00 00r00r6D           1127 	.dw	0,(Smain$main$46)
+      0000B3 0E                    1128 	.db	14
+      0000B4 03                    1129 	.uleb128	3
+      0000B5 01                    1130 	.db	1
+      0000B6 00 00r00r6F           1131 	.dw	0,(Smain$main$47)
+      0000BA 0E                    1132 	.db	14
+      0000BB 04                    1133 	.uleb128	4
+      0000BC 01                    1134 	.db	1
+      0000BD 00 00r00r71           1135 	.dw	0,(Smain$main$48)
+      0000C1 0E                    1136 	.db	14
+      0000C2 05                    1137 	.uleb128	5
+      0000C3 01                    1138 	.db	1
+      0000C4 00 00r00r76           1139 	.dw	0,(Smain$main$49)
+      0000C8 0E                    1140 	.db	14
+      0000C9 02                    1141 	.uleb128	2
+      0000CA 01                    1142 	.db	1
+      0000CB 00 00r00r7B           1143 	.dw	0,(Smain$main$52)
+      0000CF 0E                    1144 	.db	14
+      0000D0 03                    1145 	.uleb128	3
+      0000D1 01                    1146 	.db	1
+      0000D2 00 00r00r7D           1147 	.dw	0,(Smain$main$53)
+      0000D6 0E                    1148 	.db	14
+      0000D7 04                    1149 	.uleb128	4
+      0000D8 01                    1150 	.db	1
+      0000D9 00 00r00r7F           1151 	.dw	0,(Smain$main$54)
+      0000DD 0E                    1152 	.db	14
+      0000DE 05                    1153 	.uleb128	5
+      0000DF 01                    1154 	.db	1
+      0000E0 00 00r00r84           1155 	.dw	0,(Smain$main$55)
+      0000E4 0E                    1156 	.db	14
+      0000E5 02                    1157 	.uleb128	2
+      0000E6 01                    1158 	.db	1
+      0000E7 00 00r00r89           1159 	.dw	0,(Smain$main$58)
+      0000EB 0E                    1160 	.db	14
+      0000EC 03                    1161 	.uleb128	3
+      0000ED 01                    1162 	.db	1
+      0000EE 00 00r00r8B           1163 	.dw	0,(Smain$main$59)
+      0000F2 0E                    1164 	.db	14
+      0000F3 04                    1165 	.uleb128	4
+      0000F4 01                    1166 	.db	1
+      0000F5 00 00r00r8D           1167 	.dw	0,(Smain$main$60)
+      0000F9 0E                    1168 	.db	14
+      0000FA 05                    1169 	.uleb128	5
+      0000FB 01                    1170 	.db	1
+      0000FC 00 00r00r92           1171 	.dw	0,(Smain$main$61)
+      000100 0E                    1172 	.db	14
+      000101 02                    1173 	.uleb128	2
+      000102 01                    1174 	.db	1
+      000103 00 00r00r97           1175 	.dw	0,(Smain$main$64)
+      000107 0E                    1176 	.db	14
+      000108 03                    1177 	.uleb128	3
+      000109 01                    1178 	.db	1
+      00010A 00 00r00r99           1179 	.dw	0,(Smain$main$65)
+      00010E 0E                    1180 	.db	14
+      00010F 04                    1181 	.uleb128	4
+      000110 01                    1182 	.db	1
+      000111 00 00r00r9B           1183 	.dw	0,(Smain$main$66)
+      000115 0E                    1184 	.db	14
+      000116 05                    1185 	.uleb128	5
+      000117 01                    1186 	.db	1
+      000118 00 00r00rA0           1187 	.dw	0,(Smain$main$67)
+      00011C 0E                    1188 	.db	14
+      00011D 02                    1189 	.uleb128	2
+      00011E 01                    1190 	.db	1
+      00011F 00 00r00rA5           1191 	.dw	0,(Smain$main$70)
+      000123 0E                    1192 	.db	14
+      000124 03                    1193 	.uleb128	3
+      000125 01                    1194 	.db	1
+      000126 00 00r00rA7           1195 	.dw	0,(Smain$main$71)
+      00012A 0E                    1196 	.db	14
+      00012B 04                    1197 	.uleb128	4
+      00012C 01                    1198 	.db	1
+      00012D 00 00r00rA9           1199 	.dw	0,(Smain$main$72)
+      000131 0E                    1200 	.db	14
+      000132 05                    1201 	.uleb128	5
+      000133 01                    1202 	.db	1
+      000134 00 00r00rAE           1203 	.dw	0,(Smain$main$73)
+      000138 0E                    1204 	.db	14
+      000139 02                    1205 	.uleb128	2
+      00013A 01                    1206 	.db	1
+      00013B 00 00r00rB3           1207 	.dw	0,(Smain$main$76)
+      00013F 0E                    1208 	.db	14
+      000140 03                    1209 	.uleb128	3
+      000141 01                    1210 	.db	1
+      000142 00 00r00rB5           1211 	.dw	0,(Smain$main$77)
+      000146 0E                    1212 	.db	14
+      000147 04                    1213 	.uleb128	4
+      000148 01                    1214 	.db	1
+      000149 00 00r00rB7           1215 	.dw	0,(Smain$main$78)
+      00014D 0E                    1216 	.db	14
+      00014E 05                    1217 	.uleb128	5
+      00014F 01                    1218 	.db	1
+      000150 00 00r00rBC           1219 	.dw	0,(Smain$main$79)
+      000154 0E                    1220 	.db	14
+      000155 02                    1221 	.uleb128	2
+      000156 01                    1222 	.db	1
+      000157 00 00r00rC1           1223 	.dw	0,(Smain$main$82)
+      00015B 0E                    1224 	.db	14
+      00015C 03                    1225 	.uleb128	3
+      00015D 01                    1226 	.db	1
+      00015E 00 00r00rC3           1227 	.dw	0,(Smain$main$83)
+      000162 0E                    1228 	.db	14
+      000163 04                    1229 	.uleb128	4
+      000164 01                    1230 	.db	1
+      000165 00 00r00rC5           1231 	.dw	0,(Smain$main$84)
+      000169 0E                    1232 	.db	14
+      00016A 05                    1233 	.uleb128	5
+      00016B 01                    1234 	.db	1
+      00016C 00 00r00rCA           1235 	.dw	0,(Smain$main$85)
+      000170 0E                    1236 	.db	14
+      000171 02                    1237 	.uleb128	2
+                                   1238 
+                                   1239 	.area .debug_frame (NOLOAD)
+      000172 00 00                 1240 	.dw	0
+      000174 00 0E                 1241 	.dw	Ldebug_CIE1_end-Ldebug_CIE1_start
+      000176                       1242 Ldebug_CIE1_start:
+      000176 FF FF                 1243 	.dw	0xffff
+      000178 FF FF                 1244 	.dw	0xffff
+      00017A 01                    1245 	.db	1
+      00017B 00                    1246 	.db	0
+      00017C 01                    1247 	.uleb128	1
+      00017D 7F                    1248 	.sleb128	-1
+      00017E 09                    1249 	.db	9
+      00017F 0C                    1250 	.db	12
+      000180 08                    1251 	.uleb128	8
+      000181 02                    1252 	.uleb128	2
+      000182 89                    1253 	.db	137
+      000183 01                    1254 	.uleb128	1
+      000184                       1255 Ldebug_CIE1_end:
+      000184 00 00 00 13           1256 	.dw	0,19
+      000188 00 00r01r72           1257 	.dw	0,(Ldebug_CIE1_start-4)
+      00018C 00 00r00r17           1258 	.dw	0,(Smain$delay_2$9)	;initial loc
+      000190 00 00 00 17           1259 	.dw	0,Smain$delay_2$13-Smain$delay_2$9
+      000194 01                    1260 	.db	1
+      000195 00 00r00r17           1261 	.dw	0,(Smain$delay_2$9)
+      000199 0E                    1262 	.db	14
+      00019A 02                    1263 	.uleb128	2
+                                   1264 
+                                   1265 	.area .debug_frame (NOLOAD)
+      00019B 00 00                 1266 	.dw	0
+      00019D 00 0E                 1267 	.dw	Ldebug_CIE2_end-Ldebug_CIE2_start
+      00019F                       1268 Ldebug_CIE2_start:
+      00019F FF FF                 1269 	.dw	0xffff
+      0001A1 FF FF                 1270 	.dw	0xffff
+      0001A3 01                    1271 	.db	1
+      0001A4 00                    1272 	.db	0
+      0001A5 01                    1273 	.uleb128	1
+      0001A6 7F                    1274 	.sleb128	-1
+      0001A7 09                    1275 	.db	9
+      0001A8 0C                    1276 	.db	12
+      0001A9 08                    1277 	.uleb128	8
+      0001AA 02                    1278 	.uleb128	2
+      0001AB 89                    1279 	.db	137
+      0001AC 01                    1280 	.uleb128	1
+      0001AD                       1281 Ldebug_CIE2_end:
+      0001AD 00 00 00 13           1282 	.dw	0,19
+      0001B1 00 00r01r9B           1283 	.dw	0,(Ldebug_CIE2_start-4)
+      0001B5 00 00r00r00           1284 	.dw	0,(Smain$delay_1$2)	;initial loc
+      0001B9 00 00 00 17           1285 	.dw	0,Smain$delay_1$6-Smain$delay_1$2
+      0001BD 01                    1286 	.db	1
+      0001BE 00 00r00r00           1287 	.dw	0,(Smain$delay_1$2)
+      0001C2 0E                    1288 	.db	14
+      0001C3 02                    1289 	.uleb128	2

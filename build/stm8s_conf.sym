@@ -1,0 +1,55 @@
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 1.
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+    .__.$$$.                                                    =  002710 L
+    .__.ABS.                                                    =  000000 G
+    .__.CPU.                                                    =  000000 L
+    .__.H$L.                                                    =  000001 L
+  9 A$stm8s_conf$59                                                000000 GR
+  9 A$stm8s_conf$64                                                000002 GR
+ 10 Ldebug_CIE0_end                                                000012 R
+ 10 Ldebug_CIE0_start                                              000004 R
+  D Ldebug_abbrev                                                  000000 R
+  E Ldebug_info_end                                                0000AA R
+  E Ldebug_info_start                                              000004 R
+  B Ldebug_line_end                                                00009F R
+  B Ldebug_line_start                                              000004 R
+  B Ldebug_line_stmt                                               000083 R
+  C Ldebug_loc_start                                               000000 R
+  F Ldebug_pubnames_end                                            000024 R
+  F Ldebug_pubnames_start                                          000004 R
+  9 Sstm8s_conf$assert_failed$0                                 =  000000 GR
+  9 Sstm8s_conf$assert_failed$1                                 =  000000 GR
+  9 Sstm8s_conf$assert_failed$2                                 =  000000 GR
+  9 Sstm8s_conf$assert_failed$3                                 =  000002 GR
+  9 Sstm8s_conf$assert_failed$4                                 =  000002 GR
+  9 Sstm8s_conf$assert_failed$5                                 =  000003 GR
+  9 XG$assert_failed$0$0                                        =  000002 GR
+  9 _assert_failed                                                 000000 GR
+
+
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 2.
+Hexadecimal [24-Bits]
+
+Area Table
+
+   0 _CODE                                      size      0   flags    0
+   1 DATA                                       size      0   flags    0
+   2 INITIALIZED                                size      0   flags    0
+   3 DABS                                       size      0   flags    8
+   4 HOME                                       size      0   flags    0
+   5 GSINIT                                     size      0   flags    0
+   6 GSFINAL                                    size      0   flags    0
+   7 CONST                                      size      0   flags    0
+   8 INITIALIZER                                size      0   flags    0
+   9 CODE                                       size      3   flags    0
+   A CABS                                       size      0   flags    8
+   B .debug_line                                size     9F   flags  100
+   C .debug_loc                                 size     14   flags  100
+   D .debug_abbrev                              size     3E   flags  100
+   E .debug_info                                size     AA   flags  100
+   F .debug_pubnames                            size     24   flags  100
+  10 .debug_frame                               size     29   flags  100
+

@@ -1,0 +1,3075 @@
+ASxxxx Linker V03.00 + NoICE + sdld,  page 1.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00000000  .__.ABS.                           
+     00000000  l_CABS                          
+     00000000  l_DABS                          
+     00000000  l_DATA                          
+     00000000  l_INITIALIZED                   
+     00000000  l_INITIALIZER                   
+     00000000  l__CODE                         
+     00000000  s_.debug_abbrev                 
+     00000000  s_.debug_frame                  
+     00000000  s_.debug_info                   
+     00000000  s_.debug_line                   
+     00000000  s_.debug_loc                    
+     00000000  s_.debug_pubnames               
+     00000000  s_CABS                          
+     00000000  s_DABS                          
+     00000000  s__CODE                         
+     00000001  l_SSEG                          
+     00000001  s_DATA                          
+     00000001  s_INITIALIZED                   
+     00000001  s_SSEG                          
+     00000003  l_GSFINAL                       
+     0000001A  l_GSINIT                        
+     0000003D  l_CONST                         
+     0000006F  l_HOME                          
+     00000214  l_.debug_abbrev                 
+     0000060A  l_.debug_pubnames               
+     000009CC  l_CODE                          
+     00000DAF  l_.debug_line                   
+     00001258  l_.debug_info                   
+     000013FD  l_.debug_frame                  
+     000015E4  l_.debug_loc                    
+     00008000  s_HOME                          
+     0000806F  s_GSINIT                        
+     00008089  s_GSFINAL                       
+     0000808C  s_CONST                         
+     000080C9  s_CODE                          
+     000080C9  s_INITIALIZER                   
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 2.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+SSEG                                00000001    00000001 =           1. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+ASxxxx Linker V03.00 + NoICE + sdld,  page 3.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+HOME                                00008000    0000006F =         111. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00008000  A$main$50                          main
+     00008004  A$main$51                          main
+     00008008  A$main$52                          main
+     0000800C  A$main$53                          main
+     00008010  A$main$54                          main
+     00008014  A$main$55                          main
+     00008018  A$main$56                          main
+     0000801C  A$main$57                          main
+     00008020  A$main$58                          main
+     00008024  A$main$59                          main
+     00008028  A$main$60                          main
+     0000802C  A$main$61                          main
+     00008030  A$main$62                          main
+     00008034  A$main$63                          main
+     00008038  A$main$64                          main
+     0000803C  A$main$65                          main
+     00008040  A$main$66                          main
+     00008044  A$main$67                          main
+     00008048  A$main$68                          main
+     0000804C  A$main$69                          main
+     00008050  A$main$70                          main
+     00008054  A$main$71                          main
+     00008058  A$main$72                          main
+     0000805C  A$main$73                          main
+     00008060  A$main$74                          main
+     00008064  A$main$75                          main
+     00008068  A$main$76                          main
+     0000806C  A$main$110                         main
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 4.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+GSINIT                              0000806F    0000001A =          26. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     0000806F  A$main$86                          main
+     00008072  A$main$87                          main
+     00008074  A$main$89                          main
+     00008078  A$main$90                          main
+     00008079  A$main$91                          main
+     0000807B  A$main$93                          main
+     0000807E  A$main$94                          main
+     00008080  A$main$96                          main
+     00008083  A$main$97                          main
+     00008086  A$main$98                          main
+     00008087  A$main$99                          main
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 5.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+GSFINAL                             00008089    00000003 =           3. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00008089  A$main$103                         main
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 6.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CONST                               0000808C    0000003D =          61. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     0000808C  G$HSIDivFactor$0_0$0               stm8s_clk
+     0000808C  _HSIDivFactor                      stm8s_clk
+     00008090  G$CLKPrescTable$0_0$0              stm8s_clk
+     00008090  _CLKPrescTable                     stm8s_clk
+     00008098  Fstm8s_clk$__str_0$0_0$0           stm8s_clk
+     000080B0  Fstm8s_gpio$__str_0$0_0$0          stm8s_gpio
+ASxxxx Linker V03.00 + NoICE + sdld,  page 7.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CODE                                000080C9    000009CC =        2508. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000080C9  A$main$126                         main
+     000080C9  Smain$delay_1$0                    main
+     000080C9  Smain$delay_1$1                    main
+     000080C9  Smain$delay_1$2                    main
+     000080C9  Smain$delay_1$3                    main
+     000080C9  _delay_1                           main
+     000080CB  A$main$127                         main
+     000080CC  A$main$129                         main
+     000080D0  A$main$130                         main
+     000080D1  A$main$131                         main
+     000080D3  A$main$132                         main
+     000080D4  A$main$133                         main
+     000080D6  A$main$134                         main
+     000080D8  A$main$135                         main
+     000080DA  A$main$136                         main
+     000080DC  A$main$137                         main
+     000080DD  A$main$138                         main
+     000080DF  A$main$144                         main
+     000080DF  Smain$delay_1$4                    main
+     000080DF  Smain$delay_1$5                    main
+     000080DF  XG$delay_1$0$0                     main
+     000080E0  A$main$156                         main
+     000080E0  Smain$delay_1$6                    main
+     000080E0  Smain$delay_2$10                   main
+     000080E0  Smain$delay_2$7                    main
+     000080E0  Smain$delay_2$8                    main
+     000080E0  Smain$delay_2$9                    main
+     000080E0  _delay_2                           main
+     000080E2  A$main$157                         main
+     000080E3  A$main$159                         main
+     000080E7  A$main$160                         main
+     000080E8  A$main$161                         main
+     000080EA  A$main$162                         main
+     000080EB  A$main$163                         main
+     000080ED  A$main$164                         main
+     000080EF  A$main$165                         main
+     000080F1  A$main$166                         main
+     000080F3  A$main$167                         main
+     000080F4  A$main$168                         main
+     000080F6  A$main$174                         main
+     000080F6  Smain$delay_2$11                   main
+     000080F6  Smain$delay_2$12                   main
+     000080F6  XG$delay_2$0$0                     main
+     000080F7  A$main$185                         main
+     000080F7  Smain$delay_2$13                   main
+     000080F7  Smain$main$14                      main
+     000080F7  Smain$main$15                      main
+     000080F7  Smain$main$16                      main
+     000080F7  _main                              main
+     000080F9  A$main$187                         main
+ASxxxx Linker V03.00 + NoICE + sdld,  page 8.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CODE                                000080C9    000009CC =        2508. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000080F9  Smain$main$17                      main
+     000080FC  A$main$188                         main
+     000080FD  A$main$192                         main
+     000080FD  Smain$main$18                      main
+     000080FD  Smain$main$19                      main
+     000080FF  A$main$194                         main
+     000080FF  Smain$main$20                      main
+     00008101  A$main$196                         main
+     00008101  Smain$main$21                      main
+     00008103  A$main$198                         main
+     00008103  Smain$main$22                      main
+     00008105  A$main$200                         main
+     00008105  Smain$main$23                      main
+     00008108  A$main$201                         main
+     0000810A  A$main$209                         main
+     0000810A  Smain$main$24                      main
+     0000810A  Smain$main$25                      main
+     0000810A  Smain$main$26                      main
+     0000810A  Smain$main$27                      main
+     0000810C  A$main$211                         main
+     0000810C  Smain$main$28                      main
+     0000810E  A$main$213                         main
+     0000810E  Smain$main$29                      main
+     00008110  A$main$215                         main
+     00008110  Smain$main$30                      main
+     00008113  A$main$216                         main
+     00008115  A$main$220                         main
+     00008115  Smain$main$31                      main
+     00008115  Smain$main$32                      main
+     00008118  A$main$223                         main
+     00008118  Smain$main$33                      main
+     0000811A  A$main$225                         main
+     0000811A  Smain$main$34                      main
+     0000811C  A$main$227                         main
+     0000811C  Smain$main$35                      main
+     0000811E  A$main$229                         main
+     0000811E  Smain$main$36                      main
+     00008121  A$main$230                         main
+     00008123  A$main$234                         main
+     00008123  Smain$main$37                      main
+     00008123  Smain$main$38                      main
+     00008126  A$main$237                         main
+     00008126  Smain$main$39                      main
+     00008128  A$main$239                         main
+     00008128  Smain$main$40                      main
+     0000812A  A$main$241                         main
+     0000812A  Smain$main$41                      main
+     0000812C  A$main$243                         main
+     0000812C  Smain$main$42                      main
+     0000812F  A$main$244                         main
+     00008131  A$main$248                         main
+ASxxxx Linker V03.00 + NoICE + sdld,  page 9.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CODE                                000080C9    000009CC =        2508. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00008131  Smain$main$43                      main
+     00008131  Smain$main$44                      main
+     00008134  A$main$251                         main
+     00008134  Smain$main$45                      main
+     00008136  A$main$253                         main
+     00008136  Smain$main$46                      main
+     00008138  A$main$255                         main
+     00008138  Smain$main$47                      main
+     0000813A  A$main$257                         main
+     0000813A  Smain$main$48                      main
+     0000813D  A$main$258                         main
+     0000813F  A$main$262                         main
+     0000813F  Smain$main$49                      main
+     0000813F  Smain$main$50                      main
+     00008142  A$main$265                         main
+     00008142  Smain$main$51                      main
+     00008144  A$main$267                         main
+     00008144  Smain$main$52                      main
+     00008146  A$main$269                         main
+     00008146  Smain$main$53                      main
+     00008148  A$main$271                         main
+     00008148  Smain$main$54                      main
+     0000814B  A$main$272                         main
+     0000814D  A$main$276                         main
+     0000814D  Smain$main$55                      main
+     0000814D  Smain$main$56                      main
+     00008150  A$main$279                         main
+     00008150  Smain$main$57                      main
+     00008152  A$main$281                         main
+     00008152  Smain$main$58                      main
+     00008154  A$main$283                         main
+     00008154  Smain$main$59                      main
+     00008156  A$main$285                         main
+     00008156  Smain$main$60                      main
+     00008159  A$main$286                         main
+     0000815B  A$main$290                         main
+     0000815B  Smain$main$61                      main
+     0000815B  Smain$main$62                      main
+     0000815E  A$main$293                         main
+     0000815E  Smain$main$63                      main
+     00008160  A$main$295                         main
+     00008160  Smain$main$64                      main
+     00008162  A$main$297                         main
+     00008162  Smain$main$65                      main
+     00008164  A$main$299                         main
+     00008164  Smain$main$66                      main
+     00008167  A$main$300                         main
+     00008169  A$main$304                         main
+     00008169  Smain$main$67                      main
+     00008169  Smain$main$68                      main
+     0000816C  A$main$307                         main
+ASxxxx Linker V03.00 + NoICE + sdld,  page 10.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CODE                                000080C9    000009CC =        2508. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     0000816C  Smain$main$69                      main
+     0000816E  A$main$309                         main
+     0000816E  Smain$main$70                      main
+     00008170  A$main$311                         main
+     00008170  Smain$main$71                      main
+     00008172  A$main$313                         main
+     00008172  Smain$main$72                      main
+     00008175  A$main$314                         main
+     00008177  A$main$318                         main
+     00008177  Smain$main$73                      main
+     00008177  Smain$main$74                      main
+     0000817A  A$main$321                         main
+     0000817A  Smain$main$75                      main
+     0000817C  A$main$323                         main
+     0000817C  Smain$main$76                      main
+     0000817E  A$main$325                         main
+     0000817E  Smain$main$77                      main
+     00008180  A$main$327                         main
+     00008180  Smain$main$78                      main
+     00008183  A$main$328                         main
+     00008185  A$main$332                         main
+     00008185  Smain$main$79                      main
+     00008185  Smain$main$80                      main
+     00008188  A$main$335                         main
+     00008188  Smain$main$81                      main
+     0000818A  A$main$337                         main
+     0000818A  Smain$main$82                      main
+     0000818C  A$main$339                         main
+     0000818C  Smain$main$83                      main
+     0000818E  A$main$341                         main
+     0000818E  Smain$main$84                      main
+     00008191  A$main$342                         main
+     00008193  A$main$346                         main
+     00008193  Smain$main$85                      main
+     00008193  Smain$main$86                      main
+     00008196  A$main$348                         main
+     00008196  Smain$main$87                      main
+     00008199  A$main$353                         main
+     00008199  Smain$main$88                      main
+     00008199  Smain$main$89                      main
+     00008199  XG$main$0$0                        main
+     0000819A  A$stm8s_it$85                      stm8s_it
+     0000819A  Smain$main$90                      main
+     0000819A  Sstm8s_it$TRAP_IRQHandler$0        stm8s_it
+     0000819A  Sstm8s_it$TRAP_IRQHandler$1        stm8s_it
+     0000819A  Sstm8s_it$TRAP_IRQHandler$2        stm8s_it
+     0000819A  Sstm8s_it$TRAP_IRQHandler$3        stm8s_it
+     0000819A  XG$TRAP_IRQHandler$0$0             stm8s_it
+     0000819A  _TRAP_IRQHandler                   stm8s_it
+     0000819B  A$stm8s_it$98                      stm8s_it
+     0000819B  Sstm8s_it$TLI_IRQHandler$5         stm8s_it
+ASxxxx Linker V03.00 + NoICE + sdld,  page 11.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CODE                                000080C9    000009CC =        2508. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     0000819B  Sstm8s_it$TLI_IRQHandler$6         stm8s_it
+     0000819B  Sstm8s_it$TLI_IRQHandler$7         stm8s_it
+     0000819B  Sstm8s_it$TLI_IRQHandler$8         stm8s_it
+     0000819B  Sstm8s_it$TRAP_IRQHandler$4        stm8s_it
+     0000819B  XG$TLI_IRQHandler$0$0              stm8s_it
+     0000819B  _TLI_IRQHandler                    stm8s_it
+     0000819C  A$stm8s_it$111                     stm8s_it
+     0000819C  Sstm8s_it$AWU_IRQHandler$10        stm8s_it
+     0000819C  Sstm8s_it$AWU_IRQHandler$11        stm8s_it
+     0000819C  Sstm8s_it$AWU_IRQHandler$12        stm8s_it
+     0000819C  Sstm8s_it$AWU_IRQHandler$13        stm8s_it
+     0000819C  Sstm8s_it$TLI_IRQHandler$9         stm8s_it
+     0000819C  XG$AWU_IRQHandler$0$0              stm8s_it
+     0000819C  _AWU_IRQHandler                    stm8s_it
+     0000819D  A$stm8s_it$124                     stm8s_it
+     0000819D  Sstm8s_it$AWU_IRQHandler$14        stm8s_it
+     0000819D  Sstm8s_it$CLK_IRQHandler$15        stm8s_it
+     0000819D  Sstm8s_it$CLK_IRQHandler$16        stm8s_it
+     0000819D  Sstm8s_it$CLK_IRQHandler$17        stm8s_it
+     0000819D  Sstm8s_it$CLK_IRQHandler$18        stm8s_it
+     0000819D  XG$CLK_IRQHandler$0$0              stm8s_it
+     0000819D  _CLK_IRQHandler                    stm8s_it
+     0000819E  A$stm8s_it$137                     stm8s_it
+     0000819E  Sstm8s_it$CLK_IRQHandler$19        stm8s_it
+     0000819E  Sstm8s_it$EXTI_PORTA_IRQHandler$   stm8s_it
+     0000819E  Sstm8s_it$EXTI_PORTA_IRQHandler$   stm8s_it
+     0000819E  Sstm8s_it$EXTI_PORTA_IRQHandler$   stm8s_it
+     0000819E  Sstm8s_it$EXTI_PORTA_IRQHandler$   stm8s_it
+     0000819E  XG$EXTI_PORTA_IRQHandler$0$0       stm8s_it
+     0000819E  _EXTI_PORTA_IRQHandler             stm8s_it
+     0000819F  A$stm8s_it$150                     stm8s_it
+     0000819F  Sstm8s_it$EXTI_PORTA_IRQHandler$   stm8s_it
+     0000819F  Sstm8s_it$EXTI_PORTB_IRQHandler$   stm8s_it
+     0000819F  Sstm8s_it$EXTI_PORTB_IRQHandler$   stm8s_it
+     0000819F  Sstm8s_it$EXTI_PORTB_IRQHandler$   stm8s_it
+     0000819F  Sstm8s_it$EXTI_PORTB_IRQHandler$   stm8s_it
+     0000819F  XG$EXTI_PORTB_IRQHandler$0$0       stm8s_it
+     0000819F  _EXTI_PORTB_IRQHandler             stm8s_it
+     000081A0  A$stm8s_it$163                     stm8s_it
+     000081A0  Sstm8s_it$EXTI_PORTB_IRQHandler$   stm8s_it
+     000081A0  Sstm8s_it$EXTI_PORTC_IRQHandler$   stm8s_it
+     000081A0  Sstm8s_it$EXTI_PORTC_IRQHandler$   stm8s_it
+     000081A0  Sstm8s_it$EXTI_PORTC_IRQHandler$   stm8s_it
+     000081A0  Sstm8s_it$EXTI_PORTC_IRQHandler$   stm8s_it
+     000081A0  XG$EXTI_PORTC_IRQHandler$0$0       stm8s_it
+     000081A0  _EXTI_PORTC_IRQHandler             stm8s_it
+     000081A1  A$stm8s_it$176                     stm8s_it
+     000081A1  Sstm8s_it$EXTI_PORTC_IRQHandler$   stm8s_it
+     000081A1  Sstm8s_it$EXTI_PORTD_IRQHandler$   stm8s_it
+     000081A1  Sstm8s_it$EXTI_PORTD_IRQHandler$   stm8s_it
+     000081A1  Sstm8s_it$EXTI_PORTD_IRQHandler$   stm8s_it
+ASxxxx Linker V03.00 + NoICE + sdld,  page 12.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CODE                                000080C9    000009CC =        2508. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000081A1  Sstm8s_it$EXTI_PORTD_IRQHandler$   stm8s_it
+     000081A1  XG$EXTI_PORTD_IRQHandler$0$0       stm8s_it
+     000081A1  _EXTI_PORTD_IRQHandler             stm8s_it
+     000081A2  A$stm8s_it$189                     stm8s_it
+     000081A2  Sstm8s_it$EXTI_PORTD_IRQHandler$   stm8s_it
+     000081A2  Sstm8s_it$EXTI_PORTE_IRQHandler$   stm8s_it
+     000081A2  Sstm8s_it$EXTI_PORTE_IRQHandler$   stm8s_it
+     000081A2  Sstm8s_it$EXTI_PORTE_IRQHandler$   stm8s_it
+     000081A2  Sstm8s_it$EXTI_PORTE_IRQHandler$   stm8s_it
+     000081A2  XG$EXTI_PORTE_IRQHandler$0$0       stm8s_it
+     000081A2  _EXTI_PORTE_IRQHandler             stm8s_it
+     000081A3  A$stm8s_it$202                     stm8s_it
+     000081A3  Sstm8s_it$CAN_RX_IRQHandler$45     stm8s_it
+     000081A3  Sstm8s_it$CAN_RX_IRQHandler$46     stm8s_it
+     000081A3  Sstm8s_it$CAN_RX_IRQHandler$47     stm8s_it
+     000081A3  Sstm8s_it$CAN_RX_IRQHandler$48     stm8s_it
+     000081A3  Sstm8s_it$EXTI_PORTE_IRQHandler$   stm8s_it
+     000081A3  XG$CAN_RX_IRQHandler$0$0           stm8s_it
+     000081A3  _CAN_RX_IRQHandler                 stm8s_it
+     000081A4  A$stm8s_it$215                     stm8s_it
+     000081A4  Sstm8s_it$CAN_RX_IRQHandler$49     stm8s_it
+     000081A4  Sstm8s_it$CAN_TX_IRQHandler$50     stm8s_it
+     000081A4  Sstm8s_it$CAN_TX_IRQHandler$51     stm8s_it
+     000081A4  Sstm8s_it$CAN_TX_IRQHandler$52     stm8s_it
+     000081A4  Sstm8s_it$CAN_TX_IRQHandler$53     stm8s_it
+     000081A4  XG$CAN_TX_IRQHandler$0$0           stm8s_it
+     000081A4  _CAN_TX_IRQHandler                 stm8s_it
+     000081A5  A$stm8s_it$228                     stm8s_it
+     000081A5  Sstm8s_it$CAN_TX_IRQHandler$54     stm8s_it
+     000081A5  Sstm8s_it$SPI_IRQHandler$55        stm8s_it
+     000081A5  Sstm8s_it$SPI_IRQHandler$56        stm8s_it
+     000081A5  Sstm8s_it$SPI_IRQHandler$57        stm8s_it
+     000081A5  Sstm8s_it$SPI_IRQHandler$58        stm8s_it
+     000081A5  XG$SPI_IRQHandler$0$0              stm8s_it
+     000081A5  _SPI_IRQHandler                    stm8s_it
+     000081A6  A$stm8s_it$241                     stm8s_it
+     000081A6  Sstm8s_it$SPI_IRQHandler$59        stm8s_it
+     000081A6  Sstm8s_it$TIM1_UPD_OVF_TRG_BRK_I   stm8s_it
+     000081A6  Sstm8s_it$TIM1_UPD_OVF_TRG_BRK_I   stm8s_it
+     000081A6  Sstm8s_it$TIM1_UPD_OVF_TRG_BRK_I   stm8s_it
+     000081A6  Sstm8s_it$TIM1_UPD_OVF_TRG_BRK_I   stm8s_it
+     000081A6  XG$TIM1_UPD_OVF_TRG_BRK_IRQHandl   stm8s_it
+     000081A6  _TIM1_UPD_OVF_TRG_BRK_IRQHandler   stm8s_it
+     000081A7  A$stm8s_it$254                     stm8s_it
+     000081A7  Sstm8s_it$TIM1_CAP_COM_IRQHandle   stm8s_it
+     000081A7  Sstm8s_it$TIM1_CAP_COM_IRQHandle   stm8s_it
+     000081A7  Sstm8s_it$TIM1_CAP_COM_IRQHandle   stm8s_it
+     000081A7  Sstm8s_it$TIM1_CAP_COM_IRQHandle   stm8s_it
+     000081A7  Sstm8s_it$TIM1_UPD_OVF_TRG_BRK_I   stm8s_it
+     000081A7  XG$TIM1_CAP_COM_IRQHandler$0$0     stm8s_it
+     000081A7  _TIM1_CAP_COM_IRQHandler           stm8s_it
+ASxxxx Linker V03.00 + NoICE + sdld,  page 13.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CODE                                000080C9    000009CC =        2508. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000081A8  A$stm8s_it$267                     stm8s_it
+     000081A8  Sstm8s_it$TIM1_CAP_COM_IRQHandle   stm8s_it
+     000081A8  Sstm8s_it$TIM2_UPD_OVF_BRK_IRQHa   stm8s_it
+     000081A8  Sstm8s_it$TIM2_UPD_OVF_BRK_IRQHa   stm8s_it
+     000081A8  Sstm8s_it$TIM2_UPD_OVF_BRK_IRQHa   stm8s_it
+     000081A8  Sstm8s_it$TIM2_UPD_OVF_BRK_IRQHa   stm8s_it
+     000081A8  XG$TIM2_UPD_OVF_BRK_IRQHandler$0   stm8s_it
+     000081A8  _TIM2_UPD_OVF_BRK_IRQHandler       stm8s_it
+     000081A9  A$stm8s_it$280                     stm8s_it
+     000081A9  Sstm8s_it$TIM2_CAP_COM_IRQHandle   stm8s_it
+     000081A9  Sstm8s_it$TIM2_CAP_COM_IRQHandle   stm8s_it
+     000081A9  Sstm8s_it$TIM2_CAP_COM_IRQHandle   stm8s_it
+     000081A9  Sstm8s_it$TIM2_CAP_COM_IRQHandle   stm8s_it
+     000081A9  Sstm8s_it$TIM2_UPD_OVF_BRK_IRQHa   stm8s_it
+     000081A9  XG$TIM2_CAP_COM_IRQHandler$0$0     stm8s_it
+     000081A9  _TIM2_CAP_COM_IRQHandler           stm8s_it
+     000081AA  A$stm8s_it$293                     stm8s_it
+     000081AA  Sstm8s_it$TIM2_CAP_COM_IRQHandle   stm8s_it
+     000081AA  Sstm8s_it$TIM3_UPD_OVF_BRK_IRQHa   stm8s_it
+     000081AA  Sstm8s_it$TIM3_UPD_OVF_BRK_IRQHa   stm8s_it
+     000081AA  Sstm8s_it$TIM3_UPD_OVF_BRK_IRQHa   stm8s_it
+     000081AA  Sstm8s_it$TIM3_UPD_OVF_BRK_IRQHa   stm8s_it
+     000081AA  XG$TIM3_UPD_OVF_BRK_IRQHandler$0   stm8s_it
+     000081AA  _TIM3_UPD_OVF_BRK_IRQHandler       stm8s_it
+     000081AB  A$stm8s_it$306                     stm8s_it
+     000081AB  Sstm8s_it$TIM3_CAP_COM_IRQHandle   stm8s_it
+     000081AB  Sstm8s_it$TIM3_CAP_COM_IRQHandle   stm8s_it
+     000081AB  Sstm8s_it$TIM3_CAP_COM_IRQHandle   stm8s_it
+     000081AB  Sstm8s_it$TIM3_CAP_COM_IRQHandle   stm8s_it
+     000081AB  Sstm8s_it$TIM3_UPD_OVF_BRK_IRQHa   stm8s_it
+     000081AB  XG$TIM3_CAP_COM_IRQHandler$0$0     stm8s_it
+     000081AB  _TIM3_CAP_COM_IRQHandler           stm8s_it
+     000081AC  A$stm8s_it$319                     stm8s_it
+     000081AC  Sstm8s_it$TIM3_CAP_COM_IRQHandle   stm8s_it
+     000081AC  Sstm8s_it$UART1_TX_IRQHandler$90   stm8s_it
+     000081AC  Sstm8s_it$UART1_TX_IRQHandler$91   stm8s_it
+     000081AC  Sstm8s_it$UART1_TX_IRQHandler$92   stm8s_it
+     000081AC  Sstm8s_it$UART1_TX_IRQHandler$93   stm8s_it
+     000081AC  XG$UART1_TX_IRQHandler$0$0         stm8s_it
+     000081AC  _UART1_TX_IRQHandler               stm8s_it
+     000081AD  A$stm8s_it$332                     stm8s_it
+     000081AD  Sstm8s_it$UART1_RX_IRQHandler$95   stm8s_it
+     000081AD  Sstm8s_it$UART1_RX_IRQHandler$96   stm8s_it
+     000081AD  Sstm8s_it$UART1_RX_IRQHandler$97   stm8s_it
+     000081AD  Sstm8s_it$UART1_RX_IRQHandler$98   stm8s_it
+     000081AD  Sstm8s_it$UART1_TX_IRQHandler$94   stm8s_it
+     000081AD  XG$UART1_RX_IRQHandler$0$0         stm8s_it
+     000081AD  _UART1_RX_IRQHandler               stm8s_it
+     000081AE  A$stm8s_it$345                     stm8s_it
+     000081AE  Sstm8s_it$I2C_IRQHandler$100       stm8s_it
+     000081AE  Sstm8s_it$I2C_IRQHandler$101       stm8s_it
+ASxxxx Linker V03.00 + NoICE + sdld,  page 14.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CODE                                000080C9    000009CC =        2508. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000081AE  Sstm8s_it$I2C_IRQHandler$102       stm8s_it
+     000081AE  Sstm8s_it$I2C_IRQHandler$103       stm8s_it
+     000081AE  Sstm8s_it$UART1_RX_IRQHandler$99   stm8s_it
+     000081AE  XG$I2C_IRQHandler$0$0              stm8s_it
+     000081AE  _I2C_IRQHandler                    stm8s_it
+     000081AF  A$stm8s_it$358                     stm8s_it
+     000081AF  Sstm8s_it$I2C_IRQHandler$104       stm8s_it
+     000081AF  Sstm8s_it$UART3_TX_IRQHandler$10   stm8s_it
+     000081AF  Sstm8s_it$UART3_TX_IRQHandler$10   stm8s_it
+     000081AF  Sstm8s_it$UART3_TX_IRQHandler$10   stm8s_it
+     000081AF  Sstm8s_it$UART3_TX_IRQHandler$10   stm8s_it
+     000081AF  XG$UART3_TX_IRQHandler$0$0         stm8s_it
+     000081AF  _UART3_TX_IRQHandler               stm8s_it
+     000081B0  A$stm8s_it$371                     stm8s_it
+     000081B0  Sstm8s_it$UART3_RX_IRQHandler$11   stm8s_it
+     000081B0  Sstm8s_it$UART3_RX_IRQHandler$11   stm8s_it
+     000081B0  Sstm8s_it$UART3_RX_IRQHandler$11   stm8s_it
+     000081B0  Sstm8s_it$UART3_RX_IRQHandler$11   stm8s_it
+     000081B0  Sstm8s_it$UART3_TX_IRQHandler$10   stm8s_it
+     000081B0  XG$UART3_RX_IRQHandler$0$0         stm8s_it
+     000081B0  _UART3_RX_IRQHandler               stm8s_it
+     000081B1  A$stm8s_it$386                     stm8s_it
+     000081B1  Sstm8s_it$ADC2_IRQHandler$115      stm8s_it
+     000081B1  Sstm8s_it$ADC2_IRQHandler$116      stm8s_it
+     000081B1  Sstm8s_it$ADC2_IRQHandler$117      stm8s_it
+     000081B1  Sstm8s_it$ADC2_IRQHandler$118      stm8s_it
+     000081B1  Sstm8s_it$ADC2_IRQHandler$119      stm8s_it
+     000081B1  Sstm8s_it$UART3_RX_IRQHandler$11   stm8s_it
+     000081B1  XG$ADC2_IRQHandler$0$0             stm8s_it
+     000081B1  _ADC2_IRQHandler                   stm8s_it
+     000081B2  A$stm8s_it$399                     stm8s_it
+     000081B2  Sstm8s_it$ADC2_IRQHandler$120      stm8s_it
+     000081B2  Sstm8s_it$TIM4_UPD_OVF_IRQHandle   stm8s_it
+     000081B2  Sstm8s_it$TIM4_UPD_OVF_IRQHandle   stm8s_it
+     000081B2  Sstm8s_it$TIM4_UPD_OVF_IRQHandle   stm8s_it
+     000081B2  Sstm8s_it$TIM4_UPD_OVF_IRQHandle   stm8s_it
+     000081B2  XG$TIM4_UPD_OVF_IRQHandler$0$0     stm8s_it
+     000081B2  _TIM4_UPD_OVF_IRQHandler           stm8s_it
+     000081B3  A$stm8s_it$412                     stm8s_it
+     000081B3  Sstm8s_it$EEPROM_EEC_IRQHandler$   stm8s_it
+     000081B3  Sstm8s_it$EEPROM_EEC_IRQHandler$   stm8s_it
+     000081B3  Sstm8s_it$EEPROM_EEC_IRQHandler$   stm8s_it
+     000081B3  Sstm8s_it$EEPROM_EEC_IRQHandler$   stm8s_it
+     000081B3  Sstm8s_it$TIM4_UPD_OVF_IRQHandle   stm8s_it
+     000081B3  XG$EEPROM_EEC_IRQHandler$0$0       stm8s_it
+     000081B3  _EEPROM_EEC_IRQHandler             stm8s_it
+     000081B4  A$stm8s_conf$59                    stm8s_conf
+     000081B4  Sstm8s_conf$assert_failed$0        stm8s_conf
+     000081B4  Sstm8s_conf$assert_failed$1        stm8s_conf
+     000081B4  Sstm8s_conf$assert_failed$2        stm8s_conf
+     000081B4  Sstm8s_it$EEPROM_EEC_IRQHandler$   stm8s_it
+ASxxxx Linker V03.00 + NoICE + sdld,  page 15.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CODE                                000080C9    000009CC =        2508. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000081B4  _assert_failed                     stm8s_conf
+     000081B6  A$stm8s_conf$64                    stm8s_conf
+     000081B6  Sstm8s_conf$assert_failed$3        stm8s_conf
+     000081B6  Sstm8s_conf$assert_failed$4        stm8s_conf
+     000081B6  XG$assert_failed$0$0               stm8s_conf
+     000081B7  A$stm8s_clk$83                     stm8s_clk
+     000081B7  Sstm8s_clk$CLK_DeInit$0            stm8s_clk
+     000081B7  Sstm8s_clk$CLK_DeInit$1            stm8s_clk
+     000081B7  Sstm8s_clk$CLK_DeInit$2            stm8s_clk
+     000081B7  Sstm8s_conf$assert_failed$5        stm8s_conf
+     000081B7  _CLK_DeInit                        stm8s_clk
+     000081BB  A$stm8s_clk$86                     stm8s_clk
+     000081BB  Sstm8s_clk$CLK_DeInit$3            stm8s_clk
+     000081BF  A$stm8s_clk$89                     stm8s_clk
+     000081BF  Sstm8s_clk$CLK_DeInit$4            stm8s_clk
+     000081C3  A$stm8s_clk$92                     stm8s_clk
+     000081C3  Sstm8s_clk$CLK_DeInit$5            stm8s_clk
+     000081C7  A$stm8s_clk$95                     stm8s_clk
+     000081C7  Sstm8s_clk$CLK_DeInit$6            stm8s_clk
+     000081CB  A$stm8s_clk$98                     stm8s_clk
+     000081CB  Sstm8s_clk$CLK_DeInit$7            stm8s_clk
+     000081CF  A$stm8s_clk$101                    stm8s_clk
+     000081CF  Sstm8s_clk$CLK_DeInit$8            stm8s_clk
+     000081D3  A$stm8s_clk$104                    stm8s_clk
+     000081D3  Sstm8s_clk$CLK_DeInit$9            stm8s_clk
+     000081D7  A$stm8s_clk$107                    stm8s_clk
+     000081D7  Sstm8s_clk$CLK_DeInit$10           stm8s_clk
+     000081DB  A$stm8s_clk$111                    stm8s_clk
+     000081DB  Sstm8s_clk$CLK_DeInit$11           stm8s_clk
+     000081DE  A$stm8s_clk$112                    stm8s_clk
+     000081DF  A$stm8s_clk$113                    stm8s_clk
+     000081E1  A$stm8s_clk$116                    stm8s_clk
+     000081E1  Sstm8s_clk$CLK_DeInit$12           stm8s_clk
+     000081E5  A$stm8s_clk$119                    stm8s_clk
+     000081E5  Sstm8s_clk$CLK_DeInit$13           stm8s_clk
+     000081E9  A$stm8s_clk$122                    stm8s_clk
+     000081E9  Sstm8s_clk$CLK_DeInit$14           stm8s_clk
+     000081ED  A$stm8s_clk$127                    stm8s_clk
+     000081ED  Sstm8s_clk$CLK_DeInit$15           stm8s_clk
+     000081ED  Sstm8s_clk$CLK_DeInit$16           stm8s_clk
+     000081ED  XG$CLK_DeInit$0$0                  stm8s_clk
+     000081EE  A$stm8s_clk$138                    stm8s_clk
+     000081EE  Sstm8s_clk$CLK_DeInit$17           stm8s_clk
+     000081EE  Sstm8s_clk$CLK_FastHaltWakeUpCmd   stm8s_clk
+     000081EE  Sstm8s_clk$CLK_FastHaltWakeUpCmd   stm8s_clk
+     000081EE  Sstm8s_clk$CLK_FastHaltWakeUpCmd   stm8s_clk
+     000081EE  _CLK_FastHaltWakeUpCmd             stm8s_clk
+     000081F0  A$stm8s_clk$139                    stm8s_clk
+     000081F2  A$stm8s_clk$140                    stm8s_clk
+     000081F4  A$stm8s_clk$141                    stm8s_clk
+     000081F5  A$stm8s_clk$142                    stm8s_clk
+ASxxxx Linker V03.00 + NoICE + sdld,  page 16.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CODE                                000080C9    000009CC =        2508. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000081F7  A$stm8s_clk$144                    stm8s_clk
+     000081F7  Sstm8s_clk$CLK_FastHaltWakeUpCmd   stm8s_clk
+     000081F9  A$stm8s_clk$146                    stm8s_clk
+     000081F9  Sstm8s_clk$CLK_FastHaltWakeUpCmd   stm8s_clk
+     000081FA  A$stm8s_clk$147                    stm8s_clk
+     000081FB  A$stm8s_clk$149                    stm8s_clk
+     000081FB  Sstm8s_clk$CLK_FastHaltWakeUpCmd   stm8s_clk
+     000081FD  A$stm8s_clk$151                    stm8s_clk
+     000081FD  Sstm8s_clk$CLK_FastHaltWakeUpCmd   stm8s_clk
+     000081FF  A$stm8s_clk$153                    stm8s_clk
+     000081FF  Sstm8s_clk$CLK_FastHaltWakeUpCmd   stm8s_clk
+     00008201  A$stm8s_clk$155                    stm8s_clk
+     00008201  Sstm8s_clk$CLK_FastHaltWakeUpCmd   stm8s_clk
+     00008204  A$stm8s_clk$156                    stm8s_clk
+     00008206  A$stm8s_clk$161                    stm8s_clk
+     00008206  Sstm8s_clk$CLK_FastHaltWakeUpCmd   stm8s_clk
+     00008206  Sstm8s_clk$CLK_FastHaltWakeUpCmd   stm8s_clk
+     00008209  A$stm8s_clk$164                    stm8s_clk
+     00008209  Sstm8s_clk$CLK_FastHaltWakeUpCmd   stm8s_clk
+     0000820B  A$stm8s_clk$165                    stm8s_clk
+     0000820D  A$stm8s_clk$169                    stm8s_clk
+     0000820D  Sstm8s_clk$CLK_FastHaltWakeUpCmd   stm8s_clk
+     0000820D  Sstm8s_clk$CLK_FastHaltWakeUpCmd   stm8s_clk
+     0000820F  A$stm8s_clk$170                    stm8s_clk
+     00008212  A$stm8s_clk$172                    stm8s_clk
+     00008212  Sstm8s_clk$CLK_FastHaltWakeUpCmd   stm8s_clk
+     00008214  A$stm8s_clk$177                    stm8s_clk
+     00008214  Sstm8s_clk$CLK_FastHaltWakeUpCmd   stm8s_clk
+     00008214  Sstm8s_clk$CLK_FastHaltWakeUpCmd   stm8s_clk
+     00008216  A$stm8s_clk$178                    stm8s_clk
+     00008219  A$stm8s_clk$185                    stm8s_clk
+     00008219  Sstm8s_clk$CLK_FastHaltWakeUpCmd   stm8s_clk
+     00008219  Sstm8s_clk$CLK_FastHaltWakeUpCmd   stm8s_clk
+     00008219  Sstm8s_clk$CLK_FastHaltWakeUpCmd   stm8s_clk
+     00008219  XG$CLK_FastHaltWakeUpCmd$0$0       stm8s_clk
+     0000821A  A$stm8s_clk$196                    stm8s_clk
+     0000821A  Sstm8s_clk$CLK_FastHaltWakeUpCmd   stm8s_clk
+     0000821A  Sstm8s_clk$CLK_HSECmd$39           stm8s_clk
+     0000821A  Sstm8s_clk$CLK_HSECmd$40           stm8s_clk
+     0000821A  Sstm8s_clk$CLK_HSECmd$41           stm8s_clk
+     0000821A  _CLK_HSECmd                        stm8s_clk
+     0000821C  A$stm8s_clk$197                    stm8s_clk
+     0000821E  A$stm8s_clk$198                    stm8s_clk
+     00008220  A$stm8s_clk$199                    stm8s_clk
+     00008221  A$stm8s_clk$200                    stm8s_clk
+     00008223  A$stm8s_clk$202                    stm8s_clk
+     00008223  Sstm8s_clk$CLK_HSECmd$42           stm8s_clk
+     00008225  A$stm8s_clk$204                    stm8s_clk
+     00008225  Sstm8s_clk$CLK_HSECmd$43           stm8s_clk
+     00008226  A$stm8s_clk$205                    stm8s_clk
+     00008227  A$stm8s_clk$207                    stm8s_clk
+ASxxxx Linker V03.00 + NoICE + sdld,  page 17.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CODE                                000080C9    000009CC =        2508. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00008227  Sstm8s_clk$CLK_HSECmd$44           stm8s_clk
+     00008229  A$stm8s_clk$209                    stm8s_clk
+     00008229  Sstm8s_clk$CLK_HSECmd$45           stm8s_clk
+     0000822B  A$stm8s_clk$211                    stm8s_clk
+     0000822B  Sstm8s_clk$CLK_HSECmd$46           stm8s_clk
+     0000822D  A$stm8s_clk$213                    stm8s_clk
+     0000822D  Sstm8s_clk$CLK_HSECmd$47           stm8s_clk
+     00008230  A$stm8s_clk$214                    stm8s_clk
+     00008232  A$stm8s_clk$219                    stm8s_clk
+     00008232  Sstm8s_clk$CLK_HSECmd$48           stm8s_clk
+     00008232  Sstm8s_clk$CLK_HSECmd$49           stm8s_clk
+     00008235  A$stm8s_clk$222                    stm8s_clk
+     00008235  Sstm8s_clk$CLK_HSECmd$50           stm8s_clk
+     00008237  A$stm8s_clk$223                    stm8s_clk
+     00008239  A$stm8s_clk$227                    stm8s_clk
+     00008239  Sstm8s_clk$CLK_HSECmd$51           stm8s_clk
+     00008239  Sstm8s_clk$CLK_HSECmd$52           stm8s_clk
+     0000823B  A$stm8s_clk$228                    stm8s_clk
+     0000823E  A$stm8s_clk$230                    stm8s_clk
+     0000823E  Sstm8s_clk$CLK_HSECmd$53           stm8s_clk
+     00008240  A$stm8s_clk$235                    stm8s_clk
+     00008240  Sstm8s_clk$CLK_HSECmd$54           stm8s_clk
+     00008240  Sstm8s_clk$CLK_HSECmd$55           stm8s_clk
+     00008242  A$stm8s_clk$236                    stm8s_clk
+     00008245  A$stm8s_clk$243                    stm8s_clk
+     00008245  Sstm8s_clk$CLK_HSECmd$56           stm8s_clk
+     00008245  Sstm8s_clk$CLK_HSECmd$57           stm8s_clk
+     00008245  Sstm8s_clk$CLK_HSECmd$58           stm8s_clk
+     00008245  XG$CLK_HSECmd$0$0                  stm8s_clk
+     00008246  A$stm8s_clk$254                    stm8s_clk
+     00008246  Sstm8s_clk$CLK_HSECmd$59           stm8s_clk
+     00008246  Sstm8s_clk$CLK_HSICmd$60           stm8s_clk
+     00008246  Sstm8s_clk$CLK_HSICmd$61           stm8s_clk
+     00008246  Sstm8s_clk$CLK_HSICmd$62           stm8s_clk
+     00008246  _CLK_HSICmd                        stm8s_clk
+     00008248  A$stm8s_clk$255                    stm8s_clk
+     0000824A  A$stm8s_clk$256                    stm8s_clk
+     0000824C  A$stm8s_clk$257                    stm8s_clk
+     0000824D  A$stm8s_clk$258                    stm8s_clk
+     0000824F  A$stm8s_clk$260                    stm8s_clk
+     0000824F  Sstm8s_clk$CLK_HSICmd$63           stm8s_clk
+     00008251  A$stm8s_clk$262                    stm8s_clk
+     00008251  Sstm8s_clk$CLK_HSICmd$64           stm8s_clk
+     00008252  A$stm8s_clk$263                    stm8s_clk
+     00008253  A$stm8s_clk$265                    stm8s_clk
+     00008253  Sstm8s_clk$CLK_HSICmd$65           stm8s_clk
+     00008255  A$stm8s_clk$267                    stm8s_clk
+     00008255  Sstm8s_clk$CLK_HSICmd$66           stm8s_clk
+     00008257  A$stm8s_clk$269                    stm8s_clk
+     00008257  Sstm8s_clk$CLK_HSICmd$67           stm8s_clk
+     00008259  A$stm8s_clk$271                    stm8s_clk
+ASxxxx Linker V03.00 + NoICE + sdld,  page 18.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CODE                                000080C9    000009CC =        2508. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00008259  Sstm8s_clk$CLK_HSICmd$68           stm8s_clk
+     0000825C  A$stm8s_clk$272                    stm8s_clk
+     0000825E  A$stm8s_clk$277                    stm8s_clk
+     0000825E  Sstm8s_clk$CLK_HSICmd$69           stm8s_clk
+     0000825E  Sstm8s_clk$CLK_HSICmd$70           stm8s_clk
+     00008261  A$stm8s_clk$280                    stm8s_clk
+     00008261  Sstm8s_clk$CLK_HSICmd$71           stm8s_clk
+     00008263  A$stm8s_clk$281                    stm8s_clk
+     00008265  A$stm8s_clk$285                    stm8s_clk
+     00008265  Sstm8s_clk$CLK_HSICmd$72           stm8s_clk
+     00008265  Sstm8s_clk$CLK_HSICmd$73           stm8s_clk
+     00008267  A$stm8s_clk$286                    stm8s_clk
+     0000826A  A$stm8s_clk$288                    stm8s_clk
+     0000826A  Sstm8s_clk$CLK_HSICmd$74           stm8s_clk
+     0000826C  A$stm8s_clk$293                    stm8s_clk
+     0000826C  Sstm8s_clk$CLK_HSICmd$75           stm8s_clk
+     0000826C  Sstm8s_clk$CLK_HSICmd$76           stm8s_clk
+     0000826E  A$stm8s_clk$294                    stm8s_clk
+     00008271  A$stm8s_clk$301                    stm8s_clk
+     00008271  Sstm8s_clk$CLK_HSICmd$77           stm8s_clk
+     00008271  Sstm8s_clk$CLK_HSICmd$78           stm8s_clk
+     00008271  Sstm8s_clk$CLK_HSICmd$79           stm8s_clk
+     00008271  XG$CLK_HSICmd$0$0                  stm8s_clk
+     00008272  A$stm8s_clk$312                    stm8s_clk
+     00008272  Sstm8s_clk$CLK_HSICmd$80           stm8s_clk
+     00008272  Sstm8s_clk$CLK_LSICmd$81           stm8s_clk
+     00008272  Sstm8s_clk$CLK_LSICmd$82           stm8s_clk
+     00008272  Sstm8s_clk$CLK_LSICmd$83           stm8s_clk
+     00008272  _CLK_LSICmd                        stm8s_clk
+     00008274  A$stm8s_clk$313                    stm8s_clk
+     00008276  A$stm8s_clk$314                    stm8s_clk
+     00008278  A$stm8s_clk$315                    stm8s_clk
+     00008279  A$stm8s_clk$316                    stm8s_clk
+     0000827B  A$stm8s_clk$318                    stm8s_clk
+     0000827B  Sstm8s_clk$CLK_LSICmd$84           stm8s_clk
+     0000827D  A$stm8s_clk$320                    stm8s_clk
+     0000827D  Sstm8s_clk$CLK_LSICmd$85           stm8s_clk
+     0000827E  A$stm8s_clk$321                    stm8s_clk
+     0000827F  A$stm8s_clk$323                    stm8s_clk
+     0000827F  Sstm8s_clk$CLK_LSICmd$86           stm8s_clk
+     00008281  A$stm8s_clk$325                    stm8s_clk
+     00008281  Sstm8s_clk$CLK_LSICmd$87           stm8s_clk
+     00008283  A$stm8s_clk$327                    stm8s_clk
+     00008283  Sstm8s_clk$CLK_LSICmd$88           stm8s_clk
+     00008285  A$stm8s_clk$329                    stm8s_clk
+     00008285  Sstm8s_clk$CLK_LSICmd$89           stm8s_clk
+     00008288  A$stm8s_clk$330                    stm8s_clk
+     0000828A  A$stm8s_clk$335                    stm8s_clk
+     0000828A  Sstm8s_clk$CLK_LSICmd$90           stm8s_clk
+     0000828A  Sstm8s_clk$CLK_LSICmd$91           stm8s_clk
+     0000828D  A$stm8s_clk$338                    stm8s_clk
+ASxxxx Linker V03.00 + NoICE + sdld,  page 19.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CODE                                000080C9    000009CC =        2508. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     0000828D  Sstm8s_clk$CLK_LSICmd$92           stm8s_clk
+     0000828F  A$stm8s_clk$339                    stm8s_clk
+     00008291  A$stm8s_clk$343                    stm8s_clk
+     00008291  Sstm8s_clk$CLK_LSICmd$93           stm8s_clk
+     00008291  Sstm8s_clk$CLK_LSICmd$94           stm8s_clk
+     00008293  A$stm8s_clk$344                    stm8s_clk
+     00008296  A$stm8s_clk$346                    stm8s_clk
+     00008296  Sstm8s_clk$CLK_LSICmd$95           stm8s_clk
+     00008298  A$stm8s_clk$351                    stm8s_clk
+     00008298  Sstm8s_clk$CLK_LSICmd$96           stm8s_clk
+     00008298  Sstm8s_clk$CLK_LSICmd$97           stm8s_clk
+     0000829A  A$stm8s_clk$352                    stm8s_clk
+     0000829D  A$stm8s_clk$359                    stm8s_clk
+     0000829D  Sstm8s_clk$CLK_LSICmd$100          stm8s_clk
+     0000829D  Sstm8s_clk$CLK_LSICmd$98           stm8s_clk
+     0000829D  Sstm8s_clk$CLK_LSICmd$99           stm8s_clk
+     0000829D  XG$CLK_LSICmd$0$0                  stm8s_clk
+     0000829E  A$stm8s_clk$370                    stm8s_clk
+     0000829E  Sstm8s_clk$CLK_CCOCmd$102          stm8s_clk
+     0000829E  Sstm8s_clk$CLK_CCOCmd$103          stm8s_clk
+     0000829E  Sstm8s_clk$CLK_CCOCmd$104          stm8s_clk
+     0000829E  Sstm8s_clk$CLK_LSICmd$101          stm8s_clk
+     0000829E  _CLK_CCOCmd                        stm8s_clk
+     000082A0  A$stm8s_clk$371                    stm8s_clk
+     000082A2  A$stm8s_clk$372                    stm8s_clk
+     000082A4  A$stm8s_clk$373                    stm8s_clk
+     000082A5  A$stm8s_clk$374                    stm8s_clk
+     000082A7  A$stm8s_clk$376                    stm8s_clk
+     000082A7  Sstm8s_clk$CLK_CCOCmd$105          stm8s_clk
+     000082A9  A$stm8s_clk$378                    stm8s_clk
+     000082A9  Sstm8s_clk$CLK_CCOCmd$106          stm8s_clk
+     000082AA  A$stm8s_clk$379                    stm8s_clk
+     000082AB  A$stm8s_clk$381                    stm8s_clk
+     000082AB  Sstm8s_clk$CLK_CCOCmd$107          stm8s_clk
+     000082AD  A$stm8s_clk$383                    stm8s_clk
+     000082AD  Sstm8s_clk$CLK_CCOCmd$108          stm8s_clk
+     000082AF  A$stm8s_clk$385                    stm8s_clk
+     000082AF  Sstm8s_clk$CLK_CCOCmd$109          stm8s_clk
+     000082B1  A$stm8s_clk$387                    stm8s_clk
+     000082B1  Sstm8s_clk$CLK_CCOCmd$110          stm8s_clk
+     000082B4  A$stm8s_clk$388                    stm8s_clk
+     000082B6  A$stm8s_clk$393                    stm8s_clk
+     000082B6  Sstm8s_clk$CLK_CCOCmd$111          stm8s_clk
+     000082B6  Sstm8s_clk$CLK_CCOCmd$112          stm8s_clk
+     000082B9  A$stm8s_clk$396                    stm8s_clk
+     000082B9  Sstm8s_clk$CLK_CCOCmd$113          stm8s_clk
+     000082BB  A$stm8s_clk$397                    stm8s_clk
+     000082BD  A$stm8s_clk$401                    stm8s_clk
+     000082BD  Sstm8s_clk$CLK_CCOCmd$114          stm8s_clk
+     000082BD  Sstm8s_clk$CLK_CCOCmd$115          stm8s_clk
+     000082BF  A$stm8s_clk$402                    stm8s_clk
+ASxxxx Linker V03.00 + NoICE + sdld,  page 20.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CODE                                000080C9    000009CC =        2508. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000082C2  A$stm8s_clk$404                    stm8s_clk
+     000082C2  Sstm8s_clk$CLK_CCOCmd$116          stm8s_clk
+     000082C4  A$stm8s_clk$409                    stm8s_clk
+     000082C4  Sstm8s_clk$CLK_CCOCmd$117          stm8s_clk
+     000082C4  Sstm8s_clk$CLK_CCOCmd$118          stm8s_clk
+     000082C6  A$stm8s_clk$410                    stm8s_clk
+     000082C9  A$stm8s_clk$417                    stm8s_clk
+     000082C9  Sstm8s_clk$CLK_CCOCmd$119          stm8s_clk
+     000082C9  Sstm8s_clk$CLK_CCOCmd$120          stm8s_clk
+     000082C9  Sstm8s_clk$CLK_CCOCmd$121          stm8s_clk
+     000082C9  XG$CLK_CCOCmd$0$0                  stm8s_clk
+     000082CA  A$stm8s_clk$428                    stm8s_clk
+     000082CA  Sstm8s_clk$CLK_CCOCmd$122          stm8s_clk
+     000082CA  Sstm8s_clk$CLK_ClockSwitchCmd$12   stm8s_clk
+     000082CA  Sstm8s_clk$CLK_ClockSwitchCmd$12   stm8s_clk
+     000082CA  Sstm8s_clk$CLK_ClockSwitchCmd$12   stm8s_clk
+     000082CA  _CLK_ClockSwitchCmd                stm8s_clk
+     000082CC  A$stm8s_clk$429                    stm8s_clk
+     000082CE  A$stm8s_clk$430                    stm8s_clk
+     000082D0  A$stm8s_clk$431                    stm8s_clk
+     000082D1  A$stm8s_clk$432                    stm8s_clk
+     000082D3  A$stm8s_clk$434                    stm8s_clk
+     000082D3  Sstm8s_clk$CLK_ClockSwitchCmd$12   stm8s_clk
+     000082D5  A$stm8s_clk$436                    stm8s_clk
+     000082D5  Sstm8s_clk$CLK_ClockSwitchCmd$12   stm8s_clk
+     000082D6  A$stm8s_clk$437                    stm8s_clk
+     000082D7  A$stm8s_clk$439                    stm8s_clk
+     000082D7  Sstm8s_clk$CLK_ClockSwitchCmd$12   stm8s_clk
+     000082D9  A$stm8s_clk$441                    stm8s_clk
+     000082D9  Sstm8s_clk$CLK_ClockSwitchCmd$12   stm8s_clk
+     000082DB  A$stm8s_clk$443                    stm8s_clk
+     000082DB  Sstm8s_clk$CLK_ClockSwitchCmd$13   stm8s_clk
+     000082DD  A$stm8s_clk$445                    stm8s_clk
+     000082DD  Sstm8s_clk$CLK_ClockSwitchCmd$13   stm8s_clk
+     000082E0  A$stm8s_clk$446                    stm8s_clk
+     000082E2  A$stm8s_clk$451                    stm8s_clk
+     000082E2  Sstm8s_clk$CLK_ClockSwitchCmd$13   stm8s_clk
+     000082E2  Sstm8s_clk$CLK_ClockSwitchCmd$13   stm8s_clk
+     000082E5  A$stm8s_clk$454                    stm8s_clk
+     000082E5  Sstm8s_clk$CLK_ClockSwitchCmd$13   stm8s_clk
+     000082E7  A$stm8s_clk$455                    stm8s_clk
+     000082E9  A$stm8s_clk$459                    stm8s_clk
+     000082E9  Sstm8s_clk$CLK_ClockSwitchCmd$13   stm8s_clk
+     000082E9  Sstm8s_clk$CLK_ClockSwitchCmd$13   stm8s_clk
+     000082EB  A$stm8s_clk$460                    stm8s_clk
+     000082EE  A$stm8s_clk$462                    stm8s_clk
+     000082EE  Sstm8s_clk$CLK_ClockSwitchCmd$13   stm8s_clk
+     000082F0  A$stm8s_clk$467                    stm8s_clk
+     000082F0  Sstm8s_clk$CLK_ClockSwitchCmd$13   stm8s_clk
+     000082F0  Sstm8s_clk$CLK_ClockSwitchCmd$13   stm8s_clk
+     000082F2  A$stm8s_clk$468                    stm8s_clk
+ASxxxx Linker V03.00 + NoICE + sdld,  page 21.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CODE                                000080C9    000009CC =        2508. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000082F5  A$stm8s_clk$475                    stm8s_clk
+     000082F5  Sstm8s_clk$CLK_ClockSwitchCmd$14   stm8s_clk
+     000082F5  Sstm8s_clk$CLK_ClockSwitchCmd$14   stm8s_clk
+     000082F5  Sstm8s_clk$CLK_ClockSwitchCmd$14   stm8s_clk
+     000082F5  XG$CLK_ClockSwitchCmd$0$0          stm8s_clk
+     000082F6  A$stm8s_clk$486                    stm8s_clk
+     000082F6  Sstm8s_clk$CLK_ClockSwitchCmd$14   stm8s_clk
+     000082F6  Sstm8s_clk$CLK_SlowActiveHaltWak   stm8s_clk
+     000082F6  Sstm8s_clk$CLK_SlowActiveHaltWak   stm8s_clk
+     000082F6  Sstm8s_clk$CLK_SlowActiveHaltWak   stm8s_clk
+     000082F6  _CLK_SlowActiveHaltWakeUpCmd       stm8s_clk
+     000082F8  A$stm8s_clk$487                    stm8s_clk
+     000082FA  A$stm8s_clk$488                    stm8s_clk
+     000082FC  A$stm8s_clk$489                    stm8s_clk
+     000082FD  A$stm8s_clk$490                    stm8s_clk
+     000082FF  A$stm8s_clk$492                    stm8s_clk
+     000082FF  Sstm8s_clk$CLK_SlowActiveHaltWak   stm8s_clk
+     00008301  A$stm8s_clk$494                    stm8s_clk
+     00008301  Sstm8s_clk$CLK_SlowActiveHaltWak   stm8s_clk
+     00008302  A$stm8s_clk$495                    stm8s_clk
+     00008303  A$stm8s_clk$497                    stm8s_clk
+     00008303  Sstm8s_clk$CLK_SlowActiveHaltWak   stm8s_clk
+     00008305  A$stm8s_clk$499                    stm8s_clk
+     00008305  Sstm8s_clk$CLK_SlowActiveHaltWak   stm8s_clk
+     00008307  A$stm8s_clk$501                    stm8s_clk
+     00008307  Sstm8s_clk$CLK_SlowActiveHaltWak   stm8s_clk
+     00008309  A$stm8s_clk$503                    stm8s_clk
+     00008309  Sstm8s_clk$CLK_SlowActiveHaltWak   stm8s_clk
+     0000830C  A$stm8s_clk$504                    stm8s_clk
+     0000830E  A$stm8s_clk$509                    stm8s_clk
+     0000830E  Sstm8s_clk$CLK_SlowActiveHaltWak   stm8s_clk
+     0000830E  Sstm8s_clk$CLK_SlowActiveHaltWak   stm8s_clk
+     00008311  A$stm8s_clk$512                    stm8s_clk
+     00008311  Sstm8s_clk$CLK_SlowActiveHaltWak   stm8s_clk
+     00008313  A$stm8s_clk$513                    stm8s_clk
+     00008315  A$stm8s_clk$517                    stm8s_clk
+     00008315  Sstm8s_clk$CLK_SlowActiveHaltWak   stm8s_clk
+     00008315  Sstm8s_clk$CLK_SlowActiveHaltWak   stm8s_clk
+     00008317  A$stm8s_clk$518                    stm8s_clk
+     0000831A  A$stm8s_clk$520                    stm8s_clk
+     0000831A  Sstm8s_clk$CLK_SlowActiveHaltWak   stm8s_clk
+     0000831C  A$stm8s_clk$525                    stm8s_clk
+     0000831C  Sstm8s_clk$CLK_SlowActiveHaltWak   stm8s_clk
+     0000831C  Sstm8s_clk$CLK_SlowActiveHaltWak   stm8s_clk
+     0000831E  A$stm8s_clk$526                    stm8s_clk
+     00008321  A$stm8s_clk$533                    stm8s_clk
+     00008321  Sstm8s_clk$CLK_SlowActiveHaltWak   stm8s_clk
+     00008321  Sstm8s_clk$CLK_SlowActiveHaltWak   stm8s_clk
+     00008321  Sstm8s_clk$CLK_SlowActiveHaltWak   stm8s_clk
+     00008321  XG$CLK_SlowActiveHaltWakeUpCmd$0   stm8s_clk
+     00008322  A$stm8s_clk$542                    stm8s_clk
+ASxxxx Linker V03.00 + NoICE + sdld,  page 22.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CODE                                000080C9    000009CC =        2508. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00008322  Sstm8s_clk$CLK_PeripheralClockCo   stm8s_clk
+     00008322  Sstm8s_clk$CLK_PeripheralClockCo   stm8s_clk
+     00008322  Sstm8s_clk$CLK_SlowActiveHaltWak   stm8s_clk
+     00008322  _CLK_PeripheralClockConfig         stm8s_clk
+     00008323  A$stm8s_clk$546                    stm8s_clk
+     00008323  Sstm8s_clk$CLK_PeripheralClockCo   stm8s_clk
+     00008323  Sstm8s_clk$CLK_PeripheralClockCo   stm8s_clk
+     00008325  A$stm8s_clk$547                    stm8s_clk
+     00008327  A$stm8s_clk$548                    stm8s_clk
+     00008329  A$stm8s_clk$549                    stm8s_clk
+     0000832A  A$stm8s_clk$550                    stm8s_clk
+     0000832C  A$stm8s_clk$552                    stm8s_clk
+     0000832C  Sstm8s_clk$CLK_PeripheralClockCo   stm8s_clk
+     0000832E  A$stm8s_clk$554                    stm8s_clk
+     0000832E  Sstm8s_clk$CLK_PeripheralClockCo   stm8s_clk
+     00008330  A$stm8s_clk$556                    stm8s_clk
+     00008330  Sstm8s_clk$CLK_PeripheralClockCo   stm8s_clk
+     00008331  A$stm8s_clk$557                    stm8s_clk
+     00008332  A$stm8s_clk$559                    stm8s_clk
+     00008332  Sstm8s_clk$CLK_PeripheralClockCo   stm8s_clk
+     00008334  A$stm8s_clk$561                    stm8s_clk
+     00008334  Sstm8s_clk$CLK_PeripheralClockCo   stm8s_clk
+     00008336  A$stm8s_clk$563                    stm8s_clk
+     00008336  Sstm8s_clk$CLK_PeripheralClockCo   stm8s_clk
+     00008339  A$stm8s_clk$564                    stm8s_clk
+     0000833B  A$stm8s_clk$569                    stm8s_clk
+     0000833B  Sstm8s_clk$CLK_PeripheralClockCo   stm8s_clk
+     0000833B  Sstm8s_clk$CLK_PeripheralClockCo   stm8s_clk
+     0000833D  A$stm8s_clk$570                    stm8s_clk
+     0000833F  A$stm8s_clk$571                    stm8s_clk
+     00008342  A$stm8s_clk$573                    stm8s_clk
+     00008344  A$stm8s_clk$574                    stm8s_clk
+     00008345  A$stm8s_clk$575                    stm8s_clk
+     00008347  A$stm8s_clk$576                    stm8s_clk
+     0000834A  A$stm8s_clk$579                    stm8s_clk
+     0000834A  Sstm8s_clk$CLK_PeripheralClockCo   stm8s_clk
+     0000834C  A$stm8s_clk$580                    stm8s_clk
+     0000834E  A$stm8s_clk$581                    stm8s_clk
+     00008350  A$stm8s_clk$582                    stm8s_clk
+     00008352  A$stm8s_clk$585                    stm8s_clk
+     00008353  A$stm8s_clk$588                    stm8s_clk
+     00008353  Sstm8s_clk$CLK_PeripheralClockCo   stm8s_clk
+     00008354  A$stm8s_clk$589                    stm8s_clk
+     00008356  A$stm8s_clk$590                    stm8s_clk
+     00008359  A$stm8s_clk$592                    stm8s_clk
+     0000835A  A$stm8s_clk$593                    stm8s_clk
+     0000835C  A$stm8s_clk$594                    stm8s_clk
+     0000835F  A$stm8s_clk$596                    stm8s_clk
+     00008361  A$stm8s_clk$597                    stm8s_clk
+     00008363  A$stm8s_clk$598                    stm8s_clk
+     00008365  A$stm8s_clk$599                    stm8s_clk
+ASxxxx Linker V03.00 + NoICE + sdld,  page 23.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CODE                                000080C9    000009CC =        2508. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00008368  A$stm8s_clk$602                    stm8s_clk
+     00008368  Sstm8s_clk$CLK_PeripheralClockCo   stm8s_clk
+     0000836A  A$stm8s_clk$603                    stm8s_clk
+     0000836C  A$stm8s_clk$604                    stm8s_clk
+     0000836E  A$stm8s_clk$605                    stm8s_clk
+     0000836F  A$stm8s_clk$606                    stm8s_clk
+     00008370  A$stm8s_clk$607                    stm8s_clk
+     00008372  A$stm8s_clk$609                    stm8s_clk
+     00008373  A$stm8s_clk$610                    stm8s_clk
+     00008374  A$stm8s_clk$613                    stm8s_clk
+     00008374  Sstm8s_clk$CLK_PeripheralClockCo   stm8s_clk
+     00008375  A$stm8s_clk$614                    stm8s_clk
+     00008376  A$stm8s_clk$615                    stm8s_clk
+     00008378  A$stm8s_clk$616                    stm8s_clk
+     0000837B  A$stm8s_clk$618                    stm8s_clk
+     0000837D  A$stm8s_clk$619                    stm8s_clk
+     0000837F  A$stm8s_clk$620                    stm8s_clk
+     00008381  A$stm8s_clk$621                    stm8s_clk
+     00008383  A$stm8s_clk$624                    stm8s_clk
+     00008384  A$stm8s_clk$627                    stm8s_clk
+     00008384  Sstm8s_clk$CLK_PeripheralClockCo   stm8s_clk
+     00008385  A$stm8s_clk$628                    stm8s_clk
+     00008387  A$stm8s_clk$629                    stm8s_clk
+     00008388  A$stm8s_clk$630                    stm8s_clk
+     0000838A  A$stm8s_clk$631                    stm8s_clk
+     0000838B  A$stm8s_clk$632                    stm8s_clk
+     0000838C  A$stm8s_clk$633                    stm8s_clk
+     0000838E  A$stm8s_clk$634                    stm8s_clk
+     00008390  A$stm8s_clk$635                    stm8s_clk
+     00008392  A$stm8s_clk$636                    stm8s_clk
+     00008394  A$stm8s_clk$638                    stm8s_clk
+     00008394  Sstm8s_clk$CLK_PeripheralClockCo   stm8s_clk
+     00008396  A$stm8s_clk$639                    stm8s_clk
+     00008398  A$stm8s_clk$640                    stm8s_clk
+     0000839A  A$stm8s_clk$642                    stm8s_clk
+     0000839A  Sstm8s_clk$CLK_PeripheralClockCo   stm8s_clk
+     0000839C  A$stm8s_clk$643                    stm8s_clk
+     0000839E  A$stm8s_clk$644                    stm8s_clk
+     000083A0  A$stm8s_clk$646                    stm8s_clk
+     000083A0  Sstm8s_clk$CLK_PeripheralClockCo   stm8s_clk
+     000083A2  A$stm8s_clk$647                    stm8s_clk
+     000083A4  A$stm8s_clk$648                    stm8s_clk
+     000083A6  A$stm8s_clk$650                    stm8s_clk
+     000083A6  Sstm8s_clk$CLK_PeripheralClockCo   stm8s_clk
+     000083A8  A$stm8s_clk$651                    stm8s_clk
+     000083AA  A$stm8s_clk$652                    stm8s_clk
+     000083AC  A$stm8s_clk$654                    stm8s_clk
+     000083AC  Sstm8s_clk$CLK_PeripheralClockCo   stm8s_clk
+     000083AE  A$stm8s_clk$656                    stm8s_clk
+     000083AE  Sstm8s_clk$CLK_PeripheralClockCo   stm8s_clk
+     000083B0  A$stm8s_clk$658                    stm8s_clk
+ASxxxx Linker V03.00 + NoICE + sdld,  page 24.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CODE                                000080C9    000009CC =        2508. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000083B0  Sstm8s_clk$CLK_PeripheralClockCo   stm8s_clk
+     000083B1  A$stm8s_clk$659                    stm8s_clk
+     000083B2  A$stm8s_clk$661                    stm8s_clk
+     000083B2  Sstm8s_clk$CLK_PeripheralClockCo   stm8s_clk
+     000083B4  A$stm8s_clk$663                    stm8s_clk
+     000083B4  Sstm8s_clk$CLK_PeripheralClockCo   stm8s_clk
+     000083B6  A$stm8s_clk$665                    stm8s_clk
+     000083B6  Sstm8s_clk$CLK_PeripheralClockCo   stm8s_clk
+     000083B9  A$stm8s_clk$666                    stm8s_clk
+     000083BB  A$stm8s_clk$671                    stm8s_clk
+     000083BB  Sstm8s_clk$CLK_PeripheralClockCo   stm8s_clk
+     000083BB  Sstm8s_clk$CLK_PeripheralClockCo   stm8s_clk
+     000083BD  A$stm8s_clk$672                    stm8s_clk
+     000083BF  A$stm8s_clk$673                    stm8s_clk
+     000083C0  A$stm8s_clk$675                    stm8s_clk
+     000083C0  Sstm8s_clk$CLK_PeripheralClockCo   stm8s_clk
+     000083C2  A$stm8s_clk$676                    stm8s_clk
+     000083C4  A$stm8s_clk$677                    stm8s_clk
+     000083C5  A$stm8s_clk$679                    stm8s_clk
+     000083C5  Sstm8s_clk$CLK_PeripheralClockCo   stm8s_clk
+     000083C6  A$stm8s_clk$680                    stm8s_clk
+     000083C8  A$stm8s_clk$682                    stm8s_clk
+     000083CA  A$stm8s_clk$683                    stm8s_clk
+     000083CB  A$stm8s_clk$684                    stm8s_clk
+     000083CD  A$stm8s_clk$688                    stm8s_clk
+     000083CD  Sstm8s_clk$CLK_PeripheralClockCo   stm8s_clk
+     000083CF  A$stm8s_clk$689                    stm8s_clk
+     000083D0  A$stm8s_clk$690                    stm8s_clk
+     000083D2  A$stm8s_clk$693                    stm8s_clk
+     000083D2  Sstm8s_clk$CLK_PeripheralClockCo   stm8s_clk
+     000083D4  A$stm8s_clk$694                    stm8s_clk
+     000083D6  A$stm8s_clk$695                    stm8s_clk
+     000083D8  A$stm8s_clk$698                    stm8s_clk
+     000083D8  Sstm8s_clk$CLK_PeripheralClockCo   stm8s_clk
+     000083DB  A$stm8s_clk$702                    stm8s_clk
+     000083DB  Sstm8s_clk$CLK_PeripheralClockCo   stm8s_clk
+     000083DB  Sstm8s_clk$CLK_PeripheralClockCo   stm8s_clk
+     000083DD  A$stm8s_clk$703                    stm8s_clk
+     000083DF  A$stm8s_clk$707                    stm8s_clk
+     000083DF  Sstm8s_clk$CLK_PeripheralClockCo   stm8s_clk
+     000083DF  Sstm8s_clk$CLK_PeripheralClockCo   stm8s_clk
+     000083E1  A$stm8s_clk$708                    stm8s_clk
+     000083E4  A$stm8s_clk$710                    stm8s_clk
+     000083E4  Sstm8s_clk$CLK_PeripheralClockCo   stm8s_clk
+     000083E6  A$stm8s_clk$715                    stm8s_clk
+     000083E6  Sstm8s_clk$CLK_PeripheralClockCo   stm8s_clk
+     000083E6  Sstm8s_clk$CLK_PeripheralClockCo   stm8s_clk
+     000083E8  A$stm8s_clk$716                    stm8s_clk
+     000083EB  A$stm8s_clk$718                    stm8s_clk
+     000083EB  Sstm8s_clk$CLK_PeripheralClockCo   stm8s_clk
+     000083ED  A$stm8s_clk$722                    stm8s_clk
+ASxxxx Linker V03.00 + NoICE + sdld,  page 25.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CODE                                000080C9    000009CC =        2508. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000083ED  Sstm8s_clk$CLK_PeripheralClockCo   stm8s_clk
+     000083F0  A$stm8s_clk$726                    stm8s_clk
+     000083F0  Sstm8s_clk$CLK_PeripheralClockCo   stm8s_clk
+     000083F0  Sstm8s_clk$CLK_PeripheralClockCo   stm8s_clk
+     000083F2  A$stm8s_clk$727                    stm8s_clk
+     000083F4  A$stm8s_clk$731                    stm8s_clk
+     000083F4  Sstm8s_clk$CLK_PeripheralClockCo   stm8s_clk
+     000083F4  Sstm8s_clk$CLK_PeripheralClockCo   stm8s_clk
+     000083F6  A$stm8s_clk$732                    stm8s_clk
+     000083F9  A$stm8s_clk$734                    stm8s_clk
+     000083F9  Sstm8s_clk$CLK_PeripheralClockCo   stm8s_clk
+     000083FB  A$stm8s_clk$739                    stm8s_clk
+     000083FB  Sstm8s_clk$CLK_PeripheralClockCo   stm8s_clk
+     000083FB  Sstm8s_clk$CLK_PeripheralClockCo   stm8s_clk
+     000083FD  A$stm8s_clk$740                    stm8s_clk
+     00008400  A$stm8s_clk$745                    stm8s_clk
+     00008400  Sstm8s_clk$CLK_PeripheralClockCo   stm8s_clk
+     00008400  Sstm8s_clk$CLK_PeripheralClockCo   stm8s_clk
+     00008401  A$stm8s_clk$749                    stm8s_clk
+     00008401  Sstm8s_clk$CLK_PeripheralClockCo   stm8s_clk
+     00008401  Sstm8s_clk$CLK_PeripheralClockCo   stm8s_clk
+     00008401  XG$CLK_PeripheralClockConfig$0$0   stm8s_clk
+     00008402  A$stm8s_clk$758                    stm8s_clk
+     00008402  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     00008402  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     00008402  Sstm8s_clk$CLK_PeripheralClockCo   stm8s_clk
+     00008402  _CLK_ClockSwitchConfig             stm8s_clk
+     00008403  A$stm8s_clk$762                    stm8s_clk
+     00008403  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     00008403  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     00008405  A$stm8s_clk$763                    stm8s_clk
+     00008407  A$stm8s_clk$764                    stm8s_clk
+     00008409  A$stm8s_clk$766                    stm8s_clk
+     00008409  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     0000840B  A$stm8s_clk$767                    stm8s_clk
+     0000840D  A$stm8s_clk$768                    stm8s_clk
+     0000840F  A$stm8s_clk$770                    stm8s_clk
+     0000840F  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     00008411  A$stm8s_clk$771                    stm8s_clk
+     00008413  A$stm8s_clk$772                    stm8s_clk
+     00008415  A$stm8s_clk$774                    stm8s_clk
+     00008415  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     00008417  A$stm8s_clk$776                    stm8s_clk
+     00008417  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     00008419  A$stm8s_clk$778                    stm8s_clk
+     00008419  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     0000841A  A$stm8s_clk$779                    stm8s_clk
+     0000841B  A$stm8s_clk$781                    stm8s_clk
+     0000841B  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     0000841D  A$stm8s_clk$783                    stm8s_clk
+     0000841D  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+ASxxxx Linker V03.00 + NoICE + sdld,  page 26.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CODE                                000080C9    000009CC =        2508. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     0000841F  A$stm8s_clk$785                    stm8s_clk
+     0000841F  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     00008422  A$stm8s_clk$786                    stm8s_clk
+     00008424  A$stm8s_clk$791                    stm8s_clk
+     00008424  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     00008424  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     00008426  A$stm8s_clk$792                    stm8s_clk
+     00008427  A$stm8s_clk$793                    stm8s_clk
+     00008429  A$stm8s_clk$794                    stm8s_clk
+     0000842B  A$stm8s_clk$795                    stm8s_clk
+     0000842E  A$stm8s_clk$798                    stm8s_clk
+     00008430  A$stm8s_clk$801                    stm8s_clk
+     00008430  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     00008432  A$stm8s_clk$802                    stm8s_clk
+     00008434  A$stm8s_clk$803                    stm8s_clk
+     00008436  A$stm8s_clk$804                    stm8s_clk
+     00008438  A$stm8s_clk$805                    stm8s_clk
+     0000843A  A$stm8s_clk$807                    stm8s_clk
+     0000843A  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     0000843C  A$stm8s_clk$809                    stm8s_clk
+     0000843C  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     0000843D  A$stm8s_clk$810                    stm8s_clk
+     0000843E  A$stm8s_clk$812                    stm8s_clk
+     0000843E  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     00008440  A$stm8s_clk$814                    stm8s_clk
+     00008440  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     00008442  A$stm8s_clk$816                    stm8s_clk
+     00008442  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     00008445  A$stm8s_clk$817                    stm8s_clk
+     00008447  A$stm8s_clk$822                    stm8s_clk
+     00008447  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     00008447  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     00008449  A$stm8s_clk$823                    stm8s_clk
+     0000844B  A$stm8s_clk$824                    stm8s_clk
+     0000844D  A$stm8s_clk$825                    stm8s_clk
+     0000844E  A$stm8s_clk$826                    stm8s_clk
+     00008450  A$stm8s_clk$828                    stm8s_clk
+     00008450  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     00008452  A$stm8s_clk$830                    stm8s_clk
+     00008452  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     00008454  A$stm8s_clk$832                    stm8s_clk
+     00008454  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     00008455  A$stm8s_clk$833                    stm8s_clk
+     00008456  A$stm8s_clk$835                    stm8s_clk
+     00008456  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     00008458  A$stm8s_clk$837                    stm8s_clk
+     00008458  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     0000845A  A$stm8s_clk$839                    stm8s_clk
+     0000845A  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     0000845D  A$stm8s_clk$840                    stm8s_clk
+     0000845F  A$stm8s_clk$845                    stm8s_clk
+ASxxxx Linker V03.00 + NoICE + sdld,  page 27.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CODE                                000080C9    000009CC =        2508. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     0000845F  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     0000845F  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     00008461  A$stm8s_clk$846                    stm8s_clk
+     00008463  A$stm8s_clk$847                    stm8s_clk
+     00008465  A$stm8s_clk$848                    stm8s_clk
+     00008466  A$stm8s_clk$849                    stm8s_clk
+     00008468  A$stm8s_clk$851                    stm8s_clk
+     00008468  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     0000846A  A$stm8s_clk$853                    stm8s_clk
+     0000846A  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     0000846C  A$stm8s_clk$855                    stm8s_clk
+     0000846C  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     0000846D  A$stm8s_clk$856                    stm8s_clk
+     0000846E  A$stm8s_clk$858                    stm8s_clk
+     0000846E  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     00008470  A$stm8s_clk$860                    stm8s_clk
+     00008470  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     00008472  A$stm8s_clk$862                    stm8s_clk
+     00008472  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     00008475  A$stm8s_clk$863                    stm8s_clk
+     00008477  A$stm8s_clk$868                    stm8s_clk
+     00008477  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     00008477  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     0000847A  A$stm8s_clk$869                    stm8s_clk
+     0000847C  A$stm8s_clk$872                    stm8s_clk
+     0000847C  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     0000847F  A$stm8s_clk$873                    stm8s_clk
+     00008480  A$stm8s_clk$876                    stm8s_clk
+     00008480  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     00008482  A$stm8s_clk$877                    stm8s_clk
+     00008484  A$stm8s_clk$878                    stm8s_clk
+     00008487  A$stm8s_clk$883                    stm8s_clk
+     00008487  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     00008487  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     00008488  A$stm8s_clk$884                    stm8s_clk
+     0000848A  A$stm8s_clk$885                    stm8s_clk
+     0000848D  A$stm8s_clk$887                    stm8s_clk
+     0000848D  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     00008490  A$stm8s_clk$890                    stm8s_clk
+     00008490  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     00008492  A$stm8s_clk$891                    stm8s_clk
+     00008494  A$stm8s_clk$895                    stm8s_clk
+     00008494  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     00008494  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     00008496  A$stm8s_clk$896                    stm8s_clk
+     00008499  A$stm8s_clk$898                    stm8s_clk
+     00008499  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     0000849B  A$stm8s_clk$903                    stm8s_clk
+     0000849B  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     0000849B  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     0000849D  A$stm8s_clk$904                    stm8s_clk
+ASxxxx Linker V03.00 + NoICE + sdld,  page 28.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CODE                                000080C9    000009CC =        2508. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000084A0  A$stm8s_clk$909                    stm8s_clk
+     000084A0  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     000084A0  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     000084A3  A$stm8s_clk$910                    stm8s_clk
+     000084A5  A$stm8s_clk$911                    stm8s_clk
+     000084A6  A$stm8s_clk$915                    stm8s_clk
+     000084A6  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     000084A6  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     000084A7  A$stm8s_clk$916                    stm8s_clk
+     000084A8  A$stm8s_clk$918                    stm8s_clk
+     000084AB  A$stm8s_clk$919                    stm8s_clk
+     000084AC  A$stm8s_clk$920                    stm8s_clk
+     000084AE  A$stm8s_clk$921                    stm8s_clk
+     000084AF  A$stm8s_clk$922                    stm8s_clk
+     000084B1  A$stm8s_clk$926                    stm8s_clk
+     000084B1  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     000084B1  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     000084B2  A$stm8s_clk$928                    stm8s_clk
+     000084B2  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     000084B4  A$stm8s_clk$932                    stm8s_clk
+     000084B4  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     000084B5  A$stm8s_clk$933                    stm8s_clk
+     000084B7  A$stm8s_clk$937                    stm8s_clk
+     000084B7  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     000084B7  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     000084B9  A$stm8s_clk$938                    stm8s_clk
+     000084BA  A$stm8s_clk$940                    stm8s_clk
+     000084BA  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     000084BD  A$stm8s_clk$945                    stm8s_clk
+     000084BD  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     000084BD  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     000084BE  A$stm8s_clk$947                    stm8s_clk
+     000084BE  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     000084C1  A$stm8s_clk$952                    stm8s_clk
+     000084C1  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     000084C1  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     000084C3  A$stm8s_clk$953                    stm8s_clk
+     000084C5  A$stm8s_clk$957                    stm8s_clk
+     000084C5  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     000084C5  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     000084C6  A$stm8s_clk$958                    stm8s_clk
+     000084C8  A$stm8s_clk$959                    stm8s_clk
+     000084CB  A$stm8s_clk$961                    stm8s_clk
+     000084CB  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     000084CD  A$stm8s_clk$966                    stm8s_clk
+     000084CD  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     000084CD  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     000084CE  A$stm8s_clk$967                    stm8s_clk
+     000084D0  A$stm8s_clk$968                    stm8s_clk
+     000084D3  A$stm8s_clk$973                    stm8s_clk
+     000084D3  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+ASxxxx Linker V03.00 + NoICE + sdld,  page 29.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CODE                                000080C9    000009CC =        2508. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000084D3  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     000084D6  A$stm8s_clk$974                    stm8s_clk
+     000084D8  A$stm8s_clk$975                    stm8s_clk
+     000084D9  A$stm8s_clk$979                    stm8s_clk
+     000084D9  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     000084D9  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     000084DA  A$stm8s_clk$980                    stm8s_clk
+     000084DB  A$stm8s_clk$982                    stm8s_clk
+     000084DE  A$stm8s_clk$983                    stm8s_clk
+     000084E0  A$stm8s_clk$984                    stm8s_clk
+     000084E2  A$stm8s_clk$985                    stm8s_clk
+     000084E3  A$stm8s_clk$986                    stm8s_clk
+     000084E5  A$stm8s_clk$990                    stm8s_clk
+     000084E5  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     000084E5  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     000084E6  A$stm8s_clk$992                    stm8s_clk
+     000084E6  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     000084E8  A$stm8s_clk$996                    stm8s_clk
+     000084E8  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     000084E9  A$stm8s_clk$997                    stm8s_clk
+     000084EB  A$stm8s_clk$1001                   stm8s_clk
+     000084EB  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     000084EB  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     000084EF  A$stm8s_clk$1004                   stm8s_clk
+     000084EF  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     000084F1  A$stm8s_clk$1005                   stm8s_clk
+     000084F2  A$stm8s_clk$1007                   stm8s_clk
+     000084F2  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     000084F4  A$stm8s_clk$1012                   stm8s_clk
+     000084F4  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     000084F4  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     000084F5  A$stm8s_clk$1017                   stm8s_clk
+     000084F5  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     000084F5  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     000084F6  A$stm8s_clk$1018                   stm8s_clk
+     000084F7  A$stm8s_clk$1019                   stm8s_clk
+     000084F9  A$stm8s_clk$1020                   stm8s_clk
+     000084FC  A$stm8s_clk$1025                   stm8s_clk
+     000084FC  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     000084FC  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     000084FE  A$stm8s_clk$1026                   stm8s_clk
+     00008500  A$stm8s_clk$1027                   stm8s_clk
+     00008502  A$stm8s_clk$1028                   stm8s_clk
+     00008504  A$stm8s_clk$1029                   stm8s_clk
+     00008506  A$stm8s_clk$1034                   stm8s_clk
+     00008506  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     00008506  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     00008506  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     0000850A  A$stm8s_clk$1036                   stm8s_clk
+     0000850A  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     0000850C  A$stm8s_clk$1040                   stm8s_clk
+ASxxxx Linker V03.00 + NoICE + sdld,  page 30.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CODE                                000080C9    000009CC =        2508. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     0000850C  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     0000850E  A$stm8s_clk$1041                   stm8s_clk
+     00008510  A$stm8s_clk$1042                   stm8s_clk
+     00008512  A$stm8s_clk$1043                   stm8s_clk
+     00008514  A$stm8s_clk$1044                   stm8s_clk
+     00008516  A$stm8s_clk$1049                   stm8s_clk
+     00008516  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     00008516  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     00008516  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     0000851A  A$stm8s_clk$1051                   stm8s_clk
+     0000851A  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     0000851C  A$stm8s_clk$1055                   stm8s_clk
+     0000851C  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     0000851E  A$stm8s_clk$1056                   stm8s_clk
+     00008520  A$stm8s_clk$1057                   stm8s_clk
+     00008522  A$stm8s_clk$1058                   stm8s_clk
+     00008524  A$stm8s_clk$1059                   stm8s_clk
+     00008526  A$stm8s_clk$1064                   stm8s_clk
+     00008526  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     00008526  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     00008526  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     0000852A  A$stm8s_clk$1069                   stm8s_clk
+     0000852A  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     0000852A  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     0000852B  A$stm8s_clk$1072                   stm8s_clk
+     0000852B  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     0000852D  A$stm8s_clk$1076                   stm8s_clk
+     0000852D  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     0000852D  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     0000852D  XG$CLK_ClockSwitchConfig$0$0       stm8s_clk
+     0000852E  A$stm8s_clk$1087                   stm8s_clk
+     0000852E  Sstm8s_clk$CLK_ClockSwitchConfig   stm8s_clk
+     0000852E  Sstm8s_clk$CLK_HSIPrescalerConfi   stm8s_clk
+     0000852E  Sstm8s_clk$CLK_HSIPrescalerConfi   stm8s_clk
+     0000852E  Sstm8s_clk$CLK_HSIPrescalerConfi   stm8s_clk
+     0000852E  _CLK_HSIPrescalerConfig            stm8s_clk
+     00008530  A$stm8s_clk$1088                   stm8s_clk
+     00008532  A$stm8s_clk$1089                   stm8s_clk
+     00008534  A$stm8s_clk$1090                   stm8s_clk
+     00008536  A$stm8s_clk$1091                   stm8s_clk
+     00008538  A$stm8s_clk$1093                   stm8s_clk
+     00008538  Sstm8s_clk$CLK_HSIPrescalerConfi   stm8s_clk
+     0000853A  A$stm8s_clk$1094                   stm8s_clk
+     0000853C  A$stm8s_clk$1095                   stm8s_clk
+     0000853E  A$stm8s_clk$1097                   stm8s_clk
+     0000853E  Sstm8s_clk$CLK_HSIPrescalerConfi   stm8s_clk
+     00008540  A$stm8s_clk$1098                   stm8s_clk
+     00008542  A$stm8s_clk$1099                   stm8s_clk
+     00008544  A$stm8s_clk$1101                   stm8s_clk
+     00008544  Sstm8s_clk$CLK_HSIPrescalerConfi   stm8s_clk
+     00008546  A$stm8s_clk$1103                   stm8s_clk
+ASxxxx Linker V03.00 + NoICE + sdld,  page 31.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CODE                                000080C9    000009CC =        2508. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00008546  Sstm8s_clk$CLK_HSIPrescalerConfi   stm8s_clk
+     00008548  A$stm8s_clk$1105                   stm8s_clk
+     00008548  Sstm8s_clk$CLK_HSIPrescalerConfi   stm8s_clk
+     00008549  A$stm8s_clk$1106                   stm8s_clk
+     0000854A  A$stm8s_clk$1108                   stm8s_clk
+     0000854A  Sstm8s_clk$CLK_HSIPrescalerConfi   stm8s_clk
+     0000854C  A$stm8s_clk$1110                   stm8s_clk
+     0000854C  Sstm8s_clk$CLK_HSIPrescalerConfi   stm8s_clk
+     0000854E  A$stm8s_clk$1112                   stm8s_clk
+     0000854E  Sstm8s_clk$CLK_HSIPrescalerConfi   stm8s_clk
+     00008551  A$stm8s_clk$1113                   stm8s_clk
+     00008553  A$stm8s_clk$1118                   stm8s_clk
+     00008553  Sstm8s_clk$CLK_HSIPrescalerConfi   stm8s_clk
+     00008553  Sstm8s_clk$CLK_HSIPrescalerConfi   stm8s_clk
+     00008556  A$stm8s_clk$1119                   stm8s_clk
+     00008558  A$stm8s_clk$1120                   stm8s_clk
+     0000855B  A$stm8s_clk$1123                   stm8s_clk
+     0000855B  Sstm8s_clk$CLK_HSIPrescalerConfi   stm8s_clk
+     0000855E  A$stm8s_clk$1124                   stm8s_clk
+     00008560  A$stm8s_clk$1125                   stm8s_clk
+     00008563  A$stm8s_clk$1130                   stm8s_clk
+     00008563  Sstm8s_clk$CLK_HSIPrescalerConfi   stm8s_clk
+     00008563  Sstm8s_clk$CLK_HSIPrescalerConfi   stm8s_clk
+     00008563  XG$CLK_HSIPrescalerConfig$0$0      stm8s_clk
+     00008564  A$stm8s_clk$1141                   stm8s_clk
+     00008564  Sstm8s_clk$CLK_CCOConfig$344       stm8s_clk
+     00008564  Sstm8s_clk$CLK_CCOConfig$345       stm8s_clk
+     00008564  Sstm8s_clk$CLK_CCOConfig$346       stm8s_clk
+     00008564  Sstm8s_clk$CLK_HSIPrescalerConfi   stm8s_clk
+     00008564  _CLK_CCOConfig                     stm8s_clk
+     00008566  A$stm8s_clk$1142                   stm8s_clk
+     00008568  A$stm8s_clk$1143                   stm8s_clk
+     0000856B  A$stm8s_clk$1145                   stm8s_clk
+     0000856D  A$stm8s_clk$1146                   stm8s_clk
+     0000856F  A$stm8s_clk$1147                   stm8s_clk
+     00008571  A$stm8s_clk$1148                   stm8s_clk
+     00008574  A$stm8s_clk$1151                   stm8s_clk
+     00008574  Sstm8s_clk$CLK_CCOConfig$347       stm8s_clk
+     00008576  A$stm8s_clk$1152                   stm8s_clk
+     00008578  A$stm8s_clk$1153                   stm8s_clk
+     0000857A  A$stm8s_clk$1154                   stm8s_clk
+     0000857D  A$stm8s_clk$1157                   stm8s_clk
+     0000857D  Sstm8s_clk$CLK_CCOConfig$348       stm8s_clk
+     0000857F  A$stm8s_clk$1158                   stm8s_clk
+     00008581  A$stm8s_clk$1159                   stm8s_clk
+     00008583  A$stm8s_clk$1160                   stm8s_clk
+     00008586  A$stm8s_clk$1163                   stm8s_clk
+     00008586  Sstm8s_clk$CLK_CCOConfig$349       stm8s_clk
+     00008588  A$stm8s_clk$1164                   stm8s_clk
+     0000858A  A$stm8s_clk$1165                   stm8s_clk
+     0000858C  A$stm8s_clk$1166                   stm8s_clk
+ASxxxx Linker V03.00 + NoICE + sdld,  page 32.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CODE                                000080C9    000009CC =        2508. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     0000858F  A$stm8s_clk$1169                   stm8s_clk
+     0000858F  Sstm8s_clk$CLK_CCOConfig$350       stm8s_clk
+     00008591  A$stm8s_clk$1170                   stm8s_clk
+     00008593  A$stm8s_clk$1171                   stm8s_clk
+     00008595  A$stm8s_clk$1172                   stm8s_clk
+     00008598  A$stm8s_clk$1175                   stm8s_clk
+     00008598  Sstm8s_clk$CLK_CCOConfig$351       stm8s_clk
+     0000859A  A$stm8s_clk$1176                   stm8s_clk
+     0000859C  A$stm8s_clk$1177                   stm8s_clk
+     0000859E  A$stm8s_clk$1179                   stm8s_clk
+     0000859E  Sstm8s_clk$CLK_CCOConfig$352       stm8s_clk
+     000085A0  A$stm8s_clk$1180                   stm8s_clk
+     000085A2  A$stm8s_clk$1181                   stm8s_clk
+     000085A4  A$stm8s_clk$1183                   stm8s_clk
+     000085A4  Sstm8s_clk$CLK_CCOConfig$353       stm8s_clk
+     000085A6  A$stm8s_clk$1184                   stm8s_clk
+     000085A8  A$stm8s_clk$1185                   stm8s_clk
+     000085AA  A$stm8s_clk$1187                   stm8s_clk
+     000085AA  Sstm8s_clk$CLK_CCOConfig$354       stm8s_clk
+     000085AC  A$stm8s_clk$1188                   stm8s_clk
+     000085AE  A$stm8s_clk$1189                   stm8s_clk
+     000085B0  A$stm8s_clk$1191                   stm8s_clk
+     000085B0  Sstm8s_clk$CLK_CCOConfig$355       stm8s_clk
+     000085B2  A$stm8s_clk$1192                   stm8s_clk
+     000085B4  A$stm8s_clk$1193                   stm8s_clk
+     000085B6  A$stm8s_clk$1195                   stm8s_clk
+     000085B6  Sstm8s_clk$CLK_CCOConfig$356       stm8s_clk
+     000085B8  A$stm8s_clk$1196                   stm8s_clk
+     000085BA  A$stm8s_clk$1197                   stm8s_clk
+     000085BC  A$stm8s_clk$1199                   stm8s_clk
+     000085BC  Sstm8s_clk$CLK_CCOConfig$357       stm8s_clk
+     000085BE  A$stm8s_clk$1200                   stm8s_clk
+     000085C0  A$stm8s_clk$1201                   stm8s_clk
+     000085C2  A$stm8s_clk$1203                   stm8s_clk
+     000085C2  Sstm8s_clk$CLK_CCOConfig$358       stm8s_clk
+     000085C4  A$stm8s_clk$1205                   stm8s_clk
+     000085C4  Sstm8s_clk$CLK_CCOConfig$359       stm8s_clk
+     000085C6  A$stm8s_clk$1207                   stm8s_clk
+     000085C6  Sstm8s_clk$CLK_CCOConfig$360       stm8s_clk
+     000085C7  A$stm8s_clk$1208                   stm8s_clk
+     000085C8  A$stm8s_clk$1210                   stm8s_clk
+     000085C8  Sstm8s_clk$CLK_CCOConfig$361       stm8s_clk
+     000085CA  A$stm8s_clk$1212                   stm8s_clk
+     000085CA  Sstm8s_clk$CLK_CCOConfig$362       stm8s_clk
+     000085CC  A$stm8s_clk$1214                   stm8s_clk
+     000085CC  Sstm8s_clk$CLK_CCOConfig$363       stm8s_clk
+     000085CF  A$stm8s_clk$1215                   stm8s_clk
+     000085D1  A$stm8s_clk$1220                   stm8s_clk
+     000085D1  Sstm8s_clk$CLK_CCOConfig$364       stm8s_clk
+     000085D1  Sstm8s_clk$CLK_CCOConfig$365       stm8s_clk
+     000085D4  A$stm8s_clk$1221                   stm8s_clk
+ASxxxx Linker V03.00 + NoICE + sdld,  page 33.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CODE                                000080C9    000009CC =        2508. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000085D6  A$stm8s_clk$1222                   stm8s_clk
+     000085D9  A$stm8s_clk$1225                   stm8s_clk
+     000085D9  Sstm8s_clk$CLK_CCOConfig$366       stm8s_clk
+     000085DC  A$stm8s_clk$1226                   stm8s_clk
+     000085DE  A$stm8s_clk$1227                   stm8s_clk
+     000085E1  A$stm8s_clk$1230                   stm8s_clk
+     000085E1  Sstm8s_clk$CLK_CCOConfig$367       stm8s_clk
+     000085E5  A$stm8s_clk$1235                   stm8s_clk
+     000085E5  Sstm8s_clk$CLK_CCOConfig$368       stm8s_clk
+     000085E5  Sstm8s_clk$CLK_CCOConfig$369       stm8s_clk
+     000085E5  XG$CLK_CCOConfig$0$0               stm8s_clk
+     000085E6  A$stm8s_clk$1244                   stm8s_clk
+     000085E6  Sstm8s_clk$CLK_CCOConfig$370       stm8s_clk
+     000085E6  Sstm8s_clk$CLK_ITConfig$371        stm8s_clk
+     000085E6  Sstm8s_clk$CLK_ITConfig$372        stm8s_clk
+     000085E6  _CLK_ITConfig                      stm8s_clk
+     000085E7  A$stm8s_clk$1248                   stm8s_clk
+     000085E7  Sstm8s_clk$CLK_ITConfig$373        stm8s_clk
+     000085E7  Sstm8s_clk$CLK_ITConfig$374        stm8s_clk
+     000085E9  A$stm8s_clk$1249                   stm8s_clk
+     000085EB  A$stm8s_clk$1250                   stm8s_clk
+     000085ED  A$stm8s_clk$1251                   stm8s_clk
+     000085EE  A$stm8s_clk$1252                   stm8s_clk
+     000085F0  A$stm8s_clk$1254                   stm8s_clk
+     000085F0  Sstm8s_clk$CLK_ITConfig$375        stm8s_clk
+     000085F2  A$stm8s_clk$1256                   stm8s_clk
+     000085F2  Sstm8s_clk$CLK_ITConfig$376        stm8s_clk
+     000085F4  A$stm8s_clk$1258                   stm8s_clk
+     000085F4  Sstm8s_clk$CLK_ITConfig$377        stm8s_clk
+     000085F5  A$stm8s_clk$1259                   stm8s_clk
+     000085F6  A$stm8s_clk$1261                   stm8s_clk
+     000085F6  Sstm8s_clk$CLK_ITConfig$378        stm8s_clk
+     000085F8  A$stm8s_clk$1263                   stm8s_clk
+     000085F8  Sstm8s_clk$CLK_ITConfig$379        stm8s_clk
+     000085FA  A$stm8s_clk$1265                   stm8s_clk
+     000085FA  Sstm8s_clk$CLK_ITConfig$380        stm8s_clk
+     000085FD  A$stm8s_clk$1266                   stm8s_clk
+     000085FF  A$stm8s_clk$1271                   stm8s_clk
+     000085FF  Sstm8s_clk$CLK_ITConfig$381        stm8s_clk
+     000085FF  Sstm8s_clk$CLK_ITConfig$382        stm8s_clk
+     00008601  A$stm8s_clk$1272                   stm8s_clk
+     00008603  A$stm8s_clk$1273                   stm8s_clk
+     00008605  A$stm8s_clk$1274                   stm8s_clk
+     00008607  A$stm8s_clk$1277                   stm8s_clk
+     00008608  A$stm8s_clk$1280                   stm8s_clk
+     00008608  Sstm8s_clk$CLK_ITConfig$383        stm8s_clk
+     00008609  A$stm8s_clk$1282                   stm8s_clk
+     00008609  Sstm8s_clk$CLK_ITConfig$384        stm8s_clk
+     0000860B  A$stm8s_clk$1283                   stm8s_clk
+     0000860D  A$stm8s_clk$1284                   stm8s_clk
+     0000860E  A$stm8s_clk$1286                   stm8s_clk
+ASxxxx Linker V03.00 + NoICE + sdld,  page 34.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CODE                                000080C9    000009CC =        2508. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     0000860E  Sstm8s_clk$CLK_ITConfig$385        stm8s_clk
+     00008610  A$stm8s_clk$1287                   stm8s_clk
+     00008611  A$stm8s_clk$1289                   stm8s_clk
+     00008611  Sstm8s_clk$CLK_ITConfig$386        stm8s_clk
+     00008613  A$stm8s_clk$1290                   stm8s_clk
+     00008615  A$stm8s_clk$1291                   stm8s_clk
+     00008616  Sstm8s_clk$CLK_ITConfig$387        stm8s_clk
+     00008617  A$stm8s_clk$1295                   stm8s_clk
+     00008619  A$stm8s_clk$1298                   stm8s_clk
+     00008619  Sstm8s_clk$CLK_ITConfig$388        stm8s_clk
+     0000861A  A$stm8s_clk$1299                   stm8s_clk
+     0000861C  A$stm8s_clk$1300                   stm8s_clk
+     0000861E  A$stm8s_clk$1301                   stm8s_clk
+     00008620  A$stm8s_clk$1302                   stm8s_clk
+     00008621  A$stm8s_clk$1304                   stm8s_clk
+     00008621  Sstm8s_clk$CLK_ITConfig$389        stm8s_clk
+     00008623  A$stm8s_clk$1306                   stm8s_clk
+     00008623  Sstm8s_clk$CLK_ITConfig$390        stm8s_clk
+     00008625  A$stm8s_clk$1308                   stm8s_clk
+     00008625  Sstm8s_clk$CLK_ITConfig$391        stm8s_clk
+     00008626  A$stm8s_clk$1309                   stm8s_clk
+     00008627  A$stm8s_clk$1311                   stm8s_clk
+     00008627  Sstm8s_clk$CLK_ITConfig$392        stm8s_clk
+     00008629  A$stm8s_clk$1313                   stm8s_clk
+     00008629  Sstm8s_clk$CLK_ITConfig$393        stm8s_clk
+     0000862B  A$stm8s_clk$1315                   stm8s_clk
+     0000862B  Sstm8s_clk$CLK_ITConfig$394        stm8s_clk
+     0000862E  A$stm8s_clk$1316                   stm8s_clk
+     00008630  A$stm8s_clk$1318                   stm8s_clk
+     00008630  Sstm8s_clk$CLK_ITConfig$395        stm8s_clk
+     00008631  A$stm8s_clk$1323                   stm8s_clk
+     00008631  Sstm8s_clk$CLK_ITConfig$396        stm8s_clk
+     00008631  Sstm8s_clk$CLK_ITConfig$397        stm8s_clk
+     00008633  A$stm8s_clk$1324                   stm8s_clk
+     00008635  A$stm8s_clk$1328                   stm8s_clk
+     00008635  Sstm8s_clk$CLK_ITConfig$398        stm8s_clk
+     00008635  Sstm8s_clk$CLK_ITConfig$399        stm8s_clk
+     00008636  A$stm8s_clk$1329                   stm8s_clk
+     00008638  A$stm8s_clk$1330                   stm8s_clk
+     0000863A  A$stm8s_clk$1331                   stm8s_clk
+     0000863C  A$stm8s_clk$1335                   stm8s_clk
+     0000863C  Sstm8s_clk$CLK_ITConfig$400        stm8s_clk
+     0000863C  Sstm8s_clk$CLK_ITConfig$401        stm8s_clk
+     00008640  A$stm8s_clk$1338                   stm8s_clk
+     00008640  Sstm8s_clk$CLK_ITConfig$402        stm8s_clk
+     00008642  A$stm8s_clk$1344                   stm8s_clk
+     00008642  Sstm8s_clk$CLK_ITConfig$403        stm8s_clk
+     00008642  Sstm8s_clk$CLK_ITConfig$404        stm8s_clk
+     00008646  A$stm8s_clk$1347                   stm8s_clk
+     00008646  Sstm8s_clk$CLK_ITConfig$405        stm8s_clk
+     00008648  A$stm8s_clk$1355                   stm8s_clk
+ASxxxx Linker V03.00 + NoICE + sdld,  page 35.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CODE                                000080C9    000009CC =        2508. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00008648  Sstm8s_clk$CLK_ITConfig$406        stm8s_clk
+     00008648  Sstm8s_clk$CLK_ITConfig$407        stm8s_clk
+     00008648  Sstm8s_clk$CLK_ITConfig$408        stm8s_clk
+     00008648  Sstm8s_clk$CLK_ITConfig$409        stm8s_clk
+     00008649  A$stm8s_clk$1356                   stm8s_clk
+     0000864B  A$stm8s_clk$1357                   stm8s_clk
+     0000864D  A$stm8s_clk$1358                   stm8s_clk
+     0000864F  A$stm8s_clk$1362                   stm8s_clk
+     0000864F  Sstm8s_clk$CLK_ITConfig$410        stm8s_clk
+     0000864F  Sstm8s_clk$CLK_ITConfig$411        stm8s_clk
+     00008653  A$stm8s_clk$1365                   stm8s_clk
+     00008653  Sstm8s_clk$CLK_ITConfig$412        stm8s_clk
+     00008655  A$stm8s_clk$1371                   stm8s_clk
+     00008655  Sstm8s_clk$CLK_ITConfig$413        stm8s_clk
+     00008655  Sstm8s_clk$CLK_ITConfig$414        stm8s_clk
+     00008659  A$stm8s_clk$1378                   stm8s_clk
+     00008659  Sstm8s_clk$CLK_ITConfig$415        stm8s_clk
+     00008659  Sstm8s_clk$CLK_ITConfig$416        stm8s_clk
+     00008659  Sstm8s_clk$CLK_ITConfig$417        stm8s_clk
+     0000865A  A$stm8s_clk$1382                   stm8s_clk
+     0000865A  Sstm8s_clk$CLK_ITConfig$418        stm8s_clk
+     0000865A  Sstm8s_clk$CLK_ITConfig$419        stm8s_clk
+     0000865A  XG$CLK_ITConfig$0$0                stm8s_clk
+     0000865B  A$stm8s_clk$1391                   stm8s_clk
+     0000865B  Sstm8s_clk$CLK_ITConfig$420        stm8s_clk
+     0000865B  Sstm8s_clk$CLK_SYSCLKConfig$421    stm8s_clk
+     0000865B  Sstm8s_clk$CLK_SYSCLKConfig$422    stm8s_clk
+     0000865B  _CLK_SYSCLKConfig                  stm8s_clk
+     0000865C  A$stm8s_clk$1395                   stm8s_clk
+     0000865C  Sstm8s_clk$CLK_SYSCLKConfig$423    stm8s_clk
+     0000865C  Sstm8s_clk$CLK_SYSCLKConfig$424    stm8s_clk
+     0000865E  A$stm8s_clk$1396                   stm8s_clk
+     00008660  A$stm8s_clk$1397                   stm8s_clk
+     00008663  A$stm8s_clk$1399                   stm8s_clk
+     00008665  A$stm8s_clk$1400                   stm8s_clk
+     00008667  A$stm8s_clk$1401                   stm8s_clk
+     00008669  A$stm8s_clk$1402                   stm8s_clk
+     0000866C  A$stm8s_clk$1405                   stm8s_clk
+     0000866C  Sstm8s_clk$CLK_SYSCLKConfig$425    stm8s_clk
+     0000866E  A$stm8s_clk$1406                   stm8s_clk
+     00008670  A$stm8s_clk$1407                   stm8s_clk
+     00008672  A$stm8s_clk$1408                   stm8s_clk
+     00008675  A$stm8s_clk$1411                   stm8s_clk
+     00008675  Sstm8s_clk$CLK_SYSCLKConfig$426    stm8s_clk
+     00008677  A$stm8s_clk$1412                   stm8s_clk
+     00008679  A$stm8s_clk$1413                   stm8s_clk
+     0000867B  A$stm8s_clk$1414                   stm8s_clk
+     0000867E  A$stm8s_clk$1417                   stm8s_clk
+     0000867E  Sstm8s_clk$CLK_SYSCLKConfig$427    stm8s_clk
+     00008680  A$stm8s_clk$1418                   stm8s_clk
+     00008682  A$stm8s_clk$1419                   stm8s_clk
+ASxxxx Linker V03.00 + NoICE + sdld,  page 36.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CODE                                000080C9    000009CC =        2508. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00008684  A$stm8s_clk$1420                   stm8s_clk
+     00008687  A$stm8s_clk$1423                   stm8s_clk
+     00008687  Sstm8s_clk$CLK_SYSCLKConfig$428    stm8s_clk
+     00008689  A$stm8s_clk$1424                   stm8s_clk
+     0000868B  A$stm8s_clk$1425                   stm8s_clk
+     0000868D  A$stm8s_clk$1427                   stm8s_clk
+     0000868D  Sstm8s_clk$CLK_SYSCLKConfig$429    stm8s_clk
+     0000868F  A$stm8s_clk$1428                   stm8s_clk
+     00008691  A$stm8s_clk$1429                   stm8s_clk
+     00008693  A$stm8s_clk$1431                   stm8s_clk
+     00008693  Sstm8s_clk$CLK_SYSCLKConfig$430    stm8s_clk
+     00008695  A$stm8s_clk$1432                   stm8s_clk
+     00008697  A$stm8s_clk$1433                   stm8s_clk
+     00008699  A$stm8s_clk$1435                   stm8s_clk
+     00008699  Sstm8s_clk$CLK_SYSCLKConfig$431    stm8s_clk
+     0000869B  A$stm8s_clk$1436                   stm8s_clk
+     0000869D  A$stm8s_clk$1437                   stm8s_clk
+     0000869F  A$stm8s_clk$1439                   stm8s_clk
+     0000869F  Sstm8s_clk$CLK_SYSCLKConfig$432    stm8s_clk
+     000086A1  A$stm8s_clk$1440                   stm8s_clk
+     000086A3  A$stm8s_clk$1441                   stm8s_clk
+     000086A5  A$stm8s_clk$1443                   stm8s_clk
+     000086A5  Sstm8s_clk$CLK_SYSCLKConfig$433    stm8s_clk
+     000086A7  A$stm8s_clk$1444                   stm8s_clk
+     000086A9  A$stm8s_clk$1445                   stm8s_clk
+     000086AB  A$stm8s_clk$1447                   stm8s_clk
+     000086AB  Sstm8s_clk$CLK_SYSCLKConfig$434    stm8s_clk
+     000086AD  A$stm8s_clk$1448                   stm8s_clk
+     000086AF  A$stm8s_clk$1449                   stm8s_clk
+     000086B1  A$stm8s_clk$1451                   stm8s_clk
+     000086B1  Sstm8s_clk$CLK_SYSCLKConfig$435    stm8s_clk
+     000086B3  A$stm8s_clk$1453                   stm8s_clk
+     000086B3  Sstm8s_clk$CLK_SYSCLKConfig$436    stm8s_clk
+     000086B5  A$stm8s_clk$1455                   stm8s_clk
+     000086B5  Sstm8s_clk$CLK_SYSCLKConfig$437    stm8s_clk
+     000086B6  A$stm8s_clk$1456                   stm8s_clk
+     000086B7  A$stm8s_clk$1458                   stm8s_clk
+     000086B7  Sstm8s_clk$CLK_SYSCLKConfig$438    stm8s_clk
+     000086B9  A$stm8s_clk$1460                   stm8s_clk
+     000086B9  Sstm8s_clk$CLK_SYSCLKConfig$439    stm8s_clk
+     000086BB  A$stm8s_clk$1462                   stm8s_clk
+     000086BB  Sstm8s_clk$CLK_SYSCLKConfig$440    stm8s_clk
+     000086BE  A$stm8s_clk$1463                   stm8s_clk
+     000086C0  A$stm8s_clk$1468                   stm8s_clk
+     000086C0  Sstm8s_clk$CLK_SYSCLKConfig$441    stm8s_clk
+     000086C0  Sstm8s_clk$CLK_SYSCLKConfig$442    stm8s_clk
+     000086C3  A$stm8s_clk$1471                   stm8s_clk
+     000086C3  Sstm8s_clk$CLK_SYSCLKConfig$443    stm8s_clk
+     000086C5  A$stm8s_clk$1472                   stm8s_clk
+     000086C7  A$stm8s_clk$1476                   stm8s_clk
+     000086C7  Sstm8s_clk$CLK_SYSCLKConfig$444    stm8s_clk
+ASxxxx Linker V03.00 + NoICE + sdld,  page 37.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CODE                                000080C9    000009CC =        2508. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000086C7  Sstm8s_clk$CLK_SYSCLKConfig$445    stm8s_clk
+     000086C9  A$stm8s_clk$1477                   stm8s_clk
+     000086CC  A$stm8s_clk$1480                   stm8s_clk
+     000086CC  Sstm8s_clk$CLK_SYSCLKConfig$446    stm8s_clk
+     000086CF  A$stm8s_clk$1481                   stm8s_clk
+     000086D1  A$stm8s_clk$1482                   stm8s_clk
+     000086D3  A$stm8s_clk$1483                   stm8s_clk
+     000086D5  A$stm8s_clk$1484                   stm8s_clk
+     000086D7  A$stm8s_clk$1485                   stm8s_clk
+     000086DA  A$stm8s_clk$1487                   stm8s_clk
+     000086DA  Sstm8s_clk$CLK_SYSCLKConfig$447    stm8s_clk
+     000086DC  A$stm8s_clk$1492                   stm8s_clk
+     000086DC  Sstm8s_clk$CLK_SYSCLKConfig$448    stm8s_clk
+     000086DC  Sstm8s_clk$CLK_SYSCLKConfig$449    stm8s_clk
+     000086DE  A$stm8s_clk$1493                   stm8s_clk
+     000086E1  A$stm8s_clk$1496                   stm8s_clk
+     000086E1  Sstm8s_clk$CLK_SYSCLKConfig$450    stm8s_clk
+     000086E4  A$stm8s_clk$1497                   stm8s_clk
+     000086E6  A$stm8s_clk$1498                   stm8s_clk
+     000086E8  A$stm8s_clk$1499                   stm8s_clk
+     000086EA  A$stm8s_clk$1500                   stm8s_clk
+     000086EC  A$stm8s_clk$1501                   stm8s_clk
+     000086EF  A$stm8s_clk$1506                   stm8s_clk
+     000086EF  Sstm8s_clk$CLK_SYSCLKConfig$451    stm8s_clk
+     000086EF  Sstm8s_clk$CLK_SYSCLKConfig$452    stm8s_clk
+     000086F0  A$stm8s_clk$1510                   stm8s_clk
+     000086F0  Sstm8s_clk$CLK_SYSCLKConfig$453    stm8s_clk
+     000086F0  Sstm8s_clk$CLK_SYSCLKConfig$454    stm8s_clk
+     000086F0  XG$CLK_SYSCLKConfig$0$0            stm8s_clk
+     000086F1  A$stm8s_clk$1521                   stm8s_clk
+     000086F1  Sstm8s_clk$CLK_SWIMConfig$456      stm8s_clk
+     000086F1  Sstm8s_clk$CLK_SWIMConfig$457      stm8s_clk
+     000086F1  Sstm8s_clk$CLK_SWIMConfig$458      stm8s_clk
+     000086F1  Sstm8s_clk$CLK_SYSCLKConfig$455    stm8s_clk
+     000086F1  _CLK_SWIMConfig                    stm8s_clk
+     000086F3  A$stm8s_clk$1522                   stm8s_clk
+     000086F5  A$stm8s_clk$1523                   stm8s_clk
+     000086F7  A$stm8s_clk$1524                   stm8s_clk
+     000086F8  A$stm8s_clk$1525                   stm8s_clk
+     000086FA  A$stm8s_clk$1527                   stm8s_clk
+     000086FA  Sstm8s_clk$CLK_SWIMConfig$459      stm8s_clk
+     000086FC  A$stm8s_clk$1529                   stm8s_clk
+     000086FC  Sstm8s_clk$CLK_SWIMConfig$460      stm8s_clk
+     000086FE  A$stm8s_clk$1531                   stm8s_clk
+     000086FE  Sstm8s_clk$CLK_SWIMConfig$461      stm8s_clk
+     000086FF  A$stm8s_clk$1532                   stm8s_clk
+     00008700  A$stm8s_clk$1534                   stm8s_clk
+     00008700  Sstm8s_clk$CLK_SWIMConfig$462      stm8s_clk
+     00008702  A$stm8s_clk$1536                   stm8s_clk
+     00008702  Sstm8s_clk$CLK_SWIMConfig$463      stm8s_clk
+     00008704  A$stm8s_clk$1538                   stm8s_clk
+ASxxxx Linker V03.00 + NoICE + sdld,  page 38.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CODE                                000080C9    000009CC =        2508. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00008704  Sstm8s_clk$CLK_SWIMConfig$464      stm8s_clk
+     00008707  A$stm8s_clk$1539                   stm8s_clk
+     00008709  A$stm8s_clk$1544                   stm8s_clk
+     00008709  Sstm8s_clk$CLK_SWIMConfig$465      stm8s_clk
+     00008709  Sstm8s_clk$CLK_SWIMConfig$466      stm8s_clk
+     0000870C  A$stm8s_clk$1547                   stm8s_clk
+     0000870C  Sstm8s_clk$CLK_SWIMConfig$467      stm8s_clk
+     0000870E  A$stm8s_clk$1548                   stm8s_clk
+     00008710  A$stm8s_clk$1552                   stm8s_clk
+     00008710  Sstm8s_clk$CLK_SWIMConfig$468      stm8s_clk
+     00008710  Sstm8s_clk$CLK_SWIMConfig$469      stm8s_clk
+     00008712  A$stm8s_clk$1553                   stm8s_clk
+     00008715  A$stm8s_clk$1555                   stm8s_clk
+     00008715  Sstm8s_clk$CLK_SWIMConfig$470      stm8s_clk
+     00008717  A$stm8s_clk$1560                   stm8s_clk
+     00008717  Sstm8s_clk$CLK_SWIMConfig$471      stm8s_clk
+     00008717  Sstm8s_clk$CLK_SWIMConfig$472      stm8s_clk
+     00008719  A$stm8s_clk$1561                   stm8s_clk
+     0000871C  A$stm8s_clk$1568                   stm8s_clk
+     0000871C  Sstm8s_clk$CLK_SWIMConfig$473      stm8s_clk
+     0000871C  Sstm8s_clk$CLK_SWIMConfig$474      stm8s_clk
+     0000871C  Sstm8s_clk$CLK_SWIMConfig$475      stm8s_clk
+     0000871C  XG$CLK_SWIMConfig$0$0              stm8s_clk
+     0000871D  A$stm8s_clk$1579                   stm8s_clk
+     0000871D  Sstm8s_clk$CLK_ClockSecuritySyst   stm8s_clk
+     0000871D  Sstm8s_clk$CLK_ClockSecuritySyst   stm8s_clk
+     0000871D  Sstm8s_clk$CLK_ClockSecuritySyst   stm8s_clk
+     0000871D  Sstm8s_clk$CLK_SWIMConfig$476      stm8s_clk
+     0000871D  _CLK_ClockSecuritySystemEnable     stm8s_clk
+     00008721  A$stm8s_clk$1584                   stm8s_clk
+     00008721  Sstm8s_clk$CLK_ClockSecuritySyst   stm8s_clk
+     00008721  Sstm8s_clk$CLK_ClockSecuritySyst   stm8s_clk
+     00008721  XG$CLK_ClockSecuritySystemEnable   stm8s_clk
+     00008722  A$stm8s_clk$1595                   stm8s_clk
+     00008722  Sstm8s_clk$CLK_ClockSecuritySyst   stm8s_clk
+     00008722  Sstm8s_clk$CLK_GetSYSCLKSource$4   stm8s_clk
+     00008722  Sstm8s_clk$CLK_GetSYSCLKSource$4   stm8s_clk
+     00008722  Sstm8s_clk$CLK_GetSYSCLKSource$4   stm8s_clk
+     00008722  _CLK_GetSYSCLKSource               stm8s_clk
+     00008725  A$stm8s_clk$1600                   stm8s_clk
+     00008725  Sstm8s_clk$CLK_GetSYSCLKSource$4   stm8s_clk
+     00008725  Sstm8s_clk$CLK_GetSYSCLKSource$4   stm8s_clk
+     00008725  XG$CLK_GetSYSCLKSource$0$0         stm8s_clk
+     00008726  A$stm8s_clk$1609                   stm8s_clk
+     00008726  Sstm8s_clk$CLK_GetClockFreq$489    stm8s_clk
+     00008726  Sstm8s_clk$CLK_GetClockFreq$490    stm8s_clk
+     00008726  Sstm8s_clk$CLK_GetSYSCLKSource$4   stm8s_clk
+     00008726  _CLK_GetClockFreq                  stm8s_clk
+     00008728  A$stm8s_clk$1613                   stm8s_clk
+     00008728  Sstm8s_clk$CLK_GetClockFreq$491    stm8s_clk
+     00008728  Sstm8s_clk$CLK_GetClockFreq$492    stm8s_clk
+ASxxxx Linker V03.00 + NoICE + sdld,  page 39.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CODE                                000080C9    000009CC =        2508. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     0000872B  A$stm8s_clk$1614                   stm8s_clk
+     0000872D  A$stm8s_clk$1617                   stm8s_clk
+     0000872D  Sstm8s_clk$CLK_GetClockFreq$493    stm8s_clk
+     0000872F  A$stm8s_clk$1618                   stm8s_clk
+     00008731  A$stm8s_clk$1619                   stm8s_clk
+     00008733  A$stm8s_clk$1624                   stm8s_clk
+     00008733  Sstm8s_clk$CLK_GetClockFreq$494    stm8s_clk
+     00008733  Sstm8s_clk$CLK_GetClockFreq$495    stm8s_clk
+     00008733  Sstm8s_clk$CLK_GetClockFreq$496    stm8s_clk
+     00008736  A$stm8s_clk$1625                   stm8s_clk
+     00008738  A$stm8s_clk$1628                   stm8s_clk
+     00008738  Sstm8s_clk$CLK_GetClockFreq$497    stm8s_clk
+     00008739  A$stm8s_clk$1629                   stm8s_clk
+     0000873A  A$stm8s_clk$1630                   stm8s_clk
+     0000873B  A$stm8s_clk$1633                   stm8s_clk
+     0000873B  Sstm8s_clk$CLK_GetClockFreq$498    stm8s_clk
+     0000873C  A$stm8s_clk$1634                   stm8s_clk
+     0000873D  A$stm8s_clk$1635                   stm8s_clk
+     00008740  A$stm8s_clk$1638                   stm8s_clk
+     00008740  Sstm8s_clk$CLK_GetClockFreq$499    stm8s_clk
+     00008741  A$stm8s_clk$1639                   stm8s_clk
+     00008742  A$stm8s_clk$1640                   stm8s_clk
+     00008744  A$stm8s_clk$1642                   stm8s_clk
+     00008744  Sstm8s_clk$CLK_GetClockFreq$500    stm8s_clk
+     00008745  A$stm8s_clk$1644                   stm8s_clk
+     00008745  Sstm8s_clk$CLK_GetClockFreq$501    stm8s_clk
+     00008747  A$stm8s_clk$1646                   stm8s_clk
+     00008747  Sstm8s_clk$CLK_GetClockFreq$502    stm8s_clk
+     00008749  A$stm8s_clk$1648                   stm8s_clk
+     00008749  Sstm8s_clk$CLK_GetClockFreq$503    stm8s_clk
+     0000874B  A$stm8s_clk$1650                   stm8s_clk
+     0000874B  Sstm8s_clk$CLK_GetClockFreq$504    stm8s_clk
+     0000874D  A$stm8s_clk$1652                   stm8s_clk
+     0000874D  Sstm8s_clk$CLK_GetClockFreq$505    stm8s_clk
+     0000874F  A$stm8s_clk$1654                   stm8s_clk
+     0000874F  Sstm8s_clk$CLK_GetClockFreq$506    stm8s_clk
+     00008752  A$stm8s_clk$1655                   stm8s_clk
+     00008754  A$stm8s_clk$1657                   stm8s_clk
+     00008754  Sstm8s_clk$CLK_GetClockFreq$507    stm8s_clk
+     00008755  A$stm8s_clk$1658                   stm8s_clk
+     00008757  A$stm8s_clk$1659                   stm8s_clk
+     00008759  A$stm8s_clk$1663                   stm8s_clk
+     00008759  Sstm8s_clk$CLK_GetClockFreq$508    stm8s_clk
+     0000875B  A$stm8s_clk$1664                   stm8s_clk
+     0000875D  A$stm8s_clk$1665                   stm8s_clk
+     0000875F  A$stm8s_clk$1670                   stm8s_clk
+     0000875F  Sstm8s_clk$CLK_GetClockFreq$509    stm8s_clk
+     0000875F  Sstm8s_clk$CLK_GetClockFreq$510    stm8s_clk
+     0000875F  Sstm8s_clk$CLK_GetClockFreq$511    stm8s_clk
+     00008762  A$stm8s_clk$1671                   stm8s_clk
+     00008764  A$stm8s_clk$1672                   stm8s_clk
+ASxxxx Linker V03.00 + NoICE + sdld,  page 40.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CODE                                000080C9    000009CC =        2508. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00008765  A$stm8s_clk$1673                   stm8s_clk
+     00008766  A$stm8s_clk$1675                   stm8s_clk
+     00008766  Sstm8s_clk$CLK_GetClockFreq$512    stm8s_clk
+     00008768  A$stm8s_clk$1680                   stm8s_clk
+     00008768  Sstm8s_clk$CLK_GetClockFreq$513    stm8s_clk
+     00008768  Sstm8s_clk$CLK_GetClockFreq$514    stm8s_clk
+     0000876B  A$stm8s_clk$1681                   stm8s_clk
+     0000876D  A$stm8s_clk$1682                   stm8s_clk
+     00008770  A$stm8s_clk$1687                   stm8s_clk
+     00008770  Sstm8s_clk$CLK_GetClockFreq$515    stm8s_clk
+     00008770  Sstm8s_clk$CLK_GetClockFreq$516    stm8s_clk
+     00008771  A$stm8s_clk$1688                   stm8s_clk
+     00008773  A$stm8s_clk$1691                   stm8s_clk
+     00008773  Sstm8s_clk$CLK_GetClockFreq$517    stm8s_clk
+     00008775  A$stm8s_clk$1695                   stm8s_clk
+     00008775  Sstm8s_clk$CLK_GetClockFreq$518    stm8s_clk
+     00008775  Sstm8s_clk$CLK_GetClockFreq$519    stm8s_clk
+     00008775  XG$CLK_GetClockFreq$0$0            stm8s_clk
+     00008776  A$stm8s_clk$1706                   stm8s_clk
+     00008776  Sstm8s_clk$CLK_AdjustHSICalibrat   stm8s_clk
+     00008776  Sstm8s_clk$CLK_AdjustHSICalibrat   stm8s_clk
+     00008776  Sstm8s_clk$CLK_AdjustHSICalibrat   stm8s_clk
+     00008776  Sstm8s_clk$CLK_GetClockFreq$520    stm8s_clk
+     00008776  _CLK_AdjustHSICalibrationValue     stm8s_clk
+     00008778  A$stm8s_clk$1707                   stm8s_clk
+     0000877A  A$stm8s_clk$1708                   stm8s_clk
+     0000877C  A$stm8s_clk$1709                   stm8s_clk
+     0000877D  A$stm8s_clk$1710                   stm8s_clk
+     0000877F  A$stm8s_clk$1712                   stm8s_clk
+     0000877F  Sstm8s_clk$CLK_AdjustHSICalibrat   stm8s_clk
+     00008781  A$stm8s_clk$1713                   stm8s_clk
+     00008783  A$stm8s_clk$1714                   stm8s_clk
+     00008785  A$stm8s_clk$1716                   stm8s_clk
+     00008785  Sstm8s_clk$CLK_AdjustHSICalibrat   stm8s_clk
+     00008787  A$stm8s_clk$1717                   stm8s_clk
+     00008789  A$stm8s_clk$1718                   stm8s_clk
+     0000878B  A$stm8s_clk$1720                   stm8s_clk
+     0000878B  Sstm8s_clk$CLK_AdjustHSICalibrat   stm8s_clk
+     0000878D  A$stm8s_clk$1721                   stm8s_clk
+     0000878F  A$stm8s_clk$1722                   stm8s_clk
+     00008791  A$stm8s_clk$1724                   stm8s_clk
+     00008791  Sstm8s_clk$CLK_AdjustHSICalibrat   stm8s_clk
+     00008793  A$stm8s_clk$1725                   stm8s_clk
+     00008795  A$stm8s_clk$1726                   stm8s_clk
+     00008797  A$stm8s_clk$1728                   stm8s_clk
+     00008797  Sstm8s_clk$CLK_AdjustHSICalibrat   stm8s_clk
+     00008799  A$stm8s_clk$1729                   stm8s_clk
+     0000879B  A$stm8s_clk$1730                   stm8s_clk
+     0000879D  A$stm8s_clk$1732                   stm8s_clk
+     0000879D  Sstm8s_clk$CLK_AdjustHSICalibrat   stm8s_clk
+     0000879F  A$stm8s_clk$1733                   stm8s_clk
+ASxxxx Linker V03.00 + NoICE + sdld,  page 41.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CODE                                000080C9    000009CC =        2508. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000087A1  A$stm8s_clk$1734                   stm8s_clk
+     000087A3  A$stm8s_clk$1736                   stm8s_clk
+     000087A3  Sstm8s_clk$CLK_AdjustHSICalibrat   stm8s_clk
+     000087A5  A$stm8s_clk$1738                   stm8s_clk
+     000087A5  Sstm8s_clk$CLK_AdjustHSICalibrat   stm8s_clk
+     000087A7  A$stm8s_clk$1740                   stm8s_clk
+     000087A7  Sstm8s_clk$CLK_AdjustHSICalibrat   stm8s_clk
+     000087A8  A$stm8s_clk$1741                   stm8s_clk
+     000087A9  A$stm8s_clk$1743                   stm8s_clk
+     000087A9  Sstm8s_clk$CLK_AdjustHSICalibrat   stm8s_clk
+     000087AB  A$stm8s_clk$1745                   stm8s_clk
+     000087AB  Sstm8s_clk$CLK_AdjustHSICalibrat   stm8s_clk
+     000087AD  A$stm8s_clk$1747                   stm8s_clk
+     000087AD  Sstm8s_clk$CLK_AdjustHSICalibrat   stm8s_clk
+     000087B0  A$stm8s_clk$1748                   stm8s_clk
+     000087B2  A$stm8s_clk$1753                   stm8s_clk
+     000087B2  Sstm8s_clk$CLK_AdjustHSICalibrat   stm8s_clk
+     000087B2  Sstm8s_clk$CLK_AdjustHSICalibrat   stm8s_clk
+     000087B5  A$stm8s_clk$1754                   stm8s_clk
+     000087B7  A$stm8s_clk$1755                   stm8s_clk
+     000087B9  A$stm8s_clk$1756                   stm8s_clk
+     000087BC  A$stm8s_clk$1761                   stm8s_clk
+     000087BC  Sstm8s_clk$CLK_AdjustHSICalibrat   stm8s_clk
+     000087BC  Sstm8s_clk$CLK_AdjustHSICalibrat   stm8s_clk
+     000087BC  XG$CLK_AdjustHSICalibrationValue   stm8s_clk
+     000087BD  A$stm8s_clk$1772                   stm8s_clk
+     000087BD  Sstm8s_clk$CLK_AdjustHSICalibrat   stm8s_clk
+     000087BD  Sstm8s_clk$CLK_SYSCLKEmergencyCl   stm8s_clk
+     000087BD  Sstm8s_clk$CLK_SYSCLKEmergencyCl   stm8s_clk
+     000087BD  Sstm8s_clk$CLK_SYSCLKEmergencyCl   stm8s_clk
+     000087BD  _CLK_SYSCLKEmergencyClear          stm8s_clk
+     000087C1  A$stm8s_clk$1777                   stm8s_clk
+     000087C1  Sstm8s_clk$CLK_SYSCLKEmergencyCl   stm8s_clk
+     000087C1  Sstm8s_clk$CLK_SYSCLKEmergencyCl   stm8s_clk
+     000087C1  XG$CLK_SYSCLKEmergencyClear$0$0    stm8s_clk
+     000087C2  A$stm8s_clk$1786                   stm8s_clk
+     000087C2  Sstm8s_clk$CLK_GetFlagStatus$547   stm8s_clk
+     000087C2  Sstm8s_clk$CLK_GetFlagStatus$548   stm8s_clk
+     000087C2  Sstm8s_clk$CLK_SYSCLKEmergencyCl   stm8s_clk
+     000087C2  _CLK_GetFlagStatus                 stm8s_clk
+     000087C3  A$stm8s_clk$1790                   stm8s_clk
+     000087C3  Sstm8s_clk$CLK_GetFlagStatus$549   stm8s_clk
+     000087C3  Sstm8s_clk$CLK_GetFlagStatus$550   stm8s_clk
+     000087C5  A$stm8s_clk$1791                   stm8s_clk
+     000087C8  A$stm8s_clk$1792                   stm8s_clk
+     000087CA  A$stm8s_clk$1793                   stm8s_clk
+     000087CD  A$stm8s_clk$1796                   stm8s_clk
+     000087CD  Sstm8s_clk$CLK_GetFlagStatus$551   stm8s_clk
+     000087D0  A$stm8s_clk$1797                   stm8s_clk
+     000087D2  A$stm8s_clk$1798                   stm8s_clk
+     000087D5  A$stm8s_clk$1801                   stm8s_clk
+ASxxxx Linker V03.00 + NoICE + sdld,  page 42.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CODE                                000080C9    000009CC =        2508. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000087D5  Sstm8s_clk$CLK_GetFlagStatus$552   stm8s_clk
+     000087D8  A$stm8s_clk$1802                   stm8s_clk
+     000087DA  A$stm8s_clk$1803                   stm8s_clk
+     000087DD  A$stm8s_clk$1806                   stm8s_clk
+     000087DD  Sstm8s_clk$CLK_GetFlagStatus$553   stm8s_clk
+     000087E0  A$stm8s_clk$1807                   stm8s_clk
+     000087E2  A$stm8s_clk$1809                   stm8s_clk
+     000087E2  Sstm8s_clk$CLK_GetFlagStatus$554   stm8s_clk
+     000087E5  A$stm8s_clk$1810                   stm8s_clk
+     000087E7  A$stm8s_clk$1812                   stm8s_clk
+     000087E7  Sstm8s_clk$CLK_GetFlagStatus$555   stm8s_clk
+     000087EA  A$stm8s_clk$1813                   stm8s_clk
+     000087EC  A$stm8s_clk$1815                   stm8s_clk
+     000087EC  Sstm8s_clk$CLK_GetFlagStatus$556   stm8s_clk
+     000087EF  A$stm8s_clk$1816                   stm8s_clk
+     000087F1  A$stm8s_clk$1818                   stm8s_clk
+     000087F1  Sstm8s_clk$CLK_GetFlagStatus$557   stm8s_clk
+     000087F4  A$stm8s_clk$1819                   stm8s_clk
+     000087F6  A$stm8s_clk$1821                   stm8s_clk
+     000087F6  Sstm8s_clk$CLK_GetFlagStatus$558   stm8s_clk
+     000087F9  A$stm8s_clk$1822                   stm8s_clk
+     000087FB  A$stm8s_clk$1824                   stm8s_clk
+     000087FB  Sstm8s_clk$CLK_GetFlagStatus$559   stm8s_clk
+     000087FC  A$stm8s_clk$1826                   stm8s_clk
+     000087FC  Sstm8s_clk$CLK_GetFlagStatus$560   stm8s_clk
+     000087FE  A$stm8s_clk$1828                   stm8s_clk
+     000087FE  Sstm8s_clk$CLK_GetFlagStatus$561   stm8s_clk
+     00008800  A$stm8s_clk$1830                   stm8s_clk
+     00008800  Sstm8s_clk$CLK_GetFlagStatus$562   stm8s_clk
+     00008802  A$stm8s_clk$1832                   stm8s_clk
+     00008802  Sstm8s_clk$CLK_GetFlagStatus$563   stm8s_clk
+     00008804  A$stm8s_clk$1834                   stm8s_clk
+     00008804  Sstm8s_clk$CLK_GetFlagStatus$564   stm8s_clk
+     00008806  A$stm8s_clk$1836                   stm8s_clk
+     00008806  Sstm8s_clk$CLK_GetFlagStatus$565   stm8s_clk
+     00008808  A$stm8s_clk$1838                   stm8s_clk
+     00008808  Sstm8s_clk$CLK_GetFlagStatus$566   stm8s_clk
+     0000880B  A$stm8s_clk$1839                   stm8s_clk
+     0000880D  A$stm8s_clk$1841                   stm8s_clk
+     0000880D  Sstm8s_clk$CLK_GetFlagStatus$567   stm8s_clk
+     0000880E  A$stm8s_clk$1846                   stm8s_clk
+     0000880E  Sstm8s_clk$CLK_GetFlagStatus$568   stm8s_clk
+     0000880E  Sstm8s_clk$CLK_GetFlagStatus$569   stm8s_clk
+     0000880F  A$stm8s_clk$1849                   stm8s_clk
+     0000880F  Sstm8s_clk$CLK_GetFlagStatus$570   stm8s_clk
+     00008810  A$stm8s_clk$1850                   stm8s_clk
+     00008813  A$stm8s_clk$1851                   stm8s_clk
+     00008815  A$stm8s_clk$1856                   stm8s_clk
+     00008815  Sstm8s_clk$CLK_GetFlagStatus$571   stm8s_clk
+     00008815  Sstm8s_clk$CLK_GetFlagStatus$572   stm8s_clk
+     00008815  Sstm8s_clk$CLK_GetFlagStatus$573   stm8s_clk
+ASxxxx Linker V03.00 + NoICE + sdld,  page 43.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CODE                                000080C9    000009CC =        2508. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00008818  A$stm8s_clk$1858                   stm8s_clk
+     00008818  Sstm8s_clk$CLK_GetFlagStatus$574   stm8s_clk
+     0000881A  A$stm8s_clk$1862                   stm8s_clk
+     0000881A  Sstm8s_clk$CLK_GetFlagStatus$575   stm8s_clk
+     0000881D  A$stm8s_clk$1863                   stm8s_clk
+     0000881F  A$stm8s_clk$1868                   stm8s_clk
+     0000881F  Sstm8s_clk$CLK_GetFlagStatus$576   stm8s_clk
+     0000881F  Sstm8s_clk$CLK_GetFlagStatus$577   stm8s_clk
+     0000881F  Sstm8s_clk$CLK_GetFlagStatus$578   stm8s_clk
+     00008822  A$stm8s_clk$1870                   stm8s_clk
+     00008822  Sstm8s_clk$CLK_GetFlagStatus$579   stm8s_clk
+     00008824  A$stm8s_clk$1874                   stm8s_clk
+     00008824  Sstm8s_clk$CLK_GetFlagStatus$580   stm8s_clk
+     00008827  A$stm8s_clk$1875                   stm8s_clk
+     00008829  A$stm8s_clk$1880                   stm8s_clk
+     00008829  Sstm8s_clk$CLK_GetFlagStatus$581   stm8s_clk
+     00008829  Sstm8s_clk$CLK_GetFlagStatus$582   stm8s_clk
+     00008829  Sstm8s_clk$CLK_GetFlagStatus$583   stm8s_clk
+     0000882C  A$stm8s_clk$1882                   stm8s_clk
+     0000882C  Sstm8s_clk$CLK_GetFlagStatus$584   stm8s_clk
+     0000882E  A$stm8s_clk$1886                   stm8s_clk
+     0000882E  Sstm8s_clk$CLK_GetFlagStatus$585   stm8s_clk
+     00008831  A$stm8s_clk$1887                   stm8s_clk
+     00008833  A$stm8s_clk$1892                   stm8s_clk
+     00008833  Sstm8s_clk$CLK_GetFlagStatus$586   stm8s_clk
+     00008833  Sstm8s_clk$CLK_GetFlagStatus$587   stm8s_clk
+     00008833  Sstm8s_clk$CLK_GetFlagStatus$588   stm8s_clk
+     00008836  A$stm8s_clk$1894                   stm8s_clk
+     00008836  Sstm8s_clk$CLK_GetFlagStatus$589   stm8s_clk
+     00008838  A$stm8s_clk$1899                   stm8s_clk
+     00008838  Sstm8s_clk$CLK_GetFlagStatus$590   stm8s_clk
+     00008838  Sstm8s_clk$CLK_GetFlagStatus$591   stm8s_clk
+     0000883B  A$stm8s_clk$1904                   stm8s_clk
+     0000883B  Sstm8s_clk$CLK_GetFlagStatus$592   stm8s_clk
+     0000883B  Sstm8s_clk$CLK_GetFlagStatus$593   stm8s_clk
+     0000883C  A$stm8s_clk$1906                   stm8s_clk
+     0000883C  Sstm8s_clk$CLK_GetFlagStatus$594   stm8s_clk
+     0000883E  A$stm8s_clk$1907                   stm8s_clk
+     00008840  A$stm8s_clk$1908                   stm8s_clk
+     00008841  A$stm8s_clk$1910                   stm8s_clk
+     00008841  Sstm8s_clk$CLK_GetFlagStatus$595   stm8s_clk
+     00008843  A$stm8s_clk$1911                   stm8s_clk
+     00008845  A$stm8s_clk$1915                   stm8s_clk
+     00008845  Sstm8s_clk$CLK_GetFlagStatus$596   stm8s_clk
+     00008845  Sstm8s_clk$CLK_GetFlagStatus$597   stm8s_clk
+     00008847  A$stm8s_clk$1917                   stm8s_clk
+     00008847  Sstm8s_clk$CLK_GetFlagStatus$598   stm8s_clk
+     00008849  A$stm8s_clk$1922                   stm8s_clk
+     00008849  Sstm8s_clk$CLK_GetFlagStatus$599   stm8s_clk
+     00008849  Sstm8s_clk$CLK_GetFlagStatus$600   stm8s_clk
+     0000884A  A$stm8s_clk$1929                   stm8s_clk
+ASxxxx Linker V03.00 + NoICE + sdld,  page 44.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CODE                                000080C9    000009CC =        2508. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     0000884A  Sstm8s_clk$CLK_GetFlagStatus$601   stm8s_clk
+     0000884A  Sstm8s_clk$CLK_GetFlagStatus$602   stm8s_clk
+     0000884A  Sstm8s_clk$CLK_GetFlagStatus$603   stm8s_clk
+     0000884C  A$stm8s_clk$1933                   stm8s_clk
+     0000884C  Sstm8s_clk$CLK_GetFlagStatus$604   stm8s_clk
+     0000884C  Sstm8s_clk$CLK_GetFlagStatus$605   stm8s_clk
+     0000884C  XG$CLK_GetFlagStatus$0$0           stm8s_clk
+     0000884D  A$stm8s_clk$1944                   stm8s_clk
+     0000884D  Sstm8s_clk$CLK_GetFlagStatus$606   stm8s_clk
+     0000884D  Sstm8s_clk$CLK_GetITStatus$607     stm8s_clk
+     0000884D  Sstm8s_clk$CLK_GetITStatus$608     stm8s_clk
+     0000884D  Sstm8s_clk$CLK_GetITStatus$609     stm8s_clk
+     0000884D  _CLK_GetITStatus                   stm8s_clk
+     0000884F  A$stm8s_clk$1945                   stm8s_clk
+     00008851  A$stm8s_clk$1946                   stm8s_clk
+     00008853  A$stm8s_clk$1947                   stm8s_clk
+     00008855  A$stm8s_clk$1950                   stm8s_clk
+     00008856  A$stm8s_clk$1953                   stm8s_clk
+     00008856  Sstm8s_clk$CLK_GetITStatus$610     stm8s_clk
+     00008857  A$stm8s_clk$1955                   stm8s_clk
+     00008857  Sstm8s_clk$CLK_GetITStatus$611     stm8s_clk
+     00008859  A$stm8s_clk$1956                   stm8s_clk
+     0000885B  A$stm8s_clk$1957                   stm8s_clk
+     0000885C  A$stm8s_clk$1959                   stm8s_clk
+     0000885C  Sstm8s_clk$CLK_GetITStatus$612     stm8s_clk
+     0000885E  A$stm8s_clk$1961                   stm8s_clk
+     0000885E  Sstm8s_clk$CLK_GetITStatus$613     stm8s_clk
+     0000885F  A$stm8s_clk$1962                   stm8s_clk
+     00008861  A$stm8s_clk$1963                   stm8s_clk
+     00008862  A$stm8s_clk$1965                   stm8s_clk
+     00008862  Sstm8s_clk$CLK_GetITStatus$614     stm8s_clk
+     00008864  A$stm8s_clk$1967                   stm8s_clk
+     00008864  Sstm8s_clk$CLK_GetITStatus$615     stm8s_clk
+     00008866  A$stm8s_clk$1969                   stm8s_clk
+     00008866  Sstm8s_clk$CLK_GetITStatus$616     stm8s_clk
+     00008867  A$stm8s_clk$1970                   stm8s_clk
+     00008868  A$stm8s_clk$1972                   stm8s_clk
+     00008868  Sstm8s_clk$CLK_GetITStatus$617     stm8s_clk
+     0000886A  A$stm8s_clk$1974                   stm8s_clk
+     0000886A  Sstm8s_clk$CLK_GetITStatus$618     stm8s_clk
+     0000886C  A$stm8s_clk$1976                   stm8s_clk
+     0000886C  Sstm8s_clk$CLK_GetITStatus$619     stm8s_clk
+     0000886F  A$stm8s_clk$1977                   stm8s_clk
+     00008871  A$stm8s_clk$1979                   stm8s_clk
+     00008871  Sstm8s_clk$CLK_GetITStatus$620     stm8s_clk
+     00008872  A$stm8s_clk$1984                   stm8s_clk
+     00008872  Sstm8s_clk$CLK_GetITStatus$621     stm8s_clk
+     00008872  Sstm8s_clk$CLK_GetITStatus$622     stm8s_clk
+     00008873  A$stm8s_clk$1985                   stm8s_clk
+     00008875  A$stm8s_clk$1989                   stm8s_clk
+     00008875  Sstm8s_clk$CLK_GetITStatus$623     stm8s_clk
+ASxxxx Linker V03.00 + NoICE + sdld,  page 45.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CODE                                000080C9    000009CC =        2508. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00008875  Sstm8s_clk$CLK_GetITStatus$624     stm8s_clk
+     00008878  A$stm8s_clk$1990                   stm8s_clk
+     0000887A  A$stm8s_clk$1991                   stm8s_clk
+     0000887C  A$stm8s_clk$1992                   stm8s_clk
+     0000887E  A$stm8s_clk$1997                   stm8s_clk
+     0000887E  Sstm8s_clk$CLK_GetITStatus$625     stm8s_clk
+     0000887E  Sstm8s_clk$CLK_GetITStatus$626     stm8s_clk
+     0000887E  Sstm8s_clk$CLK_GetITStatus$627     stm8s_clk
+     00008880  A$stm8s_clk$1999                   stm8s_clk
+     00008880  Sstm8s_clk$CLK_GetITStatus$628     stm8s_clk
+     00008882  A$stm8s_clk$2004                   stm8s_clk
+     00008882  Sstm8s_clk$CLK_GetITStatus$629     stm8s_clk
+     00008882  Sstm8s_clk$CLK_GetITStatus$630     stm8s_clk
+     00008883  A$stm8s_clk$2006                   stm8s_clk
+     00008883  Sstm8s_clk$CLK_GetITStatus$631     stm8s_clk
+     00008885  A$stm8s_clk$2011                   stm8s_clk
+     00008885  Sstm8s_clk$CLK_GetITStatus$632     stm8s_clk
+     00008885  Sstm8s_clk$CLK_GetITStatus$633     stm8s_clk
+     00008888  A$stm8s_clk$2012                   stm8s_clk
+     0000888A  A$stm8s_clk$2013                   stm8s_clk
+     0000888C  A$stm8s_clk$2014                   stm8s_clk
+     0000888E  A$stm8s_clk$2019                   stm8s_clk
+     0000888E  Sstm8s_clk$CLK_GetITStatus$634     stm8s_clk
+     0000888E  Sstm8s_clk$CLK_GetITStatus$635     stm8s_clk
+     0000888E  Sstm8s_clk$CLK_GetITStatus$636     stm8s_clk
+     00008890  A$stm8s_clk$2021                   stm8s_clk
+     00008890  Sstm8s_clk$CLK_GetITStatus$637     stm8s_clk
+     00008892  A$stm8s_clk$2026                   stm8s_clk
+     00008892  Sstm8s_clk$CLK_GetITStatus$638     stm8s_clk
+     00008892  Sstm8s_clk$CLK_GetITStatus$639     stm8s_clk
+     00008893  A$stm8s_clk$2035                   stm8s_clk
+     00008893  Sstm8s_clk$CLK_GetITStatus$640     stm8s_clk
+     00008893  Sstm8s_clk$CLK_GetITStatus$641     stm8s_clk
+     00008893  Sstm8s_clk$CLK_GetITStatus$642     stm8s_clk
+     00008893  Sstm8s_clk$CLK_GetITStatus$643     stm8s_clk
+     00008893  XG$CLK_GetITStatus$0$0             stm8s_clk
+     00008894  A$stm8s_clk$2046                   stm8s_clk
+     00008894  Sstm8s_clk$CLK_ClearITPendingBit   stm8s_clk
+     00008894  Sstm8s_clk$CLK_ClearITPendingBit   stm8s_clk
+     00008894  Sstm8s_clk$CLK_ClearITPendingBit   stm8s_clk
+     00008894  Sstm8s_clk$CLK_GetITStatus$644     stm8s_clk
+     00008894  _CLK_ClearITPendingBit             stm8s_clk
+     00008896  A$stm8s_clk$2047                   stm8s_clk
+     00008898  A$stm8s_clk$2048                   stm8s_clk
+     0000889A  A$stm8s_clk$2049                   stm8s_clk
+     0000889C  A$stm8s_clk$2052                   stm8s_clk
+     0000889D  A$stm8s_clk$2055                   stm8s_clk
+     0000889D  Sstm8s_clk$CLK_ClearITPendingBit   stm8s_clk
+     0000889E  A$stm8s_clk$2056                   stm8s_clk
+     000088A0  A$stm8s_clk$2057                   stm8s_clk
+     000088A1  A$stm8s_clk$2059                   stm8s_clk
+ASxxxx Linker V03.00 + NoICE + sdld,  page 46.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CODE                                000080C9    000009CC =        2508. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000088A1  Sstm8s_clk$CLK_ClearITPendingBit   stm8s_clk
+     000088A3  A$stm8s_clk$2060                   stm8s_clk
+     000088A5  A$stm8s_clk$2061                   stm8s_clk
+     000088A6  A$stm8s_clk$2063                   stm8s_clk
+     000088A6  Sstm8s_clk$CLK_ClearITPendingBit   stm8s_clk
+     000088A8  A$stm8s_clk$2065                   stm8s_clk
+     000088A8  Sstm8s_clk$CLK_ClearITPendingBit   stm8s_clk
+     000088A9  A$stm8s_clk$2067                   stm8s_clk
+     000088A9  Sstm8s_clk$CLK_ClearITPendingBit   stm8s_clk
+     000088AB  A$stm8s_clk$2069                   stm8s_clk
+     000088AB  Sstm8s_clk$CLK_ClearITPendingBit   stm8s_clk
+     000088AD  A$stm8s_clk$2071                   stm8s_clk
+     000088AD  Sstm8s_clk$CLK_ClearITPendingBit   stm8s_clk
+     000088AE  A$stm8s_clk$2072                   stm8s_clk
+     000088AF  A$stm8s_clk$2074                   stm8s_clk
+     000088AF  Sstm8s_clk$CLK_ClearITPendingBit   stm8s_clk
+     000088B1  A$stm8s_clk$2076                   stm8s_clk
+     000088B1  Sstm8s_clk$CLK_ClearITPendingBit   stm8s_clk
+     000088B3  A$stm8s_clk$2078                   stm8s_clk
+     000088B3  Sstm8s_clk$CLK_ClearITPendingBit   stm8s_clk
+     000088B6  A$stm8s_clk$2079                   stm8s_clk
+     000088B8  A$stm8s_clk$2081                   stm8s_clk
+     000088B8  Sstm8s_clk$CLK_ClearITPendingBit   stm8s_clk
+     000088B9  A$stm8s_clk$2086                   stm8s_clk
+     000088B9  Sstm8s_clk$CLK_ClearITPendingBit   stm8s_clk
+     000088B9  Sstm8s_clk$CLK_ClearITPendingBit   stm8s_clk
+     000088BA  A$stm8s_clk$2087                   stm8s_clk
+     000088BC  A$stm8s_clk$2091                   stm8s_clk
+     000088BC  Sstm8s_clk$CLK_ClearITPendingBit   stm8s_clk
+     000088BC  Sstm8s_clk$CLK_ClearITPendingBit   stm8s_clk
+     000088C0  A$stm8s_clk$2093                   stm8s_clk
+     000088C0  Sstm8s_clk$CLK_ClearITPendingBit   stm8s_clk
+     000088C2  A$stm8s_clk$2098                   stm8s_clk
+     000088C2  Sstm8s_clk$CLK_ClearITPendingBit   stm8s_clk
+     000088C2  Sstm8s_clk$CLK_ClearITPendingBit   stm8s_clk
+     000088C6  A$stm8s_clk$2105                   stm8s_clk
+     000088C6  Sstm8s_clk$CLK_ClearITPendingBit   stm8s_clk
+     000088C6  Sstm8s_clk$CLK_ClearITPendingBit   stm8s_clk
+     000088C6  Sstm8s_clk$CLK_ClearITPendingBit   stm8s_clk
+     000088C6  XG$CLK_ClearITPendingBit$0$0       stm8s_clk
+     000088C7  A$stm8s_gpio$68                    stm8s_gpio
+     000088C7  Sstm8s_clk$CLK_ClearITPendingBit   stm8s_clk
+     000088C7  Sstm8s_gpio$GPIO_DeInit$0          stm8s_gpio
+     000088C7  Sstm8s_gpio$GPIO_DeInit$1          stm8s_gpio
+     000088C7  Sstm8s_gpio$GPIO_DeInit$2          stm8s_gpio
+     000088C7  _GPIO_DeInit                       stm8s_gpio
+     000088C9  A$stm8s_gpio$69                    stm8s_gpio
+     000088CB  A$stm8s_gpio$72                    stm8s_gpio
+     000088CB  Sstm8s_gpio$GPIO_DeInit$3          stm8s_gpio
+     000088CC  A$stm8s_gpio$73                    stm8s_gpio
+     000088CD  A$stm8s_gpio$74                    stm8s_gpio
+ASxxxx Linker V03.00 + NoICE + sdld,  page 47.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CODE                                000080C9    000009CC =        2508. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000088CE  A$stm8s_gpio$75                    stm8s_gpio
+     000088CF  A$stm8s_gpio$78                    stm8s_gpio
+     000088CF  Sstm8s_gpio$GPIO_DeInit$4          stm8s_gpio
+     000088D0  A$stm8s_gpio$79                    stm8s_gpio
+     000088D2  A$stm8s_gpio$82                    stm8s_gpio
+     000088D2  Sstm8s_gpio$GPIO_DeInit$5          stm8s_gpio
+     000088D3  A$stm8s_gpio$83                    stm8s_gpio
+     000088D5  A$stm8s_gpio$88                    stm8s_gpio
+     000088D5  Sstm8s_gpio$GPIO_DeInit$6          stm8s_gpio
+     000088D5  Sstm8s_gpio$GPIO_DeInit$7          stm8s_gpio
+     000088D5  XG$GPIO_DeInit$0$0                 stm8s_gpio
+     000088D6  A$stm8s_gpio$97                    stm8s_gpio
+     000088D6  Sstm8s_gpio$GPIO_DeInit$8          stm8s_gpio
+     000088D6  Sstm8s_gpio$GPIO_Init$10           stm8s_gpio
+     000088D6  Sstm8s_gpio$GPIO_Init$9            stm8s_gpio
+     000088D6  _GPIO_Init                         stm8s_gpio
+     000088D8  A$stm8s_gpio$101                   stm8s_gpio
+     000088D8  Sstm8s_gpio$GPIO_Init$11           stm8s_gpio
+     000088D8  Sstm8s_gpio$GPIO_Init$12           stm8s_gpio
+     000088DA  A$stm8s_gpio$102                   stm8s_gpio
+     000088DC  A$stm8s_gpio$103                   stm8s_gpio
+     000088DF  A$stm8s_gpio$105                   stm8s_gpio
+     000088E1  A$stm8s_gpio$106                   stm8s_gpio
+     000088E3  A$stm8s_gpio$107                   stm8s_gpio
+     000088E5  A$stm8s_gpio$108                   stm8s_gpio
+     000088E8  A$stm8s_gpio$111                   stm8s_gpio
+     000088E8  Sstm8s_gpio$GPIO_Init$13           stm8s_gpio
+     000088EA  A$stm8s_gpio$112                   stm8s_gpio
+     000088EC  A$stm8s_gpio$113                   stm8s_gpio
+     000088EE  A$stm8s_gpio$114                   stm8s_gpio
+     000088F1  A$stm8s_gpio$117                   stm8s_gpio
+     000088F1  Sstm8s_gpio$GPIO_Init$14           stm8s_gpio
+     000088F3  A$stm8s_gpio$118                   stm8s_gpio
+     000088F5  A$stm8s_gpio$119                   stm8s_gpio
+     000088F7  A$stm8s_gpio$120                   stm8s_gpio
+     000088FA  A$stm8s_gpio$123                   stm8s_gpio
+     000088FA  Sstm8s_gpio$GPIO_Init$15           stm8s_gpio
+     000088FC  A$stm8s_gpio$124                   stm8s_gpio
+     000088FE  A$stm8s_gpio$125                   stm8s_gpio
+     00008900  A$stm8s_gpio$126                   stm8s_gpio
+     00008903  A$stm8s_gpio$129                   stm8s_gpio
+     00008903  Sstm8s_gpio$GPIO_Init$16           stm8s_gpio
+     00008905  A$stm8s_gpio$130                   stm8s_gpio
+     00008907  A$stm8s_gpio$131                   stm8s_gpio
+     00008909  A$stm8s_gpio$133                   stm8s_gpio
+     00008909  Sstm8s_gpio$GPIO_Init$17           stm8s_gpio
+     0000890B  A$stm8s_gpio$134                   stm8s_gpio
+     0000890D  A$stm8s_gpio$135                   stm8s_gpio
+     0000890F  A$stm8s_gpio$137                   stm8s_gpio
+     0000890F  Sstm8s_gpio$GPIO_Init$18           stm8s_gpio
+     00008911  A$stm8s_gpio$138                   stm8s_gpio
+ASxxxx Linker V03.00 + NoICE + sdld,  page 48.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CODE                                000080C9    000009CC =        2508. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00008913  A$stm8s_gpio$139                   stm8s_gpio
+     00008915  A$stm8s_gpio$141                   stm8s_gpio
+     00008915  Sstm8s_gpio$GPIO_Init$19           stm8s_gpio
+     00008917  A$stm8s_gpio$142                   stm8s_gpio
+     00008919  A$stm8s_gpio$143                   stm8s_gpio
+     0000891B  A$stm8s_gpio$145                   stm8s_gpio
+     0000891B  Sstm8s_gpio$GPIO_Init$20           stm8s_gpio
+     0000891D  A$stm8s_gpio$146                   stm8s_gpio
+     0000891F  A$stm8s_gpio$147                   stm8s_gpio
+     00008921  A$stm8s_gpio$149                   stm8s_gpio
+     00008921  Sstm8s_gpio$GPIO_Init$21           stm8s_gpio
+     00008923  A$stm8s_gpio$150                   stm8s_gpio
+     00008925  A$stm8s_gpio$151                   stm8s_gpio
+     00008927  A$stm8s_gpio$153                   stm8s_gpio
+     00008927  Sstm8s_gpio$GPIO_Init$22           stm8s_gpio
+     00008929  A$stm8s_gpio$154                   stm8s_gpio
+     0000892B  A$stm8s_gpio$155                   stm8s_gpio
+     0000892D  A$stm8s_gpio$157                   stm8s_gpio
+     0000892D  Sstm8s_gpio$GPIO_Init$23           stm8s_gpio
+     0000892F  A$stm8s_gpio$159                   stm8s_gpio
+     0000892F  Sstm8s_gpio$GPIO_Init$24           stm8s_gpio
+     00008930  A$stm8s_gpio$160                   stm8s_gpio
+     00008931  A$stm8s_gpio$162                   stm8s_gpio
+     00008931  Sstm8s_gpio$GPIO_Init$25           stm8s_gpio
+     00008933  A$stm8s_gpio$164                   stm8s_gpio
+     00008933  Sstm8s_gpio$GPIO_Init$26           stm8s_gpio
+     00008935  A$stm8s_gpio$166                   stm8s_gpio
+     00008935  Sstm8s_gpio$GPIO_Init$27           stm8s_gpio
+     00008937  A$stm8s_gpio$168                   stm8s_gpio
+     00008937  Sstm8s_gpio$GPIO_Init$28           stm8s_gpio
+     0000893A  A$stm8s_gpio$169                   stm8s_gpio
+     0000893C  A$stm8s_gpio$174                   stm8s_gpio
+     0000893C  Sstm8s_gpio$GPIO_Init$29           stm8s_gpio
+     0000893C  Sstm8s_gpio$GPIO_Init$30           stm8s_gpio
+     0000893E  A$stm8s_gpio$175                   stm8s_gpio
+     00008940  A$stm8s_gpio$176                   stm8s_gpio
+     00008942  A$stm8s_gpio$178                   stm8s_gpio
+     00008942  Sstm8s_gpio$GPIO_Init$31           stm8s_gpio
+     00008943  A$stm8s_gpio$179                   stm8s_gpio
+     00008944  A$stm8s_gpio$181                   stm8s_gpio
+     00008944  Sstm8s_gpio$GPIO_Init$32           stm8s_gpio
+     00008946  A$stm8s_gpio$183                   stm8s_gpio
+     00008946  Sstm8s_gpio$GPIO_Init$33           stm8s_gpio
+     00008948  A$stm8s_gpio$185                   stm8s_gpio
+     00008948  Sstm8s_gpio$GPIO_Init$34           stm8s_gpio
+     0000894A  A$stm8s_gpio$187                   stm8s_gpio
+     0000894A  Sstm8s_gpio$GPIO_Init$35           stm8s_gpio
+     0000894D  A$stm8s_gpio$188                   stm8s_gpio
+     0000894F  A$stm8s_gpio$193                   stm8s_gpio
+     0000894F  Sstm8s_gpio$GPIO_Init$36           stm8s_gpio
+     0000894F  Sstm8s_gpio$GPIO_Init$37           stm8s_gpio
+ASxxxx Linker V03.00 + NoICE + sdld,  page 49.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CODE                                000080C9    000009CC =        2508. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00008951  A$stm8s_gpio$194                   stm8s_gpio
+     00008952  A$stm8s_gpio$195                   stm8s_gpio
+     00008955  A$stm8s_gpio$196                   stm8s_gpio
+     00008957  A$stm8s_gpio$197                   stm8s_gpio
+     00008958  A$stm8s_gpio$198                   stm8s_gpio
+     00008959  A$stm8s_gpio$200                   stm8s_gpio
+     00008959  Sstm8s_gpio$GPIO_Init$38           stm8s_gpio
+     0000895B  A$stm8s_gpio$201                   stm8s_gpio
+     0000895C  A$stm8s_gpio$202                   stm8s_gpio
+     0000895E  A$stm8s_gpio$203                   stm8s_gpio
+     0000895F  A$stm8s_gpio$205                   stm8s_gpio
+     0000895F  Sstm8s_gpio$GPIO_Init$39           stm8s_gpio
+     00008961  A$stm8s_gpio$206                   stm8s_gpio
+     00008963  A$stm8s_gpio$207                   stm8s_gpio
+     00008964  A$stm8s_gpio$210                   stm8s_gpio
+     00008964  Sstm8s_gpio$GPIO_Init$40           stm8s_gpio
+     00008965  A$stm8s_gpio$211                   stm8s_gpio
+     00008966  A$stm8s_gpio$212                   stm8s_gpio
+     00008967  A$stm8s_gpio$213                   stm8s_gpio
+     00008969  A$stm8s_gpio$216                   stm8s_gpio
+     00008969  Sstm8s_gpio$GPIO_Init$41           stm8s_gpio
+     0000896B  A$stm8s_gpio$217                   stm8s_gpio
+     0000896D  A$stm8s_gpio$220                   stm8s_gpio
+     0000896D  Sstm8s_gpio$GPIO_Init$42           stm8s_gpio
+     0000896F  A$stm8s_gpio$224                   stm8s_gpio
+     0000896F  Sstm8s_gpio$GPIO_Init$43           stm8s_gpio
+     0000896F  Sstm8s_gpio$GPIO_Init$44           stm8s_gpio
+     00008970  A$stm8s_gpio$226                   stm8s_gpio
+     00008970  Sstm8s_gpio$GPIO_Init$45           stm8s_gpio
+     00008972  A$stm8s_gpio$227                   stm8s_gpio
+     00008974  A$stm8s_gpio$228                   stm8s_gpio
+     00008975  A$stm8s_gpio$230                   stm8s_gpio
+     00008975  Sstm8s_gpio$GPIO_Init$46           stm8s_gpio
+     00008977  A$stm8s_gpio$234                   stm8s_gpio
+     00008977  Sstm8s_gpio$GPIO_Init$47           stm8s_gpio
+     00008977  Sstm8s_gpio$GPIO_Init$48           stm8s_gpio
+     00008979  A$stm8s_gpio$235                   stm8s_gpio
+     0000897B  A$stm8s_gpio$237                   stm8s_gpio
+     0000897B  Sstm8s_gpio$GPIO_Init$49           stm8s_gpio
+     0000897D  A$stm8s_gpio$242                   stm8s_gpio
+     0000897D  Sstm8s_gpio$GPIO_Init$50           stm8s_gpio
+     0000897D  Sstm8s_gpio$GPIO_Init$51           stm8s_gpio
+     0000897F  A$stm8s_gpio$243                   stm8s_gpio
+     00008981  A$stm8s_gpio$248                   stm8s_gpio
+     00008981  Sstm8s_gpio$GPIO_Init$52           stm8s_gpio
+     00008981  Sstm8s_gpio$GPIO_Init$53           stm8s_gpio
+     00008983  A$stm8s_gpio$249                   stm8s_gpio
+     00008984  A$stm8s_gpio$250                   stm8s_gpio
+     00008986  A$stm8s_gpio$251                   stm8s_gpio
+     00008988  A$stm8s_gpio$252                   stm8s_gpio
+     00008989  A$stm8s_gpio$254                   stm8s_gpio
+ASxxxx Linker V03.00 + NoICE + sdld,  page 50.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CODE                                000080C9    000009CC =        2508. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00008989  Sstm8s_gpio$GPIO_Init$54           stm8s_gpio
+     0000898B  A$stm8s_gpio$259                   stm8s_gpio
+     0000898B  Sstm8s_gpio$GPIO_Init$55           stm8s_gpio
+     0000898B  Sstm8s_gpio$GPIO_Init$56           stm8s_gpio
+     0000898D  A$stm8s_gpio$260                   stm8s_gpio
+     0000898E  A$stm8s_gpio$261                   stm8s_gpio
+     00008990  A$stm8s_gpio$262                   stm8s_gpio
+     00008992  A$stm8s_gpio$263                   stm8s_gpio
+     00008993  A$stm8s_gpio$268                   stm8s_gpio
+     00008993  Sstm8s_gpio$GPIO_Init$57           stm8s_gpio
+     00008993  Sstm8s_gpio$GPIO_Init$58           stm8s_gpio
+     00008994  A$stm8s_gpio$269                   stm8s_gpio
+     00008997  A$stm8s_gpio$270                   stm8s_gpio
+     00008998  A$stm8s_gpio$273                   stm8s_gpio
+     00008998  Sstm8s_gpio$GPIO_Init$59           stm8s_gpio
+     00008999  A$stm8s_gpio$275                   stm8s_gpio
+     00008999  Sstm8s_gpio$GPIO_Init$60           stm8s_gpio
+     0000899B  A$stm8s_gpio$276                   stm8s_gpio
+     0000899D  A$stm8s_gpio$277                   stm8s_gpio
+     0000899E  A$stm8s_gpio$279                   stm8s_gpio
+     0000899E  Sstm8s_gpio$GPIO_Init$61           stm8s_gpio
+     000089A0  A$stm8s_gpio$283                   stm8s_gpio
+     000089A0  Sstm8s_gpio$GPIO_Init$62           stm8s_gpio
+     000089A0  Sstm8s_gpio$GPIO_Init$63           stm8s_gpio
+     000089A2  A$stm8s_gpio$284                   stm8s_gpio
+     000089A3  A$stm8s_gpio$286                   stm8s_gpio
+     000089A3  Sstm8s_gpio$GPIO_Init$64           stm8s_gpio
+     000089A5  A$stm8s_gpio$291                   stm8s_gpio
+     000089A5  Sstm8s_gpio$GPIO_Init$65           stm8s_gpio
+     000089A5  Sstm8s_gpio$GPIO_Init$66           stm8s_gpio
+     000089A7  A$stm8s_gpio$292                   stm8s_gpio
+     000089A8  A$stm8s_gpio$297                   stm8s_gpio
+     000089A8  Sstm8s_gpio$GPIO_Init$67           stm8s_gpio
+     000089A8  Sstm8s_gpio$GPIO_Init$68           stm8s_gpio
+     000089AA  A$stm8s_gpio$298                   stm8s_gpio
+     000089AB  A$stm8s_gpio$301                   stm8s_gpio
+     000089AB  Sstm8s_gpio$GPIO_Init$69           stm8s_gpio
+     000089AC  A$stm8s_gpio$303                   stm8s_gpio
+     000089AC  Sstm8s_gpio$GPIO_Init$70           stm8s_gpio
+     000089AE  A$stm8s_gpio$304                   stm8s_gpio
+     000089B0  A$stm8s_gpio$305                   stm8s_gpio
+     000089B1  A$stm8s_gpio$307                   stm8s_gpio
+     000089B1  Sstm8s_gpio$GPIO_Init$71           stm8s_gpio
+     000089B3  A$stm8s_gpio$311                   stm8s_gpio
+     000089B3  Sstm8s_gpio$GPIO_Init$72           stm8s_gpio
+     000089B3  Sstm8s_gpio$GPIO_Init$73           stm8s_gpio
+     000089B5  A$stm8s_gpio$312                   stm8s_gpio
+     000089B7  A$stm8s_gpio$313                   stm8s_gpio
+     000089B8  A$stm8s_gpio$315                   stm8s_gpio
+     000089B8  Sstm8s_gpio$GPIO_Init$74           stm8s_gpio
+     000089BA  A$stm8s_gpio$320                   stm8s_gpio
+ASxxxx Linker V03.00 + NoICE + sdld,  page 51.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CODE                                000080C9    000009CC =        2508. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000089BA  Sstm8s_gpio$GPIO_Init$75           stm8s_gpio
+     000089BA  Sstm8s_gpio$GPIO_Init$76           stm8s_gpio
+     000089BC  A$stm8s_gpio$321                   stm8s_gpio
+     000089BE  A$stm8s_gpio$322                   stm8s_gpio
+     000089BF  A$stm8s_gpio$327                   stm8s_gpio
+     000089BF  Sstm8s_gpio$GPIO_Init$77           stm8s_gpio
+     000089BF  Sstm8s_gpio$GPIO_Init$78           stm8s_gpio
+     000089C1  A$stm8s_gpio$331                   stm8s_gpio
+     000089C1  Sstm8s_gpio$GPIO_Init$79           stm8s_gpio
+     000089C1  Sstm8s_gpio$GPIO_Init$80           stm8s_gpio
+     000089C1  XG$GPIO_Init$0$0                   stm8s_gpio
+     000089C2  A$stm8s_gpio$342                   stm8s_gpio
+     000089C2  Sstm8s_gpio$GPIO_Init$81           stm8s_gpio
+     000089C2  Sstm8s_gpio$GPIO_Write$82          stm8s_gpio
+     000089C2  Sstm8s_gpio$GPIO_Write$83          stm8s_gpio
+     000089C2  Sstm8s_gpio$GPIO_Write$84          stm8s_gpio
+     000089C2  _GPIO_Write                        stm8s_gpio
+     000089C4  A$stm8s_gpio$343                   stm8s_gpio
+     000089C6  A$stm8s_gpio$344                   stm8s_gpio
+     000089C7  A$stm8s_gpio$349                   stm8s_gpio
+     000089C7  Sstm8s_gpio$GPIO_Write$85          stm8s_gpio
+     000089C7  Sstm8s_gpio$GPIO_Write$86          stm8s_gpio
+     000089C7  XG$GPIO_Write$0$0                  stm8s_gpio
+     000089C8  A$stm8s_gpio$360                   stm8s_gpio
+     000089C8  Sstm8s_gpio$GPIO_Write$87          stm8s_gpio
+     000089C8  Sstm8s_gpio$GPIO_WriteHigh$88      stm8s_gpio
+     000089C8  Sstm8s_gpio$GPIO_WriteHigh$89      stm8s_gpio
+     000089C8  Sstm8s_gpio$GPIO_WriteHigh$90      stm8s_gpio
+     000089C8  _GPIO_WriteHigh                    stm8s_gpio
+     000089CA  A$stm8s_gpio$361                   stm8s_gpio
+     000089CB  A$stm8s_gpio$362                   stm8s_gpio
+     000089CD  A$stm8s_gpio$363                   stm8s_gpio
+     000089CE  A$stm8s_gpio$368                   stm8s_gpio
+     000089CE  Sstm8s_gpio$GPIO_WriteHigh$91      stm8s_gpio
+     000089CE  Sstm8s_gpio$GPIO_WriteHigh$92      stm8s_gpio
+     000089CE  XG$GPIO_WriteHigh$0$0              stm8s_gpio
+     000089CF  A$stm8s_gpio$377                   stm8s_gpio
+     000089CF  Sstm8s_gpio$GPIO_WriteHigh$93      stm8s_gpio
+     000089CF  Sstm8s_gpio$GPIO_WriteLow$94       stm8s_gpio
+     000089CF  Sstm8s_gpio$GPIO_WriteLow$95       stm8s_gpio
+     000089CF  _GPIO_WriteLow                     stm8s_gpio
+     000089D0  A$stm8s_gpio$381                   stm8s_gpio
+     000089D0  Sstm8s_gpio$GPIO_WriteLow$96       stm8s_gpio
+     000089D0  Sstm8s_gpio$GPIO_WriteLow$97       stm8s_gpio
+     000089D2  A$stm8s_gpio$382                   stm8s_gpio
+     000089D3  A$stm8s_gpio$383                   stm8s_gpio
+     000089D5  A$stm8s_gpio$384                   stm8s_gpio
+     000089D7  A$stm8s_gpio$385                   stm8s_gpio
+     000089D8  A$stm8s_gpio$386                   stm8s_gpio
+     000089DA  A$stm8s_gpio$387                   stm8s_gpio
+     000089DB  A$stm8s_gpio$390                   stm8s_gpio
+ASxxxx Linker V03.00 + NoICE + sdld,  page 52.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CODE                                000080C9    000009CC =        2508. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000089DB  Sstm8s_gpio$GPIO_WriteLow$98       stm8s_gpio
+     000089DC  A$stm8s_gpio$394                   stm8s_gpio
+     000089DC  Sstm8s_gpio$GPIO_WriteLow$100      stm8s_gpio
+     000089DC  Sstm8s_gpio$GPIO_WriteLow$99       stm8s_gpio
+     000089DC  XG$GPIO_WriteLow$0$0               stm8s_gpio
+     000089DD  A$stm8s_gpio$405                   stm8s_gpio
+     000089DD  Sstm8s_gpio$GPIO_WriteLow$101      stm8s_gpio
+     000089DD  Sstm8s_gpio$GPIO_WriteReverse$10   stm8s_gpio
+     000089DD  Sstm8s_gpio$GPIO_WriteReverse$10   stm8s_gpio
+     000089DD  Sstm8s_gpio$GPIO_WriteReverse$10   stm8s_gpio
+     000089DD  _GPIO_WriteReverse                 stm8s_gpio
+     000089DF  A$stm8s_gpio$406                   stm8s_gpio
+     000089E0  A$stm8s_gpio$407                   stm8s_gpio
+     000089E2  A$stm8s_gpio$408                   stm8s_gpio
+     000089E3  A$stm8s_gpio$413                   stm8s_gpio
+     000089E3  Sstm8s_gpio$GPIO_WriteReverse$10   stm8s_gpio
+     000089E3  Sstm8s_gpio$GPIO_WriteReverse$10   stm8s_gpio
+     000089E3  XG$GPIO_WriteReverse$0$0           stm8s_gpio
+     000089E4  A$stm8s_gpio$424                   stm8s_gpio
+     000089E4  Sstm8s_gpio$GPIO_ReadOutputData$   stm8s_gpio
+     000089E4  Sstm8s_gpio$GPIO_ReadOutputData$   stm8s_gpio
+     000089E4  Sstm8s_gpio$GPIO_ReadOutputData$   stm8s_gpio
+     000089E4  Sstm8s_gpio$GPIO_WriteReverse$10   stm8s_gpio
+     000089E4  _GPIO_ReadOutputData               stm8s_gpio
+     000089E6  A$stm8s_gpio$425                   stm8s_gpio
+     000089E7  A$stm8s_gpio$430                   stm8s_gpio
+     000089E7  Sstm8s_gpio$GPIO_ReadOutputData$   stm8s_gpio
+     000089E7  Sstm8s_gpio$GPIO_ReadOutputData$   stm8s_gpio
+     000089E7  XG$GPIO_ReadOutputData$0$0         stm8s_gpio
+     000089E8  A$stm8s_gpio$441                   stm8s_gpio
+     000089E8  Sstm8s_gpio$GPIO_ReadInputData$1   stm8s_gpio
+     000089E8  Sstm8s_gpio$GPIO_ReadInputData$1   stm8s_gpio
+     000089E8  Sstm8s_gpio$GPIO_ReadInputData$1   stm8s_gpio
+     000089E8  Sstm8s_gpio$GPIO_ReadOutputData$   stm8s_gpio
+     000089E8  _GPIO_ReadInputData                stm8s_gpio
+     000089EA  A$stm8s_gpio$442                   stm8s_gpio
+     000089EC  A$stm8s_gpio$447                   stm8s_gpio
+     000089EC  Sstm8s_gpio$GPIO_ReadInputData$1   stm8s_gpio
+     000089EC  Sstm8s_gpio$GPIO_ReadInputData$1   stm8s_gpio
+     000089EC  XG$GPIO_ReadInputData$0$0          stm8s_gpio
+     000089ED  A$stm8s_gpio$458                   stm8s_gpio
+     000089ED  Sstm8s_gpio$GPIO_ReadInputData$1   stm8s_gpio
+     000089ED  Sstm8s_gpio$GPIO_ReadInputPin$12   stm8s_gpio
+     000089ED  Sstm8s_gpio$GPIO_ReadInputPin$12   stm8s_gpio
+     000089ED  Sstm8s_gpio$GPIO_ReadInputPin$12   stm8s_gpio
+     000089ED  _GPIO_ReadInputPin                 stm8s_gpio
+     000089EF  A$stm8s_gpio$459                   stm8s_gpio
+     000089F1  A$stm8s_gpio$460                   stm8s_gpio
+     000089F3  A$stm8s_gpio$465                   stm8s_gpio
+     000089F3  Sstm8s_gpio$GPIO_ReadInputPin$12   stm8s_gpio
+     000089F3  Sstm8s_gpio$GPIO_ReadInputPin$12   stm8s_gpio
+ASxxxx Linker V03.00 + NoICE + sdld,  page 53.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CODE                                000080C9    000009CC =        2508. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000089F3  XG$GPIO_ReadInputPin$0$0           stm8s_gpio
+     000089F4  A$stm8s_gpio$474                   stm8s_gpio
+     000089F4  Sstm8s_gpio$GPIO_ExternalPullUpC   stm8s_gpio
+     000089F4  Sstm8s_gpio$GPIO_ExternalPullUpC   stm8s_gpio
+     000089F4  Sstm8s_gpio$GPIO_ReadInputPin$12   stm8s_gpio
+     000089F4  _GPIO_ExternalPullUpConfig         stm8s_gpio
+     000089F5  A$stm8s_gpio$478                   stm8s_gpio
+     000089F5  Sstm8s_gpio$GPIO_ExternalPullUpC   stm8s_gpio
+     000089F5  Sstm8s_gpio$GPIO_ExternalPullUpC   stm8s_gpio
+     000089F7  A$stm8s_gpio$479                   stm8s_gpio
+     000089F9  A$stm8s_gpio$480                   stm8s_gpio
+     000089FB  A$stm8s_gpio$482                   stm8s_gpio
+     000089FB  Sstm8s_gpio$GPIO_ExternalPullUpC   stm8s_gpio
+     000089FC  A$stm8s_gpio$483                   stm8s_gpio
+     000089FD  A$stm8s_gpio$485                   stm8s_gpio
+     000089FD  Sstm8s_gpio$GPIO_ExternalPullUpC   stm8s_gpio
+     000089FF  A$stm8s_gpio$487                   stm8s_gpio
+     000089FF  Sstm8s_gpio$GPIO_ExternalPullUpC   stm8s_gpio
+     00008A01  A$stm8s_gpio$489                   stm8s_gpio
+     00008A01  Sstm8s_gpio$GPIO_ExternalPullUpC   stm8s_gpio
+     00008A03  A$stm8s_gpio$491                   stm8s_gpio
+     00008A03  Sstm8s_gpio$GPIO_ExternalPullUpC   stm8s_gpio
+     00008A06  A$stm8s_gpio$492                   stm8s_gpio
+     00008A08  A$stm8s_gpio$497                   stm8s_gpio
+     00008A08  Sstm8s_gpio$GPIO_ExternalPullUpC   stm8s_gpio
+     00008A08  Sstm8s_gpio$GPIO_ExternalPullUpC   stm8s_gpio
+     00008A0A  A$stm8s_gpio$498                   stm8s_gpio
+     00008A0C  A$stm8s_gpio$499                   stm8s_gpio
+     00008A0E  A$stm8s_gpio$500                   stm8s_gpio
+     00008A0F  A$stm8s_gpio$501                   stm8s_gpio
+     00008A11  A$stm8s_gpio$503                   stm8s_gpio
+     00008A11  Sstm8s_gpio$GPIO_ExternalPullUpC   stm8s_gpio
+     00008A13  A$stm8s_gpio$505                   stm8s_gpio
+     00008A13  Sstm8s_gpio$GPIO_ExternalPullUpC   stm8s_gpio
+     00008A14  A$stm8s_gpio$506                   stm8s_gpio
+     00008A15  A$stm8s_gpio$508                   stm8s_gpio
+     00008A15  Sstm8s_gpio$GPIO_ExternalPullUpC   stm8s_gpio
+     00008A17  A$stm8s_gpio$510                   stm8s_gpio
+     00008A17  Sstm8s_gpio$GPIO_ExternalPullUpC   stm8s_gpio
+     00008A19  A$stm8s_gpio$512                   stm8s_gpio
+     00008A19  Sstm8s_gpio$GPIO_ExternalPullUpC   stm8s_gpio
+     00008A1B  A$stm8s_gpio$514                   stm8s_gpio
+     00008A1B  Sstm8s_gpio$GPIO_ExternalPullUpC   stm8s_gpio
+     00008A1E  A$stm8s_gpio$515                   stm8s_gpio
+     00008A20  A$stm8s_gpio$520                   stm8s_gpio
+     00008A20  Sstm8s_gpio$GPIO_ExternalPullUpC   stm8s_gpio
+     00008A20  Sstm8s_gpio$GPIO_ExternalPullUpC   stm8s_gpio
+     00008A22  A$stm8s_gpio$521                   stm8s_gpio
+     00008A25  A$stm8s_gpio$522                   stm8s_gpio
+     00008A26  A$stm8s_gpio$525                   stm8s_gpio
+     00008A26  Sstm8s_gpio$GPIO_ExternalPullUpC   stm8s_gpio
+ASxxxx Linker V03.00 + NoICE + sdld,  page 54.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CODE                                000080C9    000009CC =        2508. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00008A28  A$stm8s_gpio$526                   stm8s_gpio
+     00008A2A  A$stm8s_gpio$530                   stm8s_gpio
+     00008A2A  Sstm8s_gpio$GPIO_ExternalPullUpC   stm8s_gpio
+     00008A2A  Sstm8s_gpio$GPIO_ExternalPullUpC   stm8s_gpio
+     00008A2C  A$stm8s_gpio$531                   stm8s_gpio
+     00008A2D  A$stm8s_gpio$533                   stm8s_gpio
+     00008A2D  Sstm8s_gpio$GPIO_ExternalPullUpC   stm8s_gpio
+     00008A2F  A$stm8s_gpio$538                   stm8s_gpio
+     00008A2F  Sstm8s_gpio$GPIO_ExternalPullUpC   stm8s_gpio
+     00008A2F  Sstm8s_gpio$GPIO_ExternalPullUpC   stm8s_gpio
+     00008A30  A$stm8s_gpio$540                   stm8s_gpio
+     00008A30  Sstm8s_gpio$GPIO_ExternalPullUpC   stm8s_gpio
+     00008A32  A$stm8s_gpio$541                   stm8s_gpio
+     00008A33  A$stm8s_gpio$542                   stm8s_gpio
+     00008A35  A$stm8s_gpio$543                   stm8s_gpio
+     00008A36  A$stm8s_gpio$545                   stm8s_gpio
+     00008A36  Sstm8s_gpio$GPIO_ExternalPullUpC   stm8s_gpio
+     00008A38  A$stm8s_gpio$546                   stm8s_gpio
+     00008A39  A$stm8s_gpio$551                   stm8s_gpio
+     00008A39  Sstm8s_gpio$GPIO_ExternalPullUpC   stm8s_gpio
+     00008A39  Sstm8s_gpio$GPIO_ExternalPullUpC   stm8s_gpio
+     00008A3A  A$stm8s_gpio$555                   stm8s_gpio
+     00008A3A  Sstm8s_gpio$GPIO_ExternalPullUpC   stm8s_gpio
+     00008A3A  Sstm8s_gpio$GPIO_ExternalPullUpC   stm8s_gpio
+     00008A3A  XG$GPIO_ExternalPullUpConfig$0$0   stm8s_gpio
+     00008A3B  Sstm8s_gpio$GPIO_ExternalPullUpC   stm8s_gpio
+     00008A3B  __divulong                         
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 55.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.debug_line                         00000000    00000DAF =        3503. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+ASxxxx Linker V03.00 + NoICE + sdld,  page 56.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.debug_loc                          00000000    000015E4 =        5604. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+ASxxxx Linker V03.00 + NoICE + sdld,  page 57.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.debug_abbrev                       00000000    00000214 =         532. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+ASxxxx Linker V03.00 + NoICE + sdld,  page 58.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.debug_info                         00000000    00001258 =        4696. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+ASxxxx Linker V03.00 + NoICE + sdld,  page 59.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.debug_pubnames                     00000000    0000060A =        1546. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+ASxxxx Linker V03.00 + NoICE + sdld,  page 60.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.debug_frame                        00000000    000013FD =        5117. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+ASxxxx Linker V03.00 + NoICE + sdld,  page 61.
+
+Files Linked                              [ module(s) ]
+
+build/main.rel                            [ main ]
+build/stm8s_it.rel                        [ stm8s_it ]
+build/stm8s_conf.rel                      [ stm8s_conf ]
+build/stm8s_clk.rel                       [ stm8s_clk ]
+build/stm8s_gpio.rel                      [ stm8s_gpio ]
+
+
+Libraries Linked                          [ object file ]
+
+C:\Program Files\SDCC\bin\..\lib\stm8/stm8.lib
+                                          [ _divulong.rel ]
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 62.
+
+User Base Address Definitions
+
+HOME = 0x8000
+DATA = 0x0001
+
+
